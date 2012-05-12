@@ -13,6 +13,8 @@ unittest
 
 const int STDIN_END = 0;
 const int INDEX_TOTAL = 0;
+const bool SPAM = true;
+const bool HAM = false;
 
 string[] getWords(string text)
 {
@@ -98,29 +100,40 @@ void word_count(string[] word_list, ref uint[string] general_dictionnary,
 
 }
 
-void print_arff_term_frequency(ref uint[string][] dictionnaries)
+void print_arff_term_frequency(ref uint[string][] dictionnaries, bool[] doc_class)
 {
   writeln("@relation corpus"); 
   foreach(word; dictionnaries[INDEX_TOTAL].keys)
     writeln("@attribute ",word," numeric");
   
+  writeln("@attribute CLASS {SPAM,HAM}");
   writeln("@data");
   for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
   {
     foreach(string word; dictionnaries[INDEX_TOTAL].keys)
       write(dictionnaries[index_doc].get(word,0),",");
     
+    if(doc_class[index_doc] == SPAM)
+      write("SPAM");
+    else
+      write("HAM");
+    
     write("\n");
   }
 }
 
-void print(ref uint[string][] dictionnaries)
+void print(ref uint[string][] dictionnaries, bool[] doc_class)
 {
   //affichage
-  for(int index_doc = 0; index_doc < 1; ++index_doc)
+  for(int index_doc = 0; index_doc < dictionnaries.length; ++index_doc)
   {
     foreach(string word; dictionnaries[index_doc].keys)
-      write(word," - ");
+      write(word," ");
+    
+    if(doc_class[index_doc] == SPAM)
+      write("SPAM");
+    else
+      write("HAM");
     
     writeln();
   }
@@ -130,19 +143,35 @@ void main(string[] files)
 {
 
   uint[string][] dictionnaries;
-  ++(dictionnaries.length);
+  bool[] doc_class;
+  dictionnaries.length = 1;
+  doc_class.length = 1;
+  uint num_doc = 0;
   string doc;
 
+  
   while(stdin.readln(doc) != STDIN_END)
     {
       ++(dictionnaries.length);
+      ++(doc_class.length);
+      ++num_doc;
+      
       string[] words = getWords(doc);
+      
+      //classification of spam or ham base on last word
+      if(words[words.length-1] == "spam")
+        doc_class[num_doc] = SPAM;
+      else
+        doc_class[num_doc] = HAM;
+            
+      --(words.length); 
+      
       word_count(words, dictionnaries[INDEX_TOTAL],
           dictionnaries[dictionnaries.length-1]);
       
       
     }
   
-  print_arff_term_frequency(dictionnaries);
+  print(dictionnaries, doc_class);
 
 }
