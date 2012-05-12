@@ -1,0 +1,14 @@
+@relation corpus
+@attribute dino numeric
+@attribute marco numeric
+@attribute luca numeric
+@attribute antonio numeric
+@attribute claudio numeric
+@attribute pippo numeric
+@attribute sandro numeric
+@attribute class {a,b}
+@data
+1,1,1,0,0,0,0,a
+0,1,1,1,0,0,0,a
+1,0,0,0,1,1,0,b
+0,0,1,1,0,1,1,b
