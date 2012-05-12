@@ -192,6 +192,6 @@ void main(string[] files)
       
     }
   
-  print(dictionnaries, doc_class);
+  print_arff_term_frequency(dictionnaries, doc_class);
 
 }
