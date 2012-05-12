@@ -114,6 +114,26 @@ void print_arff_term_frequency(ref uint[string][] dictionnaries)
   }
 }
 
+void print_arff_boolean(ref uint[string][] dictionnaries)
+{
+  writeln("@relation corpus"); 
+  foreach(word; dictionnaries[INDEX_TOTAL].keys)
+    writeln("@attribute ",word," numeric");
+  
+  writeln("@data");
+  for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
+  {
+    foreach(string word; dictionnaries[INDEX_TOTAL].keys){
+      if(dictionnaries[index_doc].get(word,0) > 0)
+        write("0",",");
+      else
+        write("1",",");
+    }
+    
+    write("\n");
+  }
+}
+
 void print(ref uint[string][] dictionnaries)
 {
   //affichage
