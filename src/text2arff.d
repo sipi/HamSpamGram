@@ -16,7 +16,7 @@ const int INDEX_TOTAL = 0;
 const bool SPAM = true;
 const bool HAM = false;
 
-string[] getWords(string text)
+string[] getWords(string text, bool with_ponctuation = false)
 {
 
   enum
@@ -40,6 +40,11 @@ string[] getWords(string text)
           case SEARCH_WORD:
             if(isPunctuation(c))
               {
+                if(with_ponctuation)
+                {
+                  words.length = words.length + 1;
+                  words[nb_words++] = text[i..i+1];
+                }
               }
             else if(isAlpha(c))
               {
@@ -176,7 +181,7 @@ void main(string[] files)
       ++(doc_class.length);
       ++num_doc;
       
-      string[] words = getWords(doc);
+      string[] words = getWords(doc, true);
       
       //classification of spam or ham base on last word
       if(words[words.length-1] == "spam")
