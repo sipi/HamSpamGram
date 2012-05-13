@@ -97,21 +97,31 @@ string[] getWords(string text, bool with_ponctuation = false)
 void word_count(string[] word_list, ref uint[string] general_dictionnary,
     ref uint[string] dictionnary)
 {
+  string word;
   for(uint i = 0; i < word_list.length; ++i)
     {
-      ++dictionnary[word_list[i].toLower().idup];
-      ++general_dictionnary[word_list[i].toLower().idup];
+      word = word_list[i].toLower();
+      ++dictionnary[word.idup];
+      
+      if(dictionnary[word] == 1)
+        ++general_dictionnary[word.idup];
     }
 
 }
 
-void print_arff_term_frequency(ref uint[string][] dictionnaries, bool[] doc_class)
+void print_arff_relation(ref uint[string] dictionnary)
 {
   writeln("@relation corpus"); 
-  foreach(word; dictionnaries[INDEX_TOTAL].keys)
+  foreach(word; dictionnary.keys)
     writeln("@attribute ",word," numeric");
   
   writeln("@attribute CLASS {SPAM,HAM}");
+}
+
+void print_arff_term_frequency(ref uint[string][] dictionnaries, bool[] doc_class)
+{
+  print_arff_relation(dictionnaries[INDEX_TOTAL]);
+  
   writeln("@data");
   for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
   {
@@ -127,25 +137,55 @@ void print_arff_term_frequency(ref uint[string][] dictionnaries, bool[] doc_clas
   }
 }
 
-void print_arff_boolean(ref uint[string][] dictionnaries)
+void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
 {
-  writeln("@relation corpus"); 
-  foreach(word; dictionnaries[INDEX_TOTAL].keys)
-    writeln("@attribute ",word," numeric");
+  print_arff_relation(dictionnaries[INDEX_TOTAL]);
   
   writeln("@data");
   for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
   {
     foreach(string word; dictionnaries[INDEX_TOTAL].keys){
       if(dictionnaries[index_doc].get(word,0) > 0)
-        write("0",",");
+        write("0,");
       else
-        write("1",",");
+        write("1,");
     }
+    
+    if(doc_class[index_doc] == SPAM)
+      write("SPAM");
+    else
+      write("HAM");
     
     write("\n");
   }
 }
+
+void print_arff_tf_idf(ref uint[string][] dictionnaries, bool[] doc_class, 
+    int nbr_doc)
+{
+  print_arff_relation(dictionnaries[INDEX_TOTAL]);
+  
+  writeln("@data");
+  for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
+  {
+    foreach(string word; dictionnaries[INDEX_TOTAL].keys)
+    {
+      float tfidf = cast(float)(dictionnaries[index_doc].get(word,0)) * 
+        (cast(float)(nbr_doc) / cast(float)(dictionnaries[INDEX_TOTAL][word]));
+      
+      write(tfidf,",");
+    }
+    
+    if(doc_class[index_doc] == SPAM)
+      write("SPAM");
+    else
+      write("HAM");
+    
+    write("\n");
+  }
+}
+
+
 
 void print(ref uint[string][] dictionnaries, bool[] doc_class)
 {
@@ -192,11 +232,9 @@ void main(string[] files)
       --(words.length); 
       
       word_count(words, dictionnaries[INDEX_TOTAL],
-          dictionnaries[dictionnaries.length-1]);
-      
-      
+          dictionnaries[dictionnaries.length-1]);   
     }
   
-  print_arff_term_frequency(dictionnaries, doc_class);
+  print_arff_boolean(dictionnaries, doc_class);
 
 }
