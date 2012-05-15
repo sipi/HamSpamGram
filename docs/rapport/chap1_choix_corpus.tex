@@ -1,1 +1,29 @@
-bla bla bla
+\section{Contraintes}
+Dans un premier temps, nous avons dû constituer un corpus. Ce dernier devait être composé de documents \textbf{pouvant être distribués dans au moins deux classes}, chacune devant regrouper au moins 25 documents. Nous étions libre de choisir la langue du corpus.
+
+\section{Notre choix}
+Nous avons choisi de travailler sur le corpus \texttt{SMS Spam Corpus v.0.1}. Il comporte un ensemble de SMS en Anglais, classés en deux catégories : les \textbf{Spam} et les \textbf{Ham} (messages légitimes)\footnote{L'origine du mot Spam est \og \textbf{Sp}iced H\textbf{am} \fg{} (en Français \og Jambon épicé \fg{}), naturellement l'autre catégorie s'appelle \og Ham \fg{} (en Français \og Jambon \fg{})}.
+
+Ce corpus a été créé à partir de données collectées depuis des données libres sur Internet :
+
+\begin{description}
+\item[JSC] : The \textbf{J}on \textbf{S}tevenson \textbf{C}orpus\footnote{JSC diponible à l'adresse suivante : \texttt{http://www.demo.inty.net/Units/SMS/corpus.htm}} est composé de 202 textes correspondant à des SMS légitimes.
+\item[NSC] : The NUS SMS Corpus\footnote{NSC disponible à l'adresse suivante : \texttt{http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/}} contient environ \nombre{10000} SMS légitimes collectés pour des projets de recherche au département informatique de l'Université de Singapour.
+\item[Grumbletext WebSite] : 322 Spam SMS extraits manuellement depuis le site web \texttt{Grumbletext}. Il s'agit d'un forum Anglais sur lequel les utilisateurs dénoncent les SPAM SMS qu'ils reçoivent.
+\end{description}
+
+\subsection*{Volume de données}
+
+Le \texttt{SMS Spam Corpus c.0.1} se décline en deux versions : 
+
+\nopagebreak
+\begin{tabular}{p{3cm} p{4cm} p{4cm}}
+ & Ham & Spam \\
+\textbf{Small} & 1002 & 82 \\
+\textbf{Big} & 1002 & 322 \\
+\end{tabular}
+
+Nous utiliserons pour ce travail la version \textit{Big}.
+
+\subsection*{Format des données}
+
