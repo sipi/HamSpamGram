@@ -16,7 +16,7 @@ const int INDEX_TOTAL = 0;
 const bool SPAM = true;
 const bool HAM = false;
 
-string[] getWords(string text, bool with_ponctuation = false)
+string[] getWords(string doc, bool with_ponctuation = false)
 {
 
   enum
@@ -32,9 +32,9 @@ string[] getWords(string text, bool with_ponctuation = false)
   int state = 0;
   char c;
 
-  for(int i = 0; i < text.length; ++i)
+  for(int i = 0; i < doc.length; ++i)
     {
-      c = text[i];
+      c = doc[i];
       switch(state)
         {
           case SEARCH_WORD:
@@ -43,7 +43,7 @@ string[] getWords(string text, bool with_ponctuation = false)
                 if(with_ponctuation)
                 {
                   words.length = words.length + 1;
-                  words[nb_words++] = text[i..i+1];
+                  words[nb_words++] = text("c_",cast(short)doc[i]);
                 }
               }
             else if(isAlpha(c))
@@ -62,7 +62,7 @@ string[] getWords(string text, bool with_ponctuation = false)
               {
                 fin = i;
                 words.length = words.length + 1;
-                words[nb_words++] = text[deb .. fin];
+                words[nb_words++] = text("w_", doc[deb .. fin]);
                 state = SEARCH_WORD;
                 --i;
               }
@@ -84,10 +84,10 @@ string[] getWords(string text, bool with_ponctuation = false)
 
   if(state == 1)
     {
-      fin = cast(int) (text.length) - 1;
+      fin = cast(int) (doc.length) - 1;
       words.length = words.length + 1;
 
-      words[nb_words++] = text[deb .. fin];
+      words[nb_words++] = text("w_", doc[deb .. fin]);
     }
 
   return words;
@@ -139,16 +139,19 @@ void print_arff_term_frequency(ref uint[string][] dictionnaries, bool[] doc_clas
 
 void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
 {
-  print_arff_relation(dictionnaries[INDEX_TOTAL]);
+  writeln("@relation corpus"); 
+  foreach(word; dictionnaries[INDEX_TOTAL].keys)
+    writeln("@attribute ",word," {0, 1}");
   
+  writeln("@attribute CLASS {SPAM,HAM}");  
   writeln("@data");
   for(int index_doc = 1; index_doc < dictionnaries.length; ++index_doc)
   {
     foreach(string word; dictionnaries[INDEX_TOTAL].keys){
       if(dictionnaries[index_doc].get(word,0) > 0)
-        write("0,");
-      else
         write("1,");
+      else
+        write("0,");
     }
     
     if(doc_class[index_doc] == SPAM)
@@ -204,7 +207,7 @@ void print(ref uint[string][] dictionnaries, bool[] doc_class)
   }
 }
 
-void main(string[] files)
+void main(string[] options)
 {
 
   uint[string][] dictionnaries;
@@ -235,6 +238,25 @@ void main(string[] files)
           dictionnaries[dictionnaries.length-1]);   
     }
   
-  print_arff_boolean(dictionnaries, doc_class);
+  
+  if(options.length > 1)
+  {
+    switch(options[1][1])
+    {
+      case 'b':
+        print_arff_boolean(dictionnaries, doc_class);
+        break;
+      case 't':
+        print_arff_term_frequency(dictionnaries, doc_class);
+        break;
+      default:
+        print_arff_tf_idf(dictionnaries, doc_class, num_doc);
+    }
+    
+  }
+  else
+  {
+    print_arff_tf_idf(dictionnaries, doc_class, num_doc);
+  }
 
 }
