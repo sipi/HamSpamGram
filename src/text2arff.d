@@ -227,7 +227,7 @@ void main(string[] options)
       string[] words = getWords(doc, true);
       
       //classification of spam or ham base on last word
-      if(words[words.length-1] == "spam")
+      if(words[words.length-1] == "w_spam")
         doc_class[num_doc] = SPAM;
       else
         doc_class[num_doc] = HAM;
@@ -249,14 +249,17 @@ void main(string[] options)
       case 't':
         print_arff_term_frequency(dictionnaries, doc_class);
         break;
-      default:
+      case 'i':
         print_arff_tf_idf(dictionnaries, doc_class, num_doc);
+        break;
+      default:
+        print(dictionnaries, doc_class);
     }
     
   }
   else
   {
-    print_arff_tf_idf(dictionnaries, doc_class, num_doc);
+   //print(dictionnaries, doc_class);
   }
 
 }
