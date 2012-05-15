@@ -1,0 +1,71 @@
+
+def isBlank(char):
+  return char == ' ' or char == '\t' or char == '\n'
+
+
+def tokenizeFile(path):
+  tokens = []
+  
+  f= open(path,'r')
+  for line in f:
+    for token in tokenize(line):
+      tokens.append(token)
+  f.close()
+
+  return tokens
+
+
+
+##
+# Tokenize a string
+# a token is a sequence of character separate by a blank
+# or a sequence of characters surrounded by quotes ( ' or " ) 
+# All characters between a # and a carriage return are omitted 
+# @return an array of token
+def tokenize(string):
+  tokens = []
+  deb = 0
+  state = 0
+  for i in range(len(string)):
+    if(string[i] == "\n"):
+      state = 0
+
+    if(state == 0):
+      if(string[i] == "\n"):
+        tokens.append("\n")
+      elif(not isBlank(string[i])):
+        deb = i
+        state = 1
+
+    elif( state == 1 ):
+      if(isBlank(string[i])):
+        tokens.append( string[deb: i] )
+        state = 0
+        if(string[i] == "\n"):
+          tokens.append("\n")
+    
+    
+  if( state == 1 ):
+    tokens.append(string[deb:i+1])
+
+  return tokens
+
+# End tokenize 
+########################
+
+def array( length, default_value ):
+  array = []
+  for i in xrange(length):
+    array.append(default_value)
+
+  return array
+
+
+def array2d( first_dim_length, second_dim_length, default_value ):
+  _array = []
+  for i in xrange( first_dim_length ):
+    _array.append( array( second_dim_length, default_value ) )
+
+  return _array
+
+
