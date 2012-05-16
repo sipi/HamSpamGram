@@ -20,7 +20,7 @@ import core.util as util
 from core.OOptions import Options
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.stem.porter import PorterStemmer
-from nltk.stem import SnowballStemmer
+from nltk.stem.snowball import SnowballStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
 
 ###########################
@@ -35,7 +35,7 @@ def stemFile(path, st):
     if tokens[i] == "\n":
       print 
     else:
-      print st.stem(tokens[i]),
+      print st.stem(tokens[i].lower()),
 
   
 
@@ -54,17 +54,21 @@ conf_path = ""
 usage= "hum, I do an help. Sorry..."
 oo = Options( sys.argv, usage )
 
-oo.add( 's', 'stemmer','stemming method', 'lancaster' ) 
+oo.add( 's', 'stemmer','stemming method', '' ) 
 args = oo.parse()
 
-stem = oo.get('stemmer')
-if stem == 'lancaster' : 
+stemmer = oo.get('stemmer')
+if stemmer == 'lancaster' : 
+  print >> sys.stderr , "lancaster"
   st = LancasterStemmer()
-elif stem == 'porter':
+elif stemmer == 'porter':
+  print >> sys.stderr , "porter"
   st = PorterStemmer()
-elif stem == 'snowball':
+elif stemmer == 'snowball':
+  print >> sys.stderr , "snowball"
   st = SnowballStemmer("english")
-elif stem == 'wordnet':
+elif stemmer == 'wordnet':
+  print >> sys.stderr , "wordnet"
   st = WordNetLemmatizer()
 
 
@@ -75,8 +79,16 @@ while args :
 if(len(conf_path) == 0):
   print "not file specified"
 
-st = LancasterStemmer()
-stemFile(conf_path, st)
+if(len(stemmer) == 0):
+  tokens = util.tokenizeFile(conf_path)
+  
+  for i in range(0,  len(tokens)):
+    if tokens[i] == "\n":
+      print 
+    else:
+      print tokens[i],
+else:
+  stemFile(conf_path, st)
 
 
 

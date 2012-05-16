@@ -27,9 +27,7 @@ def tokenize(string):
   deb = 0
   state = 0
   for i in range(len(string)):
-    if(string[i] == "\n"):
-      state = 0
-
+    
     if(state == 0):
       if(string[i] == "\n"):
         tokens.append("\n")
