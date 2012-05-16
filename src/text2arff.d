@@ -3,6 +3,7 @@ import std.ascii;
 import std.utf;
 import std.conv;
 import std.string;
+import std.math;
 
 unittest
 {
@@ -171,7 +172,7 @@ void print_arff_tf_idf(ref uint[string][] dictionnaries, bool[] doc_class,
     foreach(string word; dictionnaries[INDEX_TOTAL].keys)
     {
       float tfidf = cast(float)(dictionnaries[index_doc].get(word,0)) * 
-        (cast(float)(nbr_doc) / cast(float)(dictionnaries[INDEX_TOTAL][word]));
+        log(cast(float)(nbr_doc) / cast(float)(dictionnaries[INDEX_TOTAL][word]));
       
       write(tfidf,",");
     }
