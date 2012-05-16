@@ -1,0 +1,13 @@
+\section{Stemmatisation du corpus}
+Avant d'effectuer la génération des fichiers \texttt{arff} à importer dans \textit{WEKA}, le corpus a été stemmatisé\footnote{Stemmatisé $=$ Racinisé}. Dans le but de découvrir de nouveaux outils, nous avons fait le choix de développer un utilitaire de conversion en python basé sur le stemmer \textit{snowball} inclus la librairie \textit{NLP Toolkit}. Il permet, à partir du corpus brut décrit dans la partie~\vref{chap1}, de générer un nouveau fichier contenant le même corpus stemmatisé.
+
+\section{Conversion pour WEKA}
+Le corpus peut être décrit sous trois modèles de poids :
+
+\begin{description}
+\item[Modèle booléen] : il indique ou non la présence d'un mot dans le document.
+\item[Modèle fréquentiste] : il compte le nombre de fois que chaque mot est présent dans le document (il s'agit du TF).
+\item[Modèle TF-IDF] : il se base sur le calcul du TF-IDF pour chaque mot du texte.
+\end{description}
+
+L'importation des données dans \textit{WEKA} s'effectuant à partir d'un fichier au format \texttt{arff}, nous avons développé un deuxième utilitaire de conversion écrit en \texttt{langage d}\footnote{Wikipedia : \texttt{http://fr.wikipedia.org/wiki/D\_\%28langage\%29}} qui génère, à partir du fichier généré par le stemmer, trois fichiers \texttt{arff} (pour chacun des trois modèles).
