@@ -58,7 +58,7 @@ string[] getWords(string doc, bool with_ponctuation = false)
               }
           break;
           case IN_WORD:
-            if(c < 128 && !isAlpha(c) && c != '-')
+            if(!isAlpha(c) && c != '-')
               {
                 fin = i;
                 words.length = words.length + 1;
@@ -66,14 +66,11 @@ string[] getWords(string doc, bool with_ponctuation = false)
                 state = SEARCH_WORD;
                 --i;
               }
-            else
-              {
-                if(c >= 128)
-                  state = ON_UTF_CHAR;
-              }
           break;
           case ON_UTF_CHAR:
-            state = IN_WORD;
+               words.length = words.length + 1;
+               words[nb_words++] = text("c_", doc[deb .. i+1]);
+	       state = SEARCH_WORD;
           break;
           default:
           break;
