@@ -1,13 +1,41 @@
 \section{Stemmatisation du corpus}
-Avant d'effectuer la génération des fichiers \texttt{arff} à importer dans \textit{WEKA}, le corpus a été stemmatisé\footnote{Stemmatisé $=$ Racinisé}. Dans le but de découvrir de nouveaux outils, nous avons fait le choix de développer un utilitaire de conversion en python basé sur le stemmer \textit{snowball} inclus la librairie \textit{NLP Toolkit}. Il permet, à partir du corpus brut décrit dans la partie~\vref{chap1}, de générer un nouveau fichier contenant le même corpus stemmatisé.
+Avant d'effectuer la génération des fichiers \texttt{arff} à importer dans \textit{WEKA}, le corpus a été stemmatisé\footnote{Stemmatisé $=$ Racinisé}. Dans le but de découvrir de nouveaux outils, nous avons fait le choix de développer un utilitaire de conversion en python basé sur les stemmer  inclus dans la librairie \textit{NLP Toolkit}. Il permet, à partir du corpus brut décrit dans la partie~\vref{chap1}, de générer un nouveau fichier contenant le même corpus stemmatisé.
+
+Plusieurs algorithmes de stemmatisation sont fournis par cette librairie. Nous avions le choix entre trois algorithmes : \textit{Porter}, \textit{snowball} et \textit{lancaster}.
+
+Nous avons procédé en deux temps pour évaluer les différents algorithmes. Dans un premier temps, nous avons créé un ensemble de termes pertinents qui nous a permit d'observer l'agressivité de la stemmatisation. Ensuite, nous avons appliqué les différents algorithmes à notre corpus afin de comparer le nombre de racines distinctes après exécution de chaque algorithme.
+
+Le tableau suivant présente quelques termes de notre ensemble de test, ainsi que les statistiques obtenues après exécution des stemmer sur notre corpus.
+
+\begin{tabular}{l l l l}
+				& \textbf{Porter}	& \textbf{Snowball}	& \textbf{Lancaster} \\
+\hline
+Mot 'win'		& 'win'				& 'win'				& 'win' \\
+Mot 'winner'	& 'winner'			& 'winner'			& 'win' \\
+Mot 'wing'		& 'wing'			& 'wing'			& 'wing' \\
+\hline
+Mot 'react'		& 'react'			& 'react'			& 'react' \\
+Mot 'reacts'	& 'react'			& 'react'			& 'react' \\
+Mot 'reacting'	& 'react'			& 'react'			& 'react' \\
+Mot 'reaction'	& 'reaction'		& 'reaction'		& 'react' \\
+Mot 'reactions'	& 'reaction'		& 'reaction'		& 'react' \\
+Mot 'reactive'	& 'reactiv'			& 'reactiv'			& 'react' \\
+Mot 'reactivity'& 'reactiv'			& 'reactiv'			& 'react' \\
+Mot 'reactant'	& 'reactant'		& 'reactant'		& 'react' \\
+\hline
+\hline
+Stats corpus 	& 2931				& 2932 				& 2878 \\
+\end{tabular}
+
+Étant donné que nous travaillons sur un corpus de SMS, chaque document est en réalité un court texte. Nous avons donc fait le choix d'utiliser le stemmer appliquant une racinisation la plus brutale : \textbf{Lancaster}.
 
 \section{Conversion pour WEKA}
 Le corpus peut être décrit sous trois modèles de poids :
 
 \begin{description}
-\item[Modèle booléen] : il indique ou non la présence d'un mot dans le document.
+\item[Modèle booléen] : il indique présence d'un mot dans le document.
 \item[Modèle fréquentiste] : il compte le nombre de fois que chaque mot est présent dans le document (il s'agit du TF).
-\item[Modèle TF-IDF] : il se base sur le calcul du TF-IDF pour chaque mot du texte.
+\item[Modèle TF-IDF] : il se base sur le calcul du TF-IDF pour chaque mot du document dans le corpus.
 \end{description}
 
 L'importation des données dans \textit{WEKA} s'effectuant à partir d'un fichier au format \texttt{arff}, nous avons développé un deuxième utilitaire de conversion écrit en \texttt{langage d}\footnote{Wikipedia : \texttt{http://fr.wikipedia.org/wiki/D\_\%28langage\%29}} qui génère, à partir du fichier généré par le stemmer, trois fichiers \texttt{arff} (pour chacun des trois modèles).
