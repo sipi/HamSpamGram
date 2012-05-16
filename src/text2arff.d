@@ -141,7 +141,7 @@ void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
 {
   writeln("@relation corpus"); 
   foreach(word; dictionnaries[INDEX_TOTAL].keys)
-    writeln("@attribute ",word," {0, 1}");
+    writeln("@attribute ",word," { t}");
   
   writeln("@attribute CLASS {SPAM,HAM}");  
   writeln("@data");
@@ -149,9 +149,9 @@ void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
   {
     foreach(string word; dictionnaries[INDEX_TOTAL].keys){
       if(dictionnaries[index_doc].get(word,0) > 0)
-        write("1,");
+        write("t,");
       else
-        write("0,");
+        write("?,");
     }
     
     if(doc_class[index_doc] == SPAM)
@@ -193,7 +193,8 @@ void print_arff_tf_idf(ref uint[string][] dictionnaries, bool[] doc_class,
 void print(ref uint[string][] dictionnaries, bool[] doc_class)
 {
   //affichage
-  for(int index_doc = 0; index_doc < dictionnaries.length; ++index_doc)
+  writeln(dictionnaries[INDEX_TOTAL].length);
+  /*for(int index_doc = 0; index_doc < dictionnaries.length; ++index_doc)
   {
     foreach(string word; dictionnaries[index_doc].keys)
       write(word," ");
@@ -204,7 +205,7 @@ void print(ref uint[string][] dictionnaries, bool[] doc_class)
       write("HAM");
     
     writeln();
-  }
+  }*/
 }
 
 void main(string[] options)
@@ -259,7 +260,7 @@ void main(string[] options)
   }
   else
   {
-   //print(dictionnaries, doc_class);
+    print(dictionnaries, doc_class);
   }
 
 }
