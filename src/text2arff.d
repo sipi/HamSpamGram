@@ -71,7 +71,7 @@ string[] getWords(string doc, bool with_ponctuation = false)
           case ON_UTF_CHAR:
                words.length = words.length + 1;
                words[nb_words++] = text("c_", doc[deb .. i+1]);
-	       state = SEARCH_WORD;
+               state = SEARCH_WORD;
           break;
           default:
           break;
@@ -222,18 +222,16 @@ void main(string[] options)
       ++(dictionnaries.length);
       ++(doc_class.length);
       ++num_doc;
-      
+
       string[] words = getWords(doc, true);
       
       //classification of spam or ham base on last word
-      if(words[words.length-1] == "w_spam")
+      if(words[0] == "w_spam")
         doc_class[num_doc] = SPAM;
       else
         doc_class[num_doc] = HAM;
-            
-      --(words.length); 
-      
-      word_count(words, dictionnaries[INDEX_TOTAL],
+                  
+      word_count(words[1..words.length], dictionnaries[INDEX_TOTAL],
           dictionnaries[dictionnaries.length-1]);   
     }
   
