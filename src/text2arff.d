@@ -139,7 +139,7 @@ void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
 {
   writeln("@relation corpus"); 
   foreach(word; dictionnaries[INDEX_TOTAL].keys)
-    writeln("@attribute ",word," { t}");
+    writeln("@attribute ",word," {1, 0}");
   
   writeln("@attribute CLASS {SPAM,HAM}");  
   writeln("@data");
@@ -147,9 +147,9 @@ void print_arff_boolean(ref uint[string][] dictionnaries, bool[] doc_class)
   {
     foreach(string word; dictionnaries[INDEX_TOTAL].keys){
       if(dictionnaries[index_doc].get(word,0) > 0)
-        write("t,");
+        write("1,");
       else
-        write("?,");
+        write("0,");
     }
     
     if(doc_class[index_doc] == SPAM)
