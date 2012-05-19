@@ -1,39 +1,95 @@
-Lors de l'étape de sélection d'attribut nous avons testé quatre méthodes de recherche avec leur méthode d'évaluation par défaut :
+Lors de l'étape de sélection d'attributs, dans le but de réduire le nombre d'attributs générés lors de l'étape précédente, nous avons fait une étude préalable avec un corpus plus léger (322 Spam + 1002 Ham). 
 
-\section{test des différents algorithme}
+\subsection{Étude préalable : Tests}
+Lors de cette étude, nous avons testé quatre méthodes de recherche avec leur méthode d'évaluation par défaut :
 
-\subsection{BestFirst - CfsSubsetEval}
+\subsubsection{BestFirst + CfsSubsetEval}
 
-\\todo{nam} blabla fonctionnement
+La méthode \texttt{BestFirst} examine l'espace de recherche par l'heuristique de \og greedy hillclimbing \fg{} avec la possibilité de faire un  \og backtrack \fg{}.  Pour notre test, on a choisi de commencer avec un ensemble d'attributs vide et de procéder par recherche en avant. Pour ce faire, on a modifié les paramètres de la façon suivante : 
+\begin{description}
+	\item[direction] = Forward
+	\item[startSet] = (vide)
+\end{description}
 
-\\todo{clem} include weka output
+La méthode d'évaluation utilisée, \texttt{CfsSubsetEval}, évalue les sous-ensembles d'attributs générés par la mesure de dépendance entre les attributs.
 
-\subsection{GreedyStepwise - CfsSubsetEval}
+Voici le résultat du test :
 
-\\todo blabla fonctionnement
+// TODO clem include weka output
 
+\subsubsection{GreedyStepwise + CfsSubsetEval}
 
-\\todo include weka output
+La méthode \texttt{GreedyStepwise} examine l'espace de recherche par l'heuristique \og greedy \fg{}. Pour notre test, on a choisi de commencer avec un ensemble d'attributs vide, de procéder par recherche en avant et de ne pas générer un \og ranking \fg{} sur nos attributs. Pour ce faire, on a modifié les paramètres de la façon suivante : 
+\begin{description}
+	\item[generateRanking] = False
+	\item[searchBackwards] = False
+	\item[startSet] = (vide)
+\end{description}
 
+La méthode d'évaluation utilisée est la même que pour \texttt{BestFirst} : \texttt{CfsSubsetEval}.
 
-\subsection{LinearForwardSelection - CfsSubsetEval}
+Voici le résultat du test :
 
-\\todo blabla fonctionnement
-
-
-\\todo include weka output
-
-
-\subsection{Ranker - InfoGainAttributeEval}
-
-\\todo blabla fonctionnement
-
-
-\\todo include weka output
-
-\section{discussion}
+//TODO include weka output
 
 
-\section{Nos choix}
+\subsubsection{LinearForwardSelection - CfsSubsetEval}
 
-Greedy and Ranker
+La méthode \texttt{LinearForwardSelection} est une extension de la méthode \texttt{BestFirst}. Elle utilise un nombre \emph{k} d'attributs où \emph{k} peut être fixé selon différents critères. Pour notre test, on a choisi de commencer avec un ensemble d'attributs vide, de procéder par recherche en avant et de générer un \og ranking \fg{} sur nos attributs afin de sélectionner les \emph{k}=50 attributs. Pour ce faire, on a modifié les paramètres de la façon suivante : 
+\begin{description}
+	\item[forwardSelectionMethod] = Forward selection
+	\item[numUsedAttributes] = 50
+	\item[performRanking] = True
+	\item[startSet] = (vide)	
+\end{description}
+
+La méthode d'évaluation utilisée est la même que pour \texttt{BestFirst} : \texttt{CfsSubsetEval}.
+
+Voici le résultat du test :
+
+//TODO include weka output
+
+
+\subsubsection{Ranker - InfoGainAttributeEval}
+
+La méthode \texttt{Ranker} permet de classer les attributs selon leur évaluation. Elle offre la possibilité de classer un nombre \emph{k} d'attributs où \emph{k} peut être fixé manuellement ou selon un seuil dépendant de la valeur de son évaluation. Pour voir comment varie ce nombre \emph{k} selon différents seuils, on a fait plusieurs tests en modifiant le paramètre suivant : 
+\begin{description}
+	\item[threshold] = 0.005	
+	\item[threshold] = 0.01	
+	\item[threshold] = 0.02	
+	\item[threshold] = 0.03	
+	\item[threshold] = 0.05	
+\end{description}
+
+La méthode d'évaluation utilisée, \texttt{InfoGainAttributeEval}, évalue les attributs par la mesure de gain d'information par rapport à sa classe. Plus précisément, cette mesure se fait par la formule, vue en cours, suivante : 
+\begin{equation*}
+InfoGain(Classe,Attribut) = H(Classe) - H(Classe|Attribut)
+\end{equation*}
+
+Voici le résultat des tests :
+
+//TODO include weka output
+
+\subsection{Étude préalable - Discussion}
+Une étude des résultats des tests effectués nous a permis de distinguer deux ensembles d'attributs distincts : 
+\begin{itemize}
+\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{CfsSubsetEval}
+\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{InfoGainAttributeEval}
+\end{itemize}
+
+Les résultats obtenus par les algorithmes utilisant l'évaluation par mesure de dépendance, notamment \texttt{BestFirst, GreedyStepwise, LinearForwardSelection} avec \texttt{CfsSubsetEval}, étaient tous identiques. La différence entre ces algorithmes était visible dans leur temps d'exécution.   
+
+Les algorithmes utilisant l'évaluation par mesure de gain d'information, notamment \texttt{Ranker} avec \texttt{InfoGainAttributeEval}, étaient tous très rapides. 
+\subsection{Nos choix}
+
+Notre étude préalable nous a permis de conclure que :
+\begin{itemize}
+	\item l'ensemble d'attributs après réduction diffère selon la méthode d'évaluation.
+	\item le temps d'exécution des algorithmes diffère selon la méthode de recherche. 
+\end{itemize}
+
+On a donc choisi un algorithme par méthode d'évaluation : 
+\begin{enumerate}
+\item GreedyStepwise + CfsSubsetEval (parmi les plus rapides des méthodes testés)
+\item Ranker 
+\end{enumerate}
