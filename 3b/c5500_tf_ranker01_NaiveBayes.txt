@@ -1,0 +1,572 @@
+
+Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.13) (0.87)
+=============================
+c_£
+  mean          0.4337  0.001
+  std. dev.     0.6661 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_47
+  mean          0.4993 0.0095
+  std. dev.     0.9546 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cal
+  mean          0.4926 0.0578
+  std. dev.     0.6174 0.2505
+  weight sum       747   4827
+  precision          1      1
+
+w_p
+  mean           0.241 0.0017
+  std. dev.     0.4666 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_txt
+  mean          0.2249 0.0029
+  std. dev.     0.4602 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_33
+  mean          0.8025 0.1928
+  std. dev.     1.0366 0.6489
+  weight sum       747   4827
+  precision        1.1    1.1
+
+w_claim
+  mean          0.1539      0
+  std. dev.     0.3825 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_to
+  mean           0.925 0.3236
+  std. dev.     0.9124 0.6527
+  weight sum       747   4827
+  precision          1      1
+
+w_fre
+  mean           0.241 0.0099
+  std. dev.     0.5335 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_i
+  mean          0.0937 0.6126
+  std. dev.     0.3999   0.94
+  weight sum       747   4827
+  precision          1      1
+
+w_www
+  mean          0.1312 0.0004
+  std. dev.     0.3376 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_mobl
+  mean          0.1593 0.0031
+  std. dev.     0.4482 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_uk
+  mean          0.1017 0.0002
+  std. dev.     0.3195 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_38
+  mean          0.1301 0.2103
+  std. dev.     0.6719 1.0357
+  weight sum       747   4827
+  precision        3.6    3.6
+
+c_43
+  mean          0.0268 0.0054
+  std. dev.     0.3333 0.3333
+  weight sum       747   4827
+  precision          2      2
+
+w_stop
+  mean          0.1687 0.0087
+  std. dev.     0.4551 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_yo
+  mean          0.3641 0.0943
+  std. dev.     0.5865 0.3473
+  weight sum       747   4827
+  precision          1      1
+
+w_text
+  mean          0.1874  0.017
+  std. dev.     0.4478 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_or
+  mean           0.257 0.0491
+  std. dev.     0.4723   0.23
+  weight sum       747   4827
+  precision          1      1
+
+w_now
+  mean          0.2718 0.0622
+  std. dev.     0.4712 0.2499
+  weight sum       747   4827
+  precision          1      1
+
+w_reply
+  mean          0.1499 0.0099
+  std. dev.     0.4028 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_priz
+  mean          0.0803      0
+  std. dev.     0.2908 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_award
+  mean          0.0897 0.0002
+  std. dev.     0.3252 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_win
+  mean          0.1111  0.006
+  std. dev.     0.3227 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_won
+  mean          0.1017 0.0039
+  std. dev.     0.3023 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_box
+  mean          0.0803  0.001
+  std. dev.     0.2718 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_serv
+  mean           0.083 0.0015
+  std. dev.     0.2759 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_ppm
+  mean          0.0656      0
+  std. dev.     0.2476 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_co
+  mean          0.0723 0.0004
+  std. dev.     0.2691 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_from
+  mean          0.1821 0.0317
+  std. dev.     0.4062  0.181
+  weight sum       747   4827
+  precision          1      1
+
+w_ton
+  mean           0.087 0.0002
+  std. dev.     0.3535 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cash
+  mean           0.083 0.0027
+  std. dev.     0.2807 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_a
+  mean          0.5248 0.2217
+  std. dev.     0.7265 0.5187
+  weight sum       747   4827
+  precision          1      1
+
+c_46
+  mean          2.2292 2.1235
+  std. dev.     1.7738 2.8127
+  weight sum       747   4827
+  precision     1.5769 1.5769
+
+w_contact
+  mean          0.0817 0.0029
+  std. dev.     0.2738 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cs
+  mean          0.0589      0
+  std. dev.     0.2354 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_nok
+  mean          0.0884 0.0006
+  std. dev.     0.3551 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_pobox
+  mean          0.0562      0
+  std. dev.     0.2304 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_urgent
+  mean          0.0643  0.001
+  std. dev.     0.2452 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_our
+  mean          0.1138 0.0133
+  std. dev.     0.3259 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_prize
+  mean          0.0469      0
+  std. dev.     0.2113 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_w
+  mean          0.0643 0.0031
+  std. dev.     0.2452 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_draw
+  mean          0.0522  0.001
+  std. dev.     0.2224 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_week
+  mean          0.1178 0.0145
+  std. dev.     0.3831 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_per
+  mean          0.0616 0.0027
+  std. dev.     0.2459 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_latest
+  mean          0.0495 0.0006
+  std. dev.      0.229 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_po
+  mean          0.0469 0.0006
+  std. dev.     0.2113 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_custom
+  mean          0.0562 0.0023
+  std. dev.     0.2304 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_free
+  mean          0.0589 0.0023
+  std. dev.     0.2466 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_new
+  mean          0.1004 0.0151
+  std. dev.     0.3093 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_guarantee
+  mean          0.0388      0
+  std. dev.     0.1932 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_my
+  mean          0.0252 0.2273
+  std. dev.     0.2857 0.6552
+  weight sum       747   4827
+  precision     1.7143 1.7143
+
+w_for
+  mean          0.3261 0.1245
+  std. dev.     0.6144 0.4156
+  weight sum       747   4827
+  precision        1.2    1.2
+
+w_vouch
+  mean          0.0428 0.0002
+  std. dev.     0.2153 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_ur
+  mean          0.2349 0.0681
+  std. dev.     0.5615 0.3594
+  weight sum       747   4827
+  precision        1.5    1.5
+
+w_valid
+  mean          0.0361      0
+  std. dev.     0.1866 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_video
+  mean          0.0442 0.0004
+  std. dev.     0.2242 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_min
+  mean           0.091 0.0114
+  std. dev.     0.3227 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_select
+  mean          0.0415 0.0006
+  std. dev.     0.1994 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_rington
+  mean          0.0361      0
+  std. dev.     0.1937 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_mob
+  mean          0.0335      0
+  std. dev.     0.1799 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_await
+  mean          0.0361 0.0002
+  std. dev.     0.1866 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_chat
+  mean          0.0589 0.0031
+  std. dev.     0.2674 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_collect
+  mean          0.0455 0.0017
+  std. dev.     0.2084 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cost
+  mean          0.0562 0.0023
+  std. dev.     0.2629 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_receiv
+  mean          0.0495 0.0017
+  std. dev.     0.2404 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_apply
+  mean          0.0402  0.001
+  std. dev.     0.1963 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_on
+  mean          0.2959 0.1365
+  std. dev.     0.5348 0.3997
+  weight sum       747   4827
+  precision          1      1
+
+w_entry
+  mean          0.0375      0
+  std. dev.     0.2224 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_optout
+  mean          0.0308      0
+  std. dev.     0.1727 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_msg
+  mean           0.075 0.0118
+  std. dev.     0.2684 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_39
+  mean          0.2142 0.4793
+  std. dev.      0.593  0.911
+  weight sum       747   4827
+  precision        1.6    1.6
+
+c_59
+  mean               0 0.1966
+  std. dev.     0.5455 0.9865
+  weight sum       747   4827
+  precision     3.2727 3.2727
+
+w_orang
+  mean          0.0308 0.0006
+  std. dev.     0.1727 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_mins
+  mean          0.0308 0.0002
+  std. dev.     0.1727 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_guaranteed
+  mean          0.0281      0
+  std. dev.     0.1667 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_http
+  mean          0.0281      0
+  std. dev.     0.1667 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_sae
+  mean          0.0281      0
+  std. dev.     0.1667 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_landline
+  mean          0.0281      0
+  std. dev.     0.1667 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_camer
+  mean          0.0335 0.0006
+  std. dev.     0.1799 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_c
+  mean          0.0803 0.0131
+  std. dev.     0.2954 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_rat
+  mean          0.0295 0.0002
+  std. dev.     0.1691 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_poly
+  mean          0.0321      0
+  std. dev.     0.2109 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_but
+  mean          0.0094 0.0918
+  std. dev.     0.1667 0.3108
+  weight sum       747   4827
+  precision          1      1
+
+c_42
+  mean          0.1799 0.0401
+  std. dev.      1.139 0.3321
+  weight sum       747   4827
+  precision        1.6    1.6
+
+w_network
+  mean          0.0361 0.0012
+  std. dev.     0.1866 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_it
+  mean          0.0723 0.2449
+  std. dev.     0.3395 0.6373
+  weight sum       747   4827
+  precision        1.5    1.5
+
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.44 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5360               96.1607 %
+Incorrectly Classified Instances       214                3.8393 %
+Kappa statistic                          0.8377
+Mean absolute error                      0.0382
+Root mean squared error                  0.1857
+Relative absolute error                 16.458  %
+Root relative squared error             54.5084 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  657   90 |    a = SPAM
+  124 4703 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5362               96.1966 %
+Incorrectly Classified Instances       212                3.8034 %
+Kappa statistic                          0.8387
+Mean absolute error                      0.0379
+Root mean squared error                  0.1847
+Relative absolute error                 16.3125 %
+Root relative squared error             54.2057 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  655   92 |    a = SPAM
+  120 4707 |    b = HAM
+

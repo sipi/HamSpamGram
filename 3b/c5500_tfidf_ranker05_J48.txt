@@ -1,0 +1,87 @@
+
+J48 pruned tree
+------------------
+
+c_£ <= 0
+|   w_p <= 0
+|   |   w_www <= 0
+|   |   |   w_fre <= 0
+|   |   |   |   c_47 <= 0
+|   |   |   |   |   w_cal <= 0: HAM (4578.0/94.0)
+|   |   |   |   |   w_cal > 0
+|   |   |   |   |   |   w_i <= 0
+|   |   |   |   |   |   |   c_33 <= 0
+|   |   |   |   |   |   |   |   w_to <= 1.19516
+|   |   |   |   |   |   |   |   |   w_to <= 0: HAM (88.0/26.0)
+|   |   |   |   |   |   |   |   |   w_to > 0
+|   |   |   |   |   |   |   |   |   |   w_claim <= 0: HAM (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   w_claim > 0: SPAM (3.0)
+|   |   |   |   |   |   |   |   w_to > 1.19516: SPAM (14.0/5.0)
+|   |   |   |   |   |   |   c_33 > 0: SPAM (42.0/5.0)
+|   |   |   |   |   |   w_i > 0: HAM (162.0/1.0)
+|   |   |   |   c_47 > 0
+|   |   |   |   |   w_cal <= 0
+|   |   |   |   |   |   c_47 <= 3.0846: HAM (37.0/9.0)
+|   |   |   |   |   |   c_47 > 3.0846: SPAM (15.0/4.0)
+|   |   |   |   |   w_cal > 0: SPAM (20.0/1.0)
+|   |   |   w_fre > 0
+|   |   |   |   w_i <= 0: SPAM (96.0/18.0)
+|   |   |   |   w_i > 0
+|   |   |   |   |   w_fre <= 6.6752
+|   |   |   |   |   |   c_47 <= 3.0846: HAM (27.0)
+|   |   |   |   |   |   c_47 > 3.0846: SPAM (4.0)
+|   |   |   |   |   w_fre > 6.6752: SPAM (5.0)
+|   |   w_www > 0: SPAM (55.0/2.0)
+|   w_p > 0
+|   |   w_to <= 0
+|   |   |   w_i <= 0: SPAM (41.0/5.0)
+|   |   |   w_i > 0: HAM (3.0)
+|   |   w_to > 0: SPAM (102.0)
+c_£ > 0: SPAM (258.0/5.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+
+Time taken to build model: 0.24 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5392               96.7348 %
+Incorrectly Classified Instances       182                3.2652 %
+Kappa statistic                          0.8516
+Mean absolute error                      0.0576
+Root mean squared error                  0.1697
+Relative absolute error                 24.8006 %
+Root relative squared error             49.8105 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  610  137 |    a = SPAM
+   45 4782 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5382               96.5554 %
+Incorrectly Classified Instances       192                3.4446 %
+Kappa statistic                          0.8434
+Mean absolute error                      0.0595
+Root mean squared error                  0.1751
+Relative absolute error                 25.6406 %
+Root relative squared error             51.3868 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  605  142 |    a = SPAM
+   50 4777 |    b = HAM
+

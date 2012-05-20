@@ -1,0 +1,1653 @@
+
+NBTree
+------------------
+
+w_i <= 0.5
+|   c_38 <= 0.5
+|   |   w_contact <= 0.5
+|   |   |   c_£ <= 0.5: NB 4
+|   |   |   c_£ > 0.5: NB 5
+|   |   w_contact > 0.5
+|   |   |   c_33 <= 0.5: NB 7
+|   |   |   c_33 > 0.5: NB 8
+|   c_38 > 0.5
+|   |   w_to <= 0.5
+|   |   |   c_£ <= 0.5: NB 11
+|   |   |   c_£ > 0.5: NB 12
+|   |   w_to > 0.5
+|   |   |   w_p <= 0.5: NB 14
+|   |   |   w_p > 0.5: NB 15
+w_i > 0.5: NB 16
+
+Leaf number: 4 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.11) (0.89)
+===============================
+c_£
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+c_47
+  '(-inf-0.5]'     239.0 2601.0
+  '(0.5-inf)'       97.0   13.0
+  [total]          336.0 2614.0
+
+w_cal
+  '(-inf-0.5]'     215.0 2525.0
+  '(0.5-inf)'      121.0   89.0
+  [total]          336.0 2614.0
+
+w_p
+  '(-inf-0.5]'     238.0 2609.0
+  '(0.5-inf)'       98.0    5.0
+  [total]          336.0 2614.0
+
+w_txt
+  '(-inf-0.5]'     284.0 2607.0
+  '(0.5-inf)'       52.0    7.0
+  [total]          336.0 2614.0
+
+c_33
+  '(-inf-0.5]'     192.0 2347.0
+  '(0.5-inf)'      144.0  267.0
+  [total]          336.0 2614.0
+
+w_claim
+  '(-inf-0.5]'     320.0 2613.0
+  '(0.5-inf)'       16.0    1.0
+  [total]          336.0 2614.0
+
+w_to
+  '(-inf-0.5]'     154.0 2066.0
+  '(0.5-1.5]'      108.0  468.0
+  '(1.5-inf)'       75.0   81.0
+  [total]          337.0 2615.0
+
+w_fre
+  '(-inf-0.5]'     268.0 2597.0
+  '(0.5-inf)'       68.0   17.0
+  [total]          336.0 2614.0
+
+w_i
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_www
+  '(-inf-0.5]'     284.0 2613.0
+  '(0.5-inf)'       52.0    1.0
+  [total]          336.0 2614.0
+
+w_mobl
+  '(-inf-0.5]'     293.0 2609.0
+  '(0.5-inf)'       43.0    5.0
+  [total]          336.0 2614.0
+
+w_uk
+  '(-inf-0.5]'     288.0 2613.0
+  '(0.5-inf)'       48.0    1.0
+  [total]          336.0 2614.0
+
+c_38
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+c_43
+  '(-inf-0.5]'     303.0 2604.0
+  '(0.5-inf)'       33.0   10.0
+  [total]          336.0 2614.0
+
+w_stop
+  '(-inf-0.5]'     278.0 2595.0
+  '(0.5-inf)'       58.0   19.0
+  [total]          336.0 2614.0
+
+w_yo
+  '(-inf-0.5]'     232.0 2428.0
+  '(0.5-inf)'      104.0  186.0
+  [total]          336.0 2614.0
+
+w_text
+  '(-inf-0.5]'     278.0 2584.0
+  '(0.5-inf)'       58.0   30.0
+  [total]          336.0 2614.0
+
+w_or
+  '(-inf-0.5]'     278.0 2501.0
+  '(0.5-inf)'       58.0  113.0
+  [total]          336.0 2614.0
+
+w_now
+  '(-inf-0.5]'     259.0 2508.0
+  '(0.5-inf)'       77.0  106.0
+  [total]          336.0 2614.0
+
+w_reply
+  '(-inf-0.5]'     273.0 2595.0
+  '(0.5-inf)'       63.0   19.0
+  [total]          336.0 2614.0
+
+w_priz
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_award
+  '(-inf-0.5]'     325.0 2612.0
+  '(0.5-inf)'       11.0    2.0
+  [total]          336.0 2614.0
+
+w_win
+  '(-inf-0.5]'     318.0 2599.0
+  '(0.5-inf)'       18.0   15.0
+  [total]          336.0 2614.0
+
+w_won
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_box
+  '(-inf-0.5]'     310.0 2611.0
+  '(0.5-inf)'       26.0    3.0
+  [total]          336.0 2614.0
+
+w_serv
+  '(-inf-0.5]'     306.0 2611.0
+  '(0.5-inf)'       30.0    3.0
+  [total]          336.0 2614.0
+
+w_ppm
+  '(-inf-0.5]'     328.0 2613.0
+  '(0.5-inf)'        8.0    1.0
+  [total]          336.0 2614.0
+
+w_co
+  '(-inf-0.5]'     297.0 2613.0
+  '(0.5-inf)'       39.0    1.0
+  [total]          336.0 2614.0
+
+w_from
+  '(-inf-0.5]'     278.0 2548.0
+  '(0.5-inf)'       58.0   66.0
+  [total]          336.0 2614.0
+
+w_ton
+  '(-inf-0.5]'     297.0 2612.0
+  '(0.5-inf)'       39.0    2.0
+  [total]          336.0 2614.0
+
+w_cash
+  '(-inf-0.5]'     326.0 2611.0
+  '(0.5-inf)'       10.0    3.0
+  [total]          336.0 2614.0
+
+w_a
+  '(-inf-0.5]'     230.0 2206.0
+  '(0.5-inf)'      106.0  408.0
+  [total]          336.0 2614.0
+
+c_46
+  '(-inf-1.5]'     135.0 1603.0
+  '(1.5-5.5]'      190.0  796.0
+  '(5.5-inf)'       12.0  216.0
+  [total]          337.0 2615.0
+
+w_contact
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_cs
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_nok
+  '(-inf-0.5]'     316.0 2612.0
+  '(0.5-inf)'       20.0    2.0
+  [total]          336.0 2614.0
+
+w_pobox
+  '(-inf-0.5]'     317.0 2613.0
+  '(0.5-inf)'       19.0    1.0
+  [total]          336.0 2614.0
+
+w_urgent
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+w_our
+  'All'            335.0 2613.0
+  [total]          335.0 2613.0
+
+
+
+Leaf number: 5 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.98) (0.02)
+=============================
+c_£
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+c_47
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_cal
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_p
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_txt
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+c_33
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_claim
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_to
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_fre
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_i
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_www
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_mobl
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_uk
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+c_38
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+c_43
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_stop
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_yo
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_text
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_or
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_now
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_reply
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_priz
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_award
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_win
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_won
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_box
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_serv
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_ppm
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_co
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_from
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_ton
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_cash
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_a
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+c_46
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_contact
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_cs
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_nok
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_pobox
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_urgent
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+w_our
+  'All'          159.0    4.0
+  [total]        159.0    4.0
+
+
+
+Leaf number: 7 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.82) (0.18)
+===============================
+c_£
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+c_47
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_cal
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_p
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_txt
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+c_33
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_claim
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_to
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_fre
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_i
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_www
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_mobl
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_uk
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+c_38
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+c_43
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_stop
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_yo
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_text
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_or
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_now
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_reply
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_priz
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_award
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_win
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_won
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_box
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_serv
+  '(-inf-0.5]'      18.0    2.0
+  '(0.5-inf)'        1.0    3.0
+  [total]           19.0    5.0
+
+w_ppm
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_co
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_from
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_ton
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_cash
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_a
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+c_46
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_contact
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_cs
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_nok
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_pobox
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_urgent
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+w_our
+  'All'             18.0    4.0
+  [total]           18.0    4.0
+
+
+
+Leaf number: 8 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.98) (0.02)
+=============================
+c_£
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+c_47
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_cal
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_p
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_txt
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+c_33
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_claim
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_to
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_fre
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_i
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_www
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_mobl
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_uk
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+c_38
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+c_43
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_stop
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_yo
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_text
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_or
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_now
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_reply
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_priz
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_award
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_win
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_won
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_box
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_serv
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_ppm
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_co
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_from
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_ton
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_cash
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_a
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+c_46
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_contact
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_cs
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_nok
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_pobox
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_urgent
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+w_our
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+
+
+Leaf number: 11 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.18) (0.82)
+===============================
+c_£
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+c_47
+  '(-inf-0.5]'      15.0  126.0
+  '(0.5-inf)'       15.0    4.0
+  [total]           30.0  130.0
+
+w_cal
+  '(-inf-0.5]'       9.0  127.0
+  '(0.5-inf)'       21.0    3.0
+  [total]           30.0  130.0
+
+w_p
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_txt
+  '(-inf-0.5]'      21.0  129.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           30.0  130.0
+
+c_33
+  '(-inf-0.5]'      14.0  117.0
+  '(0.5-inf)'       16.0   13.0
+  [total]           30.0  130.0
+
+w_claim
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_to
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_fre
+  '(-inf-0.5]'      14.0  129.0
+  '(0.5-inf)'       16.0    1.0
+  [total]           30.0  130.0
+
+w_i
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_www
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_mobl
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_uk
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+c_38
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+c_43
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_stop
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_yo
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_text
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_or
+  '(-inf-0.5]'      13.0  125.0
+  '(0.5-inf)'       17.0    5.0
+  [total]           30.0  130.0
+
+w_now
+  '(-inf-0.5]'      20.0  126.0
+  '(0.5-inf)'       10.0    4.0
+  [total]           30.0  130.0
+
+w_reply
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_priz
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_award
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_win
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_won
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_box
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_serv
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_ppm
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_co
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_from
+  '(-inf-0.5]'      22.0  127.0
+  '(0.5-inf)'        8.0    3.0
+  [total]           30.0  130.0
+
+w_ton
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_cash
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_a
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+c_46
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_contact
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_cs
+  '(-inf-0.5]'      24.0  129.0
+  '(0.5-inf)'        6.0    1.0
+  [total]           30.0  130.0
+
+w_nok
+  '(-inf-0.5]'      23.0  129.0
+  '(0.5-inf)'        7.0    1.0
+  [total]           30.0  130.0
+
+w_pobox
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_urgent
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+w_our
+  'All'             29.0  129.0
+  [total]           29.0  129.0
+
+
+
+Leaf number: 12 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.94) (0.06)
+=============================
+c_£
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_47
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_cal
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_p
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_txt
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_33
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_claim
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_to
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_fre
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_i
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_www
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_mobl
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_uk
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_38
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_43
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_stop
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_yo
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_text
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_or
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_now
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_reply
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_priz
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_award
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_win
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_won
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_box
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_serv
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_ppm
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_co
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_from
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_ton
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_cash
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_a
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_46
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_contact
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_cs
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_nok
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_pobox
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_urgent
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_our
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+
+
+Leaf number: 14 Naive Bayes Classifier
+
+                 Class
+Attribute         SPAM   HAM
+                 (0.6) (0.4)
+=============================
+c_£
+  '(-inf-0.5]'     42.0  52.0
+  '(0.5-inf)'      37.0   1.0
+  [total]          79.0  53.0
+
+c_47
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_cal
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_p
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_txt
+  '(-inf-0.5]'     41.0  52.0
+  '(0.5-inf)'      38.0   1.0
+  [total]          79.0  53.0
+
+c_33
+  '(-inf-0.5]'     41.0  50.0
+  '(0.5-inf)'      38.0   3.0
+  [total]          79.0  53.0
+
+w_claim
+  '(-inf-0.5]'     59.0  52.0
+  '(0.5-inf)'      20.0   1.0
+  [total]          79.0  53.0
+
+w_to
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_fre
+  '(-inf-0.5]'     42.0  48.0
+  '(0.5-inf)'      37.0   5.0
+  [total]          79.0  53.0
+
+w_i
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_www
+  '(-inf-0.5]'     47.0  50.0
+  '(0.5-inf)'      32.0   3.0
+  [total]          79.0  53.0
+
+w_mobl
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_uk
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+c_38
+  '(-inf-1.5]'     70.0   8.0
+  '(1.5-inf)'       9.0  45.0
+  [total]          79.0  53.0
+
+c_43
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_stop
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_yo
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_text
+  '(-inf-0.5]'     61.0  52.0
+  '(0.5-inf)'      18.0   1.0
+  [total]          79.0  53.0
+
+w_or
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_now
+  '(-inf-0.5]'     57.0  51.0
+  '(0.5-inf)'      22.0   2.0
+  [total]          79.0  53.0
+
+w_reply
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_priz
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_award
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_win
+  '(-inf-0.5]'     59.0  51.0
+  '(0.5-inf)'      20.0   2.0
+  [total]          79.0  53.0
+
+w_won
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_box
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_serv
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_ppm
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_co
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_from
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_ton
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_cash
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_a
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+c_46
+  '(-inf-5.5]'     78.0  41.0
+  '(5.5-inf)'       1.0  12.0
+  [total]          79.0  53.0
+
+w_contact
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_cs
+  '(-inf-0.5]'     60.0  52.0
+  '(0.5-inf)'      19.0   1.0
+  [total]          79.0  53.0
+
+w_nok
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_pobox
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_urgent
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+w_our
+  'All'            78.0  52.0
+  [total]          78.0  52.0
+
+
+
+Leaf number: 15 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.96) (0.04)
+=============================
+c_£
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+c_47
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_cal
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_p
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_txt
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+c_33
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_claim
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_to
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_fre
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_i
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_www
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_mobl
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_uk
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+c_38
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+c_43
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_stop
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_yo
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_text
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_or
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_now
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_reply
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_priz
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_award
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_win
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_won
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_box
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_serv
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_ppm
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_co
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_from
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_ton
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_cash
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_a
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+c_46
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_contact
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_cs
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_nok
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_pobox
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_urgent
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+w_our
+  'All'           25.0    1.0
+  [total]         25.0    1.0
+
+
+
+Leaf number: 16 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.03) (0.97)
+===============================
+c_£
+  '(-inf-0.5]'      43.0 2029.0
+  '(0.5-inf)'       13.0    3.0
+  [total]           56.0 2032.0
+
+c_47
+  '(-inf-0.5]'      26.0 2013.0
+  '(0.5-1.5]'       10.0   17.0
+  '(1.5-inf)'       21.0    3.0
+  [total]           57.0 2033.0
+
+w_cal
+  '(-inf-0.5]'      31.0 1864.0
+  '(0.5-inf)'       25.0  168.0
+  [total]           56.0 2032.0
+
+w_p
+  '(-inf-0.5]'      45.0 2028.0
+  '(0.5-inf)'       11.0    4.0
+  [total]           56.0 2032.0
+
+w_txt
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+c_33
+  '(-inf-0.5]'      32.0 1751.0
+  '(0.5-inf)'       24.0  281.0
+  [total]           56.0 2032.0
+
+w_claim
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_to
+  '(-inf-0.5]'      22.0 1415.0
+  '(0.5-inf)'       34.0  617.0
+  [total]           56.0 2032.0
+
+w_fre
+  '(-inf-2.5]'      50.0 2031.0
+  '(2.5-inf)'        6.0    1.0
+  [total]           56.0 2032.0
+
+w_i
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_www
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_mobl
+  '(-inf-0.5]'      49.0 2024.0
+  '(0.5-inf)'        7.0    8.0
+  [total]           56.0 2032.0
+
+w_uk
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+c_38
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+c_43
+  '(-inf-0.5]'      45.0 2020.0
+  '(0.5-inf)'       11.0   12.0
+  [total]           56.0 2032.0
+
+w_stop
+  '(-inf-0.5]'      46.0 2010.0
+  '(0.5-inf)'       10.0   22.0
+  [total]           56.0 2032.0
+
+w_yo
+  '(-inf-0.5]'      33.0 1843.0
+  '(0.5-inf)'       23.0  189.0
+  [total]           56.0 2032.0
+
+w_text
+  '(-inf-0.5]'      39.0 1980.0
+  '(0.5-inf)'       17.0   52.0
+  [total]           56.0 2032.0
+
+w_or
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_now
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_reply
+  '(-inf-0.5]'      45.0 2006.0
+  '(0.5-inf)'       11.0   26.0
+  [total]           56.0 2032.0
+
+w_priz
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_award
+  '(-inf-0.5]'      52.0 2031.0
+  '(0.5-inf)'        4.0    1.0
+  [total]           56.0 2032.0
+
+w_win
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_won
+  '(-inf-0.5]'      49.0 2020.0
+  '(0.5-inf)'        7.0   12.0
+  [total]           56.0 2032.0
+
+w_box
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_serv
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_ppm
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_co
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_from
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_ton
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_cash
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_a
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+c_46
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_contact
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_cs
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_nok
+  '(-inf-0.5]'      46.0 2031.0
+  '(0.5-inf)'       10.0    1.0
+  [total]           56.0 2032.0
+
+w_pobox
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_urgent
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+w_our
+  'All'             55.0 2031.0
+  [total]           55.0 2031.0
+
+
+
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 9.8 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5470               98.1342 %
+Incorrectly Classified Instances       104                1.8658 %
+Kappa statistic                          0.9171
+Mean absolute error                      0.0272
+Root mean squared error                  0.1278
+Relative absolute error                 11.6995 %
+Root relative squared error             37.5005 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  668   79 |    a = SPAM
+   25 4802 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5434               97.4883 %
+Incorrectly Classified Instances       140                2.5117 %
+Kappa statistic                          0.8873
+Mean absolute error                      0.0319
+Root mean squared error                  0.1431
+Relative absolute error                 13.7187 %
+Root relative squared error             42.0136 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  642  105 |    a = SPAM
+   35 4792 |    b = HAM
+

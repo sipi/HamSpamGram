@@ -1,0 +1,105 @@
+
+Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.13) (0.87)
+=============================
+c_£
+  1              254.0    6.0
+  0              495.0 4823.0
+  [total]        749.0 4829.0
+
+c_47
+  1              220.0   37.0
+  0              529.0 4792.0
+  [total]        749.0 4829.0
+
+w_cal
+  1              323.0  262.0
+  0              426.0 4567.0
+  [total]        749.0 4829.0
+
+w_p
+  1              170.0    9.0
+  0              579.0 4820.0
+  [total]        749.0 4829.0
+
+w_txt
+  1              156.0   14.0
+  0              593.0 4815.0
+  [total]        749.0 4829.0
+
+c_33
+  1              367.0  563.0
+  0              382.0 4266.0
+  [total]        749.0 4829.0
+
+w_claim
+  1              110.0    1.0
+  0              639.0 4828.0
+  [total]        749.0 4829.0
+
+w_fre
+  1              152.0   48.0
+  0              597.0 4781.0
+  [total]        749.0 4829.0
+
+w_i
+  1               55.0 2031.0
+  0              694.0 2798.0
+  [total]        749.0 4829.0
+
+w_to
+  1              469.0 1220.0
+  0              280.0 3609.0
+  [total]        749.0 4829.0
+
+w_www
+  1               99.0    3.0
+  0              650.0 4826.0
+  [total]        749.0 4829.0
+
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5361               96.1787 %
+Incorrectly Classified Instances       213                3.8213 %
+Kappa statistic                          0.8209
+Mean absolute error                      0.0515
+Root mean squared error                  0.1696
+Relative absolute error                 22.1887 %
+Root relative squared error             49.7771 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  569  178 |    a = SPAM
+   35 4792 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5363               96.2146 %
+Incorrectly Classified Instances       211                3.7854 %
+Kappa statistic                          0.8228
+Mean absolute error                      0.0517
+Root mean squared error                  0.17  
+Relative absolute error                 22.2677 %
+Root relative squared error             49.8891 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  571  176 |    a = SPAM
+   35 4792 |    b = HAM
+

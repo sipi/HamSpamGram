@@ -1,0 +1,780 @@
+
+NBTree
+------------------
+: NB0
+
+Leaf number: 0 Naive Bayes Classifier
+
+                 Class
+Attribute         SPAM    HAM
+                (0.13) (0.87)
+==============================
+c_£
+  t               254.0    6.0
+  [total]         254.0    6.0
+
+c_47
+  t               220.0   37.0
+  [total]         220.0   37.0
+
+w_cal
+  t               323.0  262.0
+  [total]         323.0  262.0
+
+w_p
+  t               170.0    9.0
+  [total]         170.0    9.0
+
+w_txt
+  t               156.0   14.0
+  [total]         156.0   14.0
+
+c_33
+  t               367.0  563.0
+  [total]         367.0  563.0
+
+w_claim
+  t               110.0    1.0
+  [total]         110.0    1.0
+
+w_fre
+  t               152.0   48.0
+  [total]         152.0   48.0
+
+w_i
+  t                55.0 2031.0
+  [total]          55.0 2031.0
+
+w_to
+  t               469.0 1220.0
+  [total]         469.0 1220.0
+
+w_www
+  t                99.0    3.0
+  [total]          99.0    3.0
+
+w_mobl
+  t               103.0   16.0
+  [total]         103.0   16.0
+
+w_uk
+  t                73.0    2.0
+  [total]          73.0    2.0
+
+w_yo
+  t               236.0  392.0
+  [total]         236.0  392.0
+
+c_43
+  t                90.0   23.0
+  [total]          90.0   23.0
+
+w_stop
+  t               103.0   42.0
+  [total]         103.0   42.0
+
+w_or
+  t               181.0  224.0
+  [total]         181.0  224.0
+
+w_text
+  t               124.0   81.0
+  [total]         124.0   81.0
+
+w_now
+  t               195.0  292.0
+  [total]         195.0  292.0
+
+w_reply
+  t               100.0   47.0
+  [total]         100.0   47.0
+
+w_priz
+  t                57.0    1.0
+  [total]          57.0    1.0
+
+w_award
+  t                59.0    2.0
+  [total]          59.0    2.0
+
+w_win
+  t                82.0   26.0
+  [total]          82.0   26.0
+
+w_won
+  t                77.0   20.0
+  [total]          77.0   20.0
+
+w_box
+  t                61.0    6.0
+  [total]          61.0    6.0
+
+w_serv
+  t                63.0    8.0
+  [total]          63.0    8.0
+
+w_ppm
+  t                50.0    1.0
+  [total]          50.0    1.0
+
+w_co
+  t                53.0    3.0
+  [total]          53.0    3.0
+
+w_from
+  t               131.0  149.0
+  [total]         131.0  149.0
+
+w_ton
+  t                51.0    2.0
+  [total]          51.0    2.0
+
+w_cash
+  t                62.0   14.0
+  [total]          62.0   14.0
+
+w_contact
+  t                62.0   15.0
+  [total]          62.0   15.0
+
+w_cs
+  t                45.0    1.0
+  [total]          45.0    1.0
+
+w_nok
+  t                50.0    4.0
+  [total]          50.0    4.0
+
+w_pobox
+  t                43.0    1.0
+  [total]          43.0    1.0
+
+w_a
+  t               304.0  886.0
+  [total]         304.0  886.0
+
+w_urgent
+  t                49.0    6.0
+  [total]          49.0    6.0
+
+w_our
+  t                84.0   61.0
+  [total]          84.0   61.0
+
+w_prize
+  t                36.0    1.0
+  [total]          36.0    1.0
+
+w_w
+  t                49.0   16.0
+  [total]          49.0   16.0
+
+w_draw
+  t                40.0    6.0
+  [total]          40.0    6.0
+
+w_week
+  t                74.0   65.0
+  [total]          74.0   65.0
+
+w_per
+  t                46.0   14.0
+  [total]          46.0   14.0
+
+w_po
+  t                36.0    4.0
+  [total]          36.0    4.0
+
+w_latest
+  t                36.0    4.0
+  [total]          36.0    4.0
+
+w_free
+  t                43.0   12.0
+  [total]          43.0   12.0
+
+w_custom
+  t                43.0   12.0
+  [total]          43.0   12.0
+
+w_new
+  t                74.0   72.0
+  [total]          74.0   72.0
+
+w_guarantee
+  t                30.0    1.0
+  [total]          30.0    1.0
+
+w_my
+  t                12.0  603.0
+  [total]          12.0  603.0
+
+w_for
+  t               180.0  449.0
+  [total]         180.0  449.0
+
+w_vouch
+  t                31.0    2.0
+  [total]          31.0    2.0
+
+w_ur
+  t               115.0  201.0
+  [total]         115.0  201.0
+
+w_valid
+  t                28.0    1.0
+  [total]          28.0    1.0
+
+c_38
+  t               148.0  333.0
+  [total]         148.0  333.0
+
+w_video
+  t                31.0    3.0
+  [total]          31.0    3.0
+
+w_min
+  t                63.0   56.0
+  [total]          63.0   56.0
+
+w_select
+  t                32.0    4.0
+  [total]          32.0    4.0
+
+w_rington
+  t                27.0    1.0
+  [total]          27.0    1.0
+
+w_mob
+  t                26.0    1.0
+  [total]          26.0    1.0
+
+w_await
+  t                28.0    2.0
+  [total]          28.0    2.0
+
+w_collect
+  t                35.0    9.0
+  [total]          35.0    9.0
+
+w_cost
+  t                37.0   12.0
+  [total]          37.0   12.0
+
+w_receiv
+  t                34.0    9.0
+  [total]          34.0    9.0
+
+w_chat
+  t                39.0   16.0
+  [total]          39.0   16.0
+
+w_apply
+  t                31.0    6.0
+  [total]          31.0    6.0
+
+w_on
+  t               197.0  579.0
+  [total]         197.0  579.0
+
+w_entry
+  t                24.0    1.0
+  [total]          24.0    1.0
+
+w_optout
+  t                24.0    1.0
+  [total]          24.0    1.0
+
+w_msg
+  t                56.0   54.0
+  [total]          56.0   54.0
+
+c_39
+  t                93.0 1310.0
+  [total]          93.0 1310.0
+
+c_59
+  t                 3.0  345.0
+  [total]           3.0  345.0
+
+w_mins
+  t                24.0    2.0
+  [total]          24.0    2.0
+
+w_http
+  t                22.0    1.0
+  [total]          22.0    1.0
+
+w_landline
+  t                22.0    1.0
+  [total]          22.0    1.0
+
+w_guaranteed
+  t                22.0    1.0
+  [total]          22.0    1.0
+
+w_sae
+  t                22.0    1.0
+  [total]          22.0    1.0
+
+w_camer
+  t                26.0    4.0
+  [total]          26.0    4.0
+
+w_c
+  t                57.0   63.0
+  [total]          57.0   63.0
+
+w_rat
+  t                23.0    2.0
+  [total]          23.0    2.0
+
+w_poly
+  t                21.0    1.0
+  [total]          21.0    1.0
+
+w_but
+  t                 8.0  417.0
+  [total]           8.0  417.0
+
+w_network
+  t                28.0    7.0
+  [total]          28.0    7.0
+
+w_orang
+  t                24.0    3.0
+  [total]          24.0    3.0
+
+w_it
+  t                35.0  737.0
+  [total]          35.0  737.0
+
+w_tone
+  t                20.0    1.0
+  [total]          20.0    1.0
+
+w_hl
+  t                20.0    1.0
+  [total]          20.0    1.0
+
+w_me
+  t                29.0  664.0
+  [total]          29.0  664.0
+
+w_attempt
+  t                23.0    3.0
+  [total]          23.0    3.0
+
+w_holiday
+  t                33.0   16.0
+  [total]          33.0   16.0
+
+w_delivery
+  t                21.0    2.0
+  [total]          21.0    2.0
+
+w_expir
+  t                19.0    1.0
+  [total]          19.0    1.0
+
+w_pound
+  t                25.0    6.0
+  [total]          25.0    6.0
+
+w_lt
+  t                 1.0  243.0
+  [total]           1.0  243.0
+
+w_gt
+  t                 1.0  243.0
+  [total]           1.0  243.0
+
+w_sms
+  t                34.0   20.0
+  [total]          34.0   20.0
+
+c_46
+  t               590.0 3081.0
+  [total]         590.0 3081.0
+
+c_62
+  t                20.0    2.0
+  [total]          20.0    2.0
+
+c_40
+  t                53.0   66.0
+  [total]          53.0   66.0
+
+w_unsubscrib
+  t                18.0    1.0
+  [total]          18.0    1.0
+
+w_pleas
+  t                56.0   75.0
+  [total]          56.0   75.0
+
+w_bon
+  t                21.0    3.0
+  [total]          21.0    3.0
+
+w_wk
+  t                26.0    9.0
+  [total]          26.0    9.0
+
+w_age
+  t                19.0    2.0
+  [total]          19.0    2.0
+
+w_mobileupd
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_ltd
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_points
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_gbp
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_mobile
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_private
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_ident
+  t                17.0    1.0
+  [total]          17.0    1.0
+
+w_chant
+  t                26.0   10.0
+  [total]          26.0   10.0
+
+w_hrs
+  t                26.0   10.0
+  [total]          26.0   10.0
+
+c_58
+  t               144.0  426.0
+  [total]         144.0  426.0
+
+w_with
+  t               103.0  250.0
+  [total]         103.0  250.0
+
+w_lin
+  t                25.0    9.0
+  [total]          25.0    9.0
+
+w_line
+  t                18.0    2.0
+  [total]          18.0    2.0
+
+w_code
+  t                16.0    1.0
+  [total]          16.0    1.0
+
+w_lands
+  t                16.0    1.0
+  [total]          16.0    1.0
+
+w_collection
+  t                16.0    1.0
+  [total]          16.0    1.0
+
+w_quiz
+  t                16.0    1.0
+  [total]          16.0    1.0
+
+w_info
+  t                19.0    3.0
+  [total]          19.0    3.0
+
+w_land
+  t                19.0    3.0
+  [total]          19.0    3.0
+
+w_st
+  t                31.0   21.0
+  [total]          31.0   21.0
+
+c_45
+  t                83.0  180.0
+  [total]          83.0  180.0
+
+w_send
+  t                70.0  135.0
+  [total]          70.0  135.0
+
+w_club
+  t                17.0    2.0
+  [total]          17.0    2.0
+
+w_pm
+  t                32.0   25.0
+  [total]          32.0   25.0
+
+w_wq
+  t                15.0    1.0
+  [total]          15.0    1.0
+
+w_freemsg
+  t                15.0    1.0
+  [total]          15.0    1.0
+
+w_wkly
+  t                15.0    1.0
+  [total]          15.0    1.0
+
+w_mths
+  t                16.0    2.0
+  [total]          16.0    2.0
+
+w_cod
+  t                16.0    2.0
+  [total]          16.0    2.0
+
+w_suite
+  t                16.0    2.0
+  [total]          16.0    2.0
+
+w_txts
+  t                14.0    1.0
+  [total]          14.0    1.0
+
+w_sk
+  t                14.0    1.0
+  [total]          14.0    1.0
+
+w_every
+  t                34.0   34.0
+  [total]          34.0   34.0
+
+w_ok
+  t                 6.0  276.0
+  [total]           6.0  276.0
+
+w_tri
+  t                19.0    6.0
+  [total]          19.0    6.0
+
+w_he
+  t                 1.0  172.0
+  [total]           1.0  172.0
+
+c_64
+  t                24.0   14.0
+  [total]          24.0   14.0
+
+w_gift
+  t                21.0    9.0
+  [total]          21.0    9.0
+
+w_how
+  t                 8.0  301.0
+  [total]           8.0  301.0
+
+w_offer
+  t                15.0    2.0
+  [total]          15.0    2.0
+
+w_ll
+  t                 5.0  255.0
+  [total]           5.0  255.0
+
+w_that
+  t                27.0  523.0
+  [total]          27.0  523.0
+
+w_urg
+  t                16.0    3.0
+  [total]          16.0    3.0
+
+w_thi
+  t                84.0  209.0
+  [total]          84.0  209.0
+
+w_show
+  t                36.0   42.0
+  [total]          36.0   42.0
+
+w_subscrib
+  t                13.0    1.0
+  [total]          13.0    1.0
+
+w_ipod
+  t                13.0    1.0
+  [total]          13.0    1.0
+
+w_un-redeemed
+  t                13.0    1.0
+  [total]          13.0    1.0
+
+w_am-
+  t                13.0    1.0
+  [total]          13.0    1.0
+
+w_colo
+  t                18.0    6.0
+  [total]          18.0    6.0
+
+w_row
+  t                17.0    5.0
+  [total]          17.0    5.0
+
+w_numb
+  t                35.0   43.0
+  [total]          35.0   43.0
+
+w_nd
+  t                22.0   13.0
+  [total]          22.0   13.0
+
+w_ac
+  t                12.0    1.0
+  [total]          12.0    1.0
+
+w_hg
+  t                12.0    1.0
+  [total]          12.0    1.0
+
+w_ts
+  t                12.0    1.0
+  [total]          12.0    1.0
+
+w_std
+  t                12.0    1.0
+  [total]          12.0    1.0
+
+w_phon
+  t                42.0   65.0
+  [total]          42.0   65.0
+
+w_lor
+  t                 1.0  146.0
+  [total]           1.0  146.0
+
+w_liv
+  t                25.0   21.0
+  [total]          25.0   21.0
+
+w_stat
+  t                18.0    8.0
+  [total]          18.0    8.0
+
+w_comply
+  t                13.0    2.0
+  [total]          13.0    2.0
+
+w_congrat
+  t                13.0    2.0
+  [total]          13.0    2.0
+
+w_pric
+  t                17.0    7.0
+  [total]          17.0    7.0
+
+w_getzed
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_repres
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_ntt
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_camera
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_wc
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_ldn
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_camcord
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+w_fantasy
+  t                11.0    1.0
+  [total]          11.0    1.0
+
+c_ü
+  t                 1.0  138.0
+  [total]           1.0  138.0
+
+w_nat
+  t                18.0    9.0
+  [total]          18.0    9.0
+
+w_top
+  t                18.0    9.0
+  [total]          18.0    9.0
+
+w_play
+  t                30.0   36.0
+  [total]          30.0   36.0
+
+
+
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.49 seconds
+Time taken to test model on training data: 0.19 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4827               86.5985 %
+Incorrectly Classified Instances       747               13.4015 %
+Kappa statistic                          0     
+Mean absolute error                      0.2322
+Root mean squared error                  0.3407
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  747 |    a = SPAM
+    0 4827 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4827               86.5985 %
+Incorrectly Classified Instances       747               13.4015 %
+Kappa statistic                          0     
+Mean absolute error                      0.2322
+Root mean squared error                  0.3407
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  747 |    a = SPAM
+    0 4827 |    b = HAM
+

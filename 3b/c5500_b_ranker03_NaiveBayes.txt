@@ -1,0 +1,150 @@
+
+Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.13) (0.87)
+=============================
+c_£
+  1              254.0    6.0
+  0              495.0 4823.0
+  [total]        749.0 4829.0
+
+c_47
+  1              220.0   37.0
+  0              529.0 4792.0
+  [total]        749.0 4829.0
+
+w_cal
+  1              323.0  262.0
+  0              426.0 4567.0
+  [total]        749.0 4829.0
+
+w_p
+  1              170.0    9.0
+  0              579.0 4820.0
+  [total]        749.0 4829.0
+
+w_txt
+  1              156.0   14.0
+  0              593.0 4815.0
+  [total]        749.0 4829.0
+
+c_33
+  1              367.0  563.0
+  0              382.0 4266.0
+  [total]        749.0 4829.0
+
+w_claim
+  1              110.0    1.0
+  0              639.0 4828.0
+  [total]        749.0 4829.0
+
+w_fre
+  1              152.0   48.0
+  0              597.0 4781.0
+  [total]        749.0 4829.0
+
+w_i
+  1               55.0 2031.0
+  0              694.0 2798.0
+  [total]        749.0 4829.0
+
+w_to
+  1              469.0 1220.0
+  0              280.0 3609.0
+  [total]        749.0 4829.0
+
+w_www
+  1               99.0    3.0
+  0              650.0 4826.0
+  [total]        749.0 4829.0
+
+w_mobl
+  1              103.0   16.0
+  0              646.0 4813.0
+  [total]        749.0 4829.0
+
+w_uk
+  1               73.0    2.0
+  0              676.0 4827.0
+  [total]        749.0 4829.0
+
+w_yo
+  1              236.0  392.0
+  0              513.0 4437.0
+  [total]        749.0 4829.0
+
+c_43
+  1               90.0   23.0
+  0              659.0 4806.0
+  [total]        749.0 4829.0
+
+w_stop
+  1              103.0   42.0
+  0              646.0 4787.0
+  [total]        749.0 4829.0
+
+w_or
+  1              181.0  224.0
+  0              568.0 4605.0
+  [total]        749.0 4829.0
+
+w_text
+  1              124.0   81.0
+  0              625.0 4748.0
+  [total]        749.0 4829.0
+
+w_now
+  1              195.0  292.0
+  0              554.0 4537.0
+  [total]        749.0 4829.0
+
+w_reply
+  1              100.0   47.0
+  0              649.0 4782.0
+  [total]        749.0 4829.0
+
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.1 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5423               97.291  %
+Incorrectly Classified Instances       151                2.709  %
+Kappa statistic                          0.8778
+Mean absolute error                      0.0361
+Root mean squared error                  0.1502
+Relative absolute error                 15.5271 %
+Root relative squared error             44.0859 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  632  115 |    a = SPAM
+   36 4791 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5420               97.2372 %
+Incorrectly Classified Instances       154                2.7628 %
+Kappa statistic                          0.8752
+Mean absolute error                      0.0363
+Root mean squared error                  0.1507
+Relative absolute error                 15.6333 %
+Root relative squared error             44.2342 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  629  118 |    a = SPAM
+   36 4791 |    b = HAM
+

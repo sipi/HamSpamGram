@@ -1,0 +1,7733 @@
+
+NBTree
+------------------
+
+w_contact <= 0.5
+|   c_38 <= 0.5
+|   |   w_reply <= 0.5
+|   |   |   w_mobl <= 0.5
+|   |   |   |   w_new <= 0.5
+|   |   |   |   |   w_per <= 0.5
+|   |   |   |   |   |   c_46 <= 0.5
+|   |   |   |   |   |   |   c_39 <= 0.5: NB 8
+|   |   |   |   |   |   |   c_39 > 0.5: NB 9
+|   |   |   |   |   |   c_46 > 0.5: NB 10
+|   |   |   |   |   w_per > 0.5
+|   |   |   |   |   |   w_for <= 0.5: NB 12
+|   |   |   |   |   |   w_for > 0.5: NB 13
+|   |   |   |   w_new > 0.5
+|   |   |   |   |   c_£ <= 0.5
+|   |   |   |   |   |   w_week <= 0.5: NB 16
+|   |   |   |   |   |   w_week > 0.5: NB 17
+|   |   |   |   |   c_£ > 0.5: NB 18
+|   |   |   w_mobl > 0.5: NB 19
+|   |   w_reply > 0.5
+|   |   |   w_cal <= 0.5
+|   |   |   |   w_fre <= 0.5
+|   |   |   |   |   c_£ <= 0.5: NB 23
+|   |   |   |   |   c_£ > 0.5: NB 24
+|   |   |   |   w_fre > 0.5: NB 25
+|   |   |   w_cal > 0.5: NB 26
+|   c_38 > 0.5
+|   |   w_cs <= 0.5
+|   |   |   w_msg <= 0.5
+|   |   |   |   w_but <= 0.5
+|   |   |   |   |   w_www <= 0.5
+|   |   |   |   |   |   w_from <= 0.5: NB 32
+|   |   |   |   |   |   w_from > 0.5: NB 33
+|   |   |   |   |   w_www > 0.5: NB 34
+|   |   |   |   w_but > 0.5: NB 35
+|   |   |   w_msg > 0.5: NB 36
+|   |   w_cs > 0.5: NB 37
+w_contact > 0.5
+|   w_ur <= 0.5: NB 39
+|   w_ur > 0.5: NB 40
+
+Leaf number: 8 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.05) (0.95)
+===============================
+c_£
+  '(-inf-0.5]'      36.0 1153.0
+  '(0.5-inf)'       25.0    1.0
+  [total]           61.0 1154.0
+
+c_47
+  '(-inf-0.5]'      43.0 1149.0
+  '(0.5-inf)'       18.0    5.0
+  [total]           61.0 1154.0
+
+w_cal
+  '(-inf-0.5]'      41.0 1115.0
+  '(0.5-inf)'       20.0   39.0
+  [total]           61.0 1154.0
+
+w_p
+  '(-inf-0.5]'      42.0 1151.0
+  '(0.5-inf)'       19.0    3.0
+  [total]           61.0 1154.0
+
+w_txt
+  '(-inf-0.5]'      52.0 1149.0
+  '(0.5-inf)'        9.0    5.0
+  [total]           61.0 1154.0
+
+c_33
+  '(-inf-0.5]'      30.0 1000.0
+  '(0.5-inf)'       31.0  154.0
+  [total]           61.0 1154.0
+
+w_claim
+  '(-inf-0.5]'      52.0 1153.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           61.0 1154.0
+
+w_to
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_fre
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_i
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_www
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_mobl
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_uk
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+c_38
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+c_43
+  '(-inf-0.5]'      54.0 1151.0
+  '(0.5-inf)'        7.0    3.0
+  [total]           61.0 1154.0
+
+w_stop
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_yo
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_text
+  '(-inf-0.5]'      51.0 1144.0
+  '(0.5-inf)'       10.0   10.0
+  [total]           61.0 1154.0
+
+w_or
+  '(-inf-0.5]'      39.0 1093.0
+  '(0.5-inf)'       22.0   61.0
+  [total]           61.0 1154.0
+
+w_now
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_reply
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_priz
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_award
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_win
+  '(-inf-0.5]'      51.0 1150.0
+  '(0.5-inf)'       10.0    4.0
+  [total]           61.0 1154.0
+
+w_won
+  '(-inf-0.5]'      50.0 1153.0
+  '(0.5-inf)'       11.0    1.0
+  [total]           61.0 1154.0
+
+w_box
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_serv
+  '(-inf-0.5]'      52.0 1153.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           61.0 1154.0
+
+w_ppm
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_co
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_from
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_ton
+  '(-inf-0.5]'      57.0 1153.0
+  '(0.5-inf)'        4.0    1.0
+  [total]           61.0 1154.0
+
+w_cash
+  '(-inf-0.5]'      49.0 1151.0
+  '(0.5-inf)'       12.0    3.0
+  [total]           61.0 1154.0
+
+w_a
+  '(-inf-1.5]'      47.0 1139.0
+  '(1.5-inf)'       14.0   15.0
+  [total]           61.0 1154.0
+
+c_46
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_contact
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_cs
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_nok
+  '(-inf-0.5]'      56.0 1153.0
+  '(0.5-inf)'        5.0    1.0
+  [total]           61.0 1154.0
+
+w_pobox
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_urgent
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_our
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_prize
+  '(-inf-0.5]'      49.0 1153.0
+  '(0.5-inf)'       12.0    1.0
+  [total]           61.0 1154.0
+
+w_w
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_draw
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_week
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_per
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_latest
+  '(-inf-0.5]'      55.0 1153.0
+  '(0.5-inf)'        6.0    1.0
+  [total]           61.0 1154.0
+
+w_po
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_custom
+  '(-inf-0.5]'      54.0 1151.0
+  '(0.5-inf)'        7.0    3.0
+  [total]           61.0 1154.0
+
+w_free
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_new
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_guarantee
+  '(-inf-0.5]'      49.0 1153.0
+  '(0.5-inf)'       12.0    1.0
+  [total]           61.0 1154.0
+
+w_my
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_for
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_vouch
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_ur
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_valid
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_video
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_min
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_select
+  '(-inf-0.5]'      56.0 1153.0
+  '(0.5-inf)'        5.0    1.0
+  [total]           61.0 1154.0
+
+w_rington
+  '(-inf-0.5]'      57.0 1153.0
+  '(0.5-inf)'        4.0    1.0
+  [total]           61.0 1154.0
+
+w_mob
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_await
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_chat
+  '(-inf-0.5]'      54.0 1151.0
+  '(0.5-inf)'        7.0    3.0
+  [total]           61.0 1154.0
+
+w_collect
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_cost
+  '(-inf-0.5]'      54.0 1152.0
+  '(0.5-inf)'        7.0    2.0
+  [total]           61.0 1154.0
+
+w_receiv
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_apply
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_on
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_entry
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_optout
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_msg
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+c_39
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+c_59
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_orang
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_mins
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_guaranteed
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_http
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_sae
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_landline
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_camer
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_c
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_rat
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_poly
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_but
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+c_42
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_network
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+w_it
+  'All'             60.0 1153.0
+  [total]           60.0 1153.0
+
+
+
+Leaf number: 9 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.01) (0.99)
+===============================
+c_£
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_47
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_cal
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_p
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_txt
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_33
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_claim
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_to
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_fre
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_i
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_www
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_mobl
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_uk
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_38
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_43
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_stop
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_yo
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_text
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_or
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_now
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_reply
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_priz
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_award
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_win
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_won
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_box
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_serv
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_ppm
+  '(-inf-0.5]'       3.0  474.0
+  '(0.5-inf)'        3.0    1.0
+  [total]            6.0  475.0
+
+w_co
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_from
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_ton
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_cash
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_a
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_46
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_contact
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_cs
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_nok
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_pobox
+  '(-inf-0.5]'       3.0  474.0
+  '(0.5-inf)'        3.0    1.0
+  [total]            6.0  475.0
+
+w_urgent
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_our
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_prize
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_w
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_draw
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_week
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_per
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_latest
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_po
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_custom
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_free
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_new
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_guarantee
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_my
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_for
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_vouch
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_ur
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_valid
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_video
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_min
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_select
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_rington
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_mob
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_await
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_chat
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_collect
+  '(-inf-0.5]'       3.0  474.0
+  '(0.5-inf)'        3.0    1.0
+  [total]            6.0  475.0
+
+w_cost
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_receiv
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_apply
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_on
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_entry
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_optout
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_msg
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_39
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_59
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_orang
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_mins
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_guaranteed
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_http
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_sae
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_landline
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_camer
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_c
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_rat
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_poly
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_but
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+c_42
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_network
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+w_it
+  'All'              5.0  474.0
+  [total]            5.0  474.0
+
+
+
+Leaf number: 10 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.09) (0.91)
+===============================
+c_£
+  '(-inf-0.5]'     187.0 2751.0
+  '(0.5-inf)'       94.0    2.0
+  [total]          281.0 2753.0
+
+c_47
+  '(-inf-0.5]'     181.0 2734.0
+  '(0.5-inf)'      100.0   19.0
+  [total]          281.0 2753.0
+
+w_cal
+  '(-inf-0.5]'     168.0 2602.0
+  '(0.5-inf)'      113.0  151.0
+  [total]          281.0 2753.0
+
+w_p
+  '(-inf-0.5]'     215.0 2747.0
+  '(0.5-inf)'       66.0    6.0
+  [total]          281.0 2753.0
+
+w_txt
+  '(-inf-0.5]'     228.0 2743.0
+  '(0.5-inf)'       53.0   10.0
+  [total]          281.0 2753.0
+
+c_33
+  '(-inf-0.5]'     143.0 2462.0
+  '(0.5-inf)'      138.0  291.0
+  [total]          281.0 2753.0
+
+w_claim
+  '(-inf-0.5]'     243.0 2752.0
+  '(0.5-inf)'       38.0    1.0
+  [total]          281.0 2753.0
+
+w_to
+  '(-inf-0.5]'     105.0 2046.0
+  '(0.5-1.5]'      104.0  546.0
+  '(1.5-inf)'       73.0  162.0
+  [total]          282.0 2754.0
+
+w_fre
+  '(-inf-0.5]'     242.0 2722.0
+  '(0.5-inf)'       39.0   31.0
+  [total]          281.0 2753.0
+
+w_i
+  '(-inf-0.5]'     246.0 1500.0
+  '(0.5-inf)'       35.0 1253.0
+  [total]          281.0 2753.0
+
+w_www
+  '(-inf-0.5]'     247.0 2752.0
+  '(0.5-inf)'       34.0    1.0
+  [total]          281.0 2753.0
+
+w_mobl
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_uk
+  '(-inf-0.5]'     246.0 2752.0
+  '(0.5-inf)'       35.0    1.0
+  [total]          281.0 2753.0
+
+c_38
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+c_43
+  '(-inf-0.5]'     249.0 2741.0
+  '(0.5-inf)'       32.0   12.0
+  [total]          281.0 2753.0
+
+w_stop
+  '(-inf-0.5]'     245.0 2724.0
+  '(0.5-inf)'       36.0   29.0
+  [total]          281.0 2753.0
+
+w_yo
+  '(-inf-0.5]'     187.0 2547.0
+  '(0.5-inf)'       94.0  206.0
+  [total]          281.0 2753.0
+
+w_text
+  '(-inf-0.5]'     234.0 2720.0
+  '(0.5-inf)'       47.0   33.0
+  [total]          281.0 2753.0
+
+w_or
+  '(-inf-0.5]'     228.0 2642.0
+  '(0.5-inf)'       53.0  111.0
+  [total]          281.0 2753.0
+
+w_now
+  '(-inf-0.5]'     202.0 2557.0
+  '(0.5-inf)'       79.0  196.0
+  [total]          281.0 2753.0
+
+w_reply
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_priz
+  '(-inf-0.5]'     271.0 2752.0
+  '(0.5-inf)'       10.0    1.0
+  [total]          281.0 2753.0
+
+w_award
+  '(-inf-0.5]'     253.0 2751.0
+  '(0.5-inf)'       28.0    2.0
+  [total]          281.0 2753.0
+
+w_win
+  '(-inf-0.5]'     248.0 2737.0
+  '(0.5-inf)'       33.0   16.0
+  [total]          281.0 2753.0
+
+w_won
+  '(-inf-0.5]'     258.0 2740.0
+  '(0.5-inf)'       23.0   13.0
+  [total]          281.0 2753.0
+
+w_box
+  '(-inf-0.5]'     262.0 2750.0
+  '(0.5-inf)'       19.0    3.0
+  [total]          281.0 2753.0
+
+w_serv
+  '(-inf-0.5]'     259.0 2750.0
+  '(0.5-inf)'       22.0    3.0
+  [total]          281.0 2753.0
+
+w_ppm
+  '(-inf-0.5]'     275.0 2752.0
+  '(0.5-inf)'        6.0    1.0
+  [total]          281.0 2753.0
+
+w_co
+  '(-inf-0.5]'     257.0 2752.0
+  '(0.5-inf)'       24.0    1.0
+  [total]          281.0 2753.0
+
+w_from
+  '(-inf-0.5]'     242.0 2663.0
+  '(0.5-inf)'       39.0   90.0
+  [total]          281.0 2753.0
+
+w_ton
+  '(-inf-0.5]'     262.0 2751.0
+  '(0.5-inf)'       19.0    2.0
+  [total]          281.0 2753.0
+
+w_cash
+  '(-inf-0.5]'     258.0 2748.0
+  '(0.5-inf)'       23.0    5.0
+  [total]          281.0 2753.0
+
+w_a
+  '(-inf-0.5]'     170.0 2237.0
+  '(0.5-inf)'      111.0  516.0
+  [total]          281.0 2753.0
+
+c_46
+  '(-inf-5.5]'     267.0 2341.0
+  '(5.5-inf)'       14.0  412.0
+  [total]          281.0 2753.0
+
+w_contact
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_cs
+  '(-inf-0.5]'     274.0 2752.0
+  '(0.5-inf)'        7.0    1.0
+  [total]          281.0 2753.0
+
+w_nok
+  '(-inf-0.5]'     264.0 2751.0
+  '(0.5-inf)'       17.0    2.0
+  [total]          281.0 2753.0
+
+w_pobox
+  '(-inf-0.5]'     255.0 2752.0
+  '(0.5-inf)'       26.0    1.0
+  [total]          281.0 2753.0
+
+w_urgent
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_our
+  '(-inf-0.5]'     262.0 2722.0
+  '(0.5-inf)'       19.0   31.0
+  [total]          281.0 2753.0
+
+w_prize
+  '(-inf-0.5]'     270.0 2752.0
+  '(0.5-inf)'       11.0    1.0
+  [total]          281.0 2753.0
+
+w_w
+  '(-inf-0.5]'     252.0 2740.0
+  '(0.5-inf)'       29.0   13.0
+  [total]          281.0 2753.0
+
+w_draw
+  '(-inf-0.5]'     272.0 2750.0
+  '(0.5-inf)'        9.0    3.0
+  [total]          281.0 2753.0
+
+w_week
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_per
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_latest
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_po
+  '(-inf-0.5]'     270.0 2749.0
+  '(0.5-inf)'       11.0    4.0
+  [total]          281.0 2753.0
+
+w_custom
+  '(-inf-0.5]'     262.0 2746.0
+  '(0.5-inf)'       19.0    7.0
+  [total]          281.0 2753.0
+
+w_free
+  '(-inf-0.5]'     270.0 2743.0
+  '(0.5-inf)'       11.0   10.0
+  [total]          281.0 2753.0
+
+w_new
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_guarantee
+  '(-inf-0.5]'     271.0 2752.0
+  '(0.5-inf)'       10.0    1.0
+  [total]          281.0 2753.0
+
+w_my
+  '(-inf-0.5]'     274.0 2377.0
+  '(0.5-inf)'        7.0  376.0
+  [total]          281.0 2753.0
+
+w_for
+  '(-inf-0.5]'     202.0 2482.0
+  '(0.5-inf)'       79.0  271.0
+  [total]          281.0 2753.0
+
+w_vouch
+  '(-inf-0.5]'     266.0 2752.0
+  '(0.5-inf)'       15.0    1.0
+  [total]          281.0 2753.0
+
+w_ur
+  '(-inf-0.5]'     237.0 2635.0
+  '(0.5-inf)'       44.0  118.0
+  [total]          281.0 2753.0
+
+w_valid
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_video
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_min
+  '(-inf-0.5]'     262.0 2734.0
+  '(0.5-inf)'       19.0   19.0
+  [total]          281.0 2753.0
+
+w_select
+  '(-inf-0.5]'     261.0 2750.0
+  '(0.5-inf)'       20.0    3.0
+  [total]          281.0 2753.0
+
+w_rington
+  '(-inf-0.5]'     273.0 2752.0
+  '(0.5-inf)'        8.0    1.0
+  [total]          281.0 2753.0
+
+w_mob
+  '(-inf-0.5]'     265.0 2752.0
+  '(0.5-inf)'       16.0    1.0
+  [total]          281.0 2753.0
+
+w_await
+  '(-inf-0.5]'     268.0 2751.0
+  '(0.5-inf)'       13.0    2.0
+  [total]          281.0 2753.0
+
+w_chat
+  '(-inf-0.5]'     265.0 2740.0
+  '(0.5-inf)'       16.0   13.0
+  [total]          281.0 2753.0
+
+w_collect
+  '(-inf-0.5]'     271.0 2748.0
+  '(0.5-inf)'       10.0    5.0
+  [total]          281.0 2753.0
+
+w_cost
+  '(-inf-0.5]'     265.0 2747.0
+  '(0.5-inf)'       16.0    6.0
+  [total]          281.0 2753.0
+
+w_receiv
+  '(-inf-0.5]'     265.0 2748.0
+  '(0.5-inf)'       16.0    5.0
+  [total]          281.0 2753.0
+
+w_apply
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_on
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_entry
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_optout
+  '(-inf-0.5]'     274.0 2752.0
+  '(0.5-inf)'        7.0    1.0
+  [total]          281.0 2753.0
+
+w_msg
+  '(-inf-0.5]'     256.0 2718.0
+  '(0.5-inf)'       25.0   35.0
+  [total]          281.0 2753.0
+
+c_39
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+c_59
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_orang
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_mins
+  '(-inf-0.5]'     269.0 2752.0
+  '(0.5-inf)'       12.0    1.0
+  [total]          281.0 2753.0
+
+w_guaranteed
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_http
+  '(-inf-0.5]'     265.0 2752.0
+  '(0.5-inf)'       16.0    1.0
+  [total]          281.0 2753.0
+
+w_sae
+  '(-inf-0.5]'     272.0 2752.0
+  '(0.5-inf)'        9.0    1.0
+  [total]          281.0 2753.0
+
+w_landline
+  '(-inf-0.5]'     272.0 2752.0
+  '(0.5-inf)'        9.0    1.0
+  [total]          281.0 2753.0
+
+w_camer
+  '(-inf-0.5]'     274.0 2751.0
+  '(0.5-inf)'        7.0    2.0
+  [total]          281.0 2753.0
+
+w_c
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_rat
+  '(-inf-0.5]'     269.0 2752.0
+  '(0.5-inf)'       12.0    1.0
+  [total]          281.0 2753.0
+
+w_poly
+  '(-inf-0.5]'     272.0 2752.0
+  '(0.5-inf)'        9.0    1.0
+  [total]          281.0 2753.0
+
+w_but
+  '(-inf-0.5]'     276.0 2452.0
+  '(0.5-inf)'        5.0  301.0
+  [total]          281.0 2753.0
+
+c_42
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_network
+  'All'            280.0 2752.0
+  [total]          280.0 2752.0
+
+w_it
+  '(-inf-0.5]'     268.0 2288.0
+  '(0.5-inf)'       13.0  465.0
+  [total]          281.0 2753.0
+
+
+
+Leaf number: 12 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.81) (0.19)
+===============================
+c_£
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_47
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_cal
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_p
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_txt
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_33
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_claim
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_to
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_fre
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_i
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_www
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_mobl
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_uk
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_38
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_43
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_stop
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_yo
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_text
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_or
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_now
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_reply
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_priz
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_award
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_win
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_won
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_box
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_serv
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_ppm
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_co
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_from
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_ton
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_cash
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_a
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_46
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_contact
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_cs
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_nok
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_pobox
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_urgent
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_our
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_prize
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_w
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_draw
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_week
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_per
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_latest
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_po
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_custom
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_free
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_new
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_guarantee
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_my
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_for
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_vouch
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_ur
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_valid
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_video
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_min
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_select
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_rington
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_mob
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_await
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_chat
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_collect
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_cost
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_receiv
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_apply
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_on
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_entry
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_optout
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_msg
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_39
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_59
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_orang
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_mins
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_guaranteed
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_http
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_sae
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_landline
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_camer
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_c
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_rat
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_poly
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_but
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+c_42
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_network
+  'All'             17.0    4.0
+  [total]           17.0    4.0
+
+w_it
+  '(-inf-0.5]'      17.0    2.0
+  '(0.5-inf)'        1.0    3.0
+  [total]           18.0    5.0
+
+
+
+Leaf number: 13 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.54) (0.46)
+===============================
+c_£
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_47
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_cal
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_p
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_txt
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_33
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_claim
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_to
+  '(-inf-0.5]'       7.0    1.0
+  '(0.5-inf)'        1.0    6.0
+  [total]            8.0    7.0
+
+w_fre
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_i
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_www
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_mobl
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_uk
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_38
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_43
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_stop
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_yo
+  '(-inf-2]'         7.0    1.0
+  '(2-inf)'          1.0    6.0
+  [total]            8.0    7.0
+
+w_text
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_or
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_now
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_reply
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_priz
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_award
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_win
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_won
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_box
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_serv
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_ppm
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_co
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_from
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_ton
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_cash
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_a
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_46
+  '(-inf-1.5]'       1.0    6.0
+  '(1.5-inf)'        7.0    1.0
+  [total]            8.0    7.0
+
+w_contact
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_cs
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_nok
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_pobox
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_urgent
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_our
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_prize
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_w
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_draw
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_week
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_per
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_latest
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_po
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_custom
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_free
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_new
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_guarantee
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_my
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_for
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_vouch
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_ur
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_valid
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_video
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_min
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_select
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_rington
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_mob
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_await
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_chat
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_collect
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_cost
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_receiv
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_apply
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_on
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_entry
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_optout
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_msg
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_39
+  '(-inf-1]'         7.0    1.0
+  '(1-inf)'          1.0    6.0
+  [total]            8.0    7.0
+
+c_59
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_orang
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_mins
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_guaranteed
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_http
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_sae
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_landline
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_camer
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_c
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_rat
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_poly
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_but
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+c_42
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_network
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+w_it
+  'All'              7.0    6.0
+  [total]            7.0    6.0
+
+
+
+Leaf number: 16 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.31) (0.69)
+===============================
+c_£
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_47
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_cal
+  '(-inf-0.5]'      15.0   52.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           24.0   53.0
+
+w_p
+  '(-inf-0.5]'      17.0   52.0
+  '(0.5-inf)'        7.0    1.0
+  [total]           24.0   53.0
+
+w_txt
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_33
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_claim
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_to
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_fre
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_i
+  '(-inf-0.5]'      23.0   32.0
+  '(0.5-inf)'        1.0   21.0
+  [total]           24.0   53.0
+
+w_www
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_mobl
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_uk
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_38
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_43
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_stop
+  '(-inf-0.5]'      16.0   52.0
+  '(0.5-inf)'        8.0    1.0
+  [total]           24.0   53.0
+
+w_yo
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_text
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_or
+  '(-inf-0.5]'      18.0   52.0
+  '(0.5-inf)'        6.0    1.0
+  [total]           24.0   53.0
+
+w_now
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_reply
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_priz
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_award
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_win
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_won
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_box
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_serv
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_ppm
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_co
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_from
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_ton
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_cash
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_a
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_46
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_contact
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_cs
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_nok
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_pobox
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_urgent
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_our
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_prize
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_w
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_draw
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_week
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_per
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_latest
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_po
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_custom
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_free
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_new
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_guarantee
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_my
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_for
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_vouch
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_ur
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_valid
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_video
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_min
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_select
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_rington
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_mob
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_await
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_chat
+  '(-inf-0.5]'      18.0   52.0
+  '(0.5-inf)'        6.0    1.0
+  [total]           24.0   53.0
+
+w_collect
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_cost
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_receiv
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_apply
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_on
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_entry
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_optout
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_msg
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_39
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_59
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_orang
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_mins
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_guaranteed
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_http
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_sae
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_landline
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_camer
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_c
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_rat
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_poly
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_but
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+c_42
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_network
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+w_it
+  'All'             23.0   52.0
+  [total]           23.0   52.0
+
+
+
+Leaf number: 17 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.38) (0.63)
+===============================
+c_£
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_47
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_cal
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_p
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_txt
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_33
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_claim
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_to
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_fre
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_i
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_www
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_mobl
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_uk
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_38
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_43
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_stop
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_yo
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_text
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_or
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_now
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_reply
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_priz
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_award
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_win
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_won
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_box
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_serv
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_ppm
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_co
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_from
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_ton
+  '(-inf-0.5]'       1.0    5.0
+  '(0.5-inf)'        3.0    1.0
+  [total]            4.0    6.0
+
+w_cash
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_a
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_46
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_contact
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_cs
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_nok
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_pobox
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_urgent
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_our
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_prize
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_w
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_draw
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_week
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_per
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_latest
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_po
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_custom
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_free
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_new
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_guarantee
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_my
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_for
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_vouch
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_ur
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_valid
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_video
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_min
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_select
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_rington
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_mob
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_await
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_chat
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_collect
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_cost
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_receiv
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_apply
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_on
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_entry
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_optout
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_msg
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_39
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_59
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_orang
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_mins
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_guaranteed
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_http
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_sae
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_landline
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_camer
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_c
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_rat
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_poly
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_but
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+c_42
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_network
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+w_it
+  'All'              3.0    5.0
+  [total]            3.0    5.0
+
+
+
+Leaf number: 18 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.88) (0.13)
+=============================
+c_£
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_47
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_cal
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_p
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_txt
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_33
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_claim
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_to
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_fre
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_i
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_www
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_mobl
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_uk
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_38
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_43
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_stop
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_yo
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_text
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_or
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_now
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_reply
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_priz
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_award
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_win
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_won
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_box
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_serv
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_ppm
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_co
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_from
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_ton
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_cash
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_a
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_46
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_contact
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_cs
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_nok
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_pobox
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_urgent
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_our
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_prize
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_w
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_draw
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_week
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_per
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_latest
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_po
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_custom
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_free
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_new
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_guarantee
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_my
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_for
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_vouch
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_ur
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_valid
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_video
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_min
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_select
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_rington
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_mob
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_await
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_chat
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_collect
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_cost
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_receiv
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_apply
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_on
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_entry
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_optout
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_msg
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_39
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_59
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_orang
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_mins
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_guaranteed
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_http
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_sae
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_landline
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_camer
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_c
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_rat
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_poly
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_but
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+c_42
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_network
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+w_it
+  'All'            7.0    1.0
+  [total]          7.0    1.0
+
+
+
+Leaf number: 19 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.88) (0.12)
+===============================
+c_£
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_47
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_cal
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_p
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_txt
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_33
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_claim
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_to
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_fre
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_i
+  '(-inf-0.5]'      68.0    5.0
+  '(0.5-inf)'        2.0    5.0
+  [total]           70.0   10.0
+
+w_www
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_mobl
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_uk
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_38
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_43
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_stop
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_yo
+  '(-inf-0.5]'      26.0    9.0
+  '(0.5-inf)'       44.0    1.0
+  [total]           70.0   10.0
+
+w_text
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_or
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_now
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_reply
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_priz
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_award
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_win
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_won
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_box
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_serv
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_ppm
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_co
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_from
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_ton
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_cash
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_a
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_46
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_contact
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_cs
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_nok
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_pobox
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_urgent
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_our
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_prize
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_w
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_draw
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_week
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_per
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_latest
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_po
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_custom
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_free
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_new
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_guarantee
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_my
+  '(-inf-0.5]'      69.0    5.0
+  '(0.5-inf)'        1.0    5.0
+  [total]           70.0   10.0
+
+w_for
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_vouch
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_ur
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_valid
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_video
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_min
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_select
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_rington
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_mob
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_await
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_chat
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_collect
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_cost
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_receiv
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_apply
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_on
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_entry
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_optout
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_msg
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_39
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_59
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_orang
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_mins
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_guaranteed
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_http
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_sae
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_landline
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_camer
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_c
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_rat
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_poly
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_but
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+c_42
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_network
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+w_it
+  'All'             69.0    9.0
+  [total]           69.0    9.0
+
+
+
+Leaf number: 23 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.54) (0.46)
+===============================
+c_£
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_47
+  '(-inf-0.5]'      22.0   31.0
+  '(0.5-inf)'       15.0    1.0
+  [total]           37.0   32.0
+
+w_cal
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_p
+  '(-inf-0.5]'      27.0   31.0
+  '(0.5-inf)'       10.0    1.0
+  [total]           37.0   32.0
+
+w_txt
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_33
+  '(-inf-0.5]'      21.0   30.0
+  '(0.5-inf)'       16.0    2.0
+  [total]           37.0   32.0
+
+w_claim
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_to
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_fre
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_i
+  '(-inf-0.5]'      33.0   16.0
+  '(0.5-inf)'        4.0   16.0
+  [total]           37.0   32.0
+
+w_www
+  '(-inf-0.5]'      23.0   31.0
+  '(0.5-inf)'       14.0    1.0
+  [total]           37.0   32.0
+
+w_mobl
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_uk
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_38
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_43
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_stop
+  '(-inf-0.5]'      20.0   31.0
+  '(0.5-inf)'       17.0    1.0
+  [total]           37.0   32.0
+
+w_yo
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_text
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_or
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_now
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_reply
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_priz
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_award
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_win
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_won
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_box
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_serv
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_ppm
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_co
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_from
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_ton
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_cash
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_a
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_46
+  '(-inf-7]'        36.0   22.0
+  '(7-inf)'          1.0   10.0
+  [total]           37.0   32.0
+
+w_contact
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_cs
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_nok
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_pobox
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_urgent
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_our
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_prize
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_w
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_draw
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_week
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_per
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_latest
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_po
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_custom
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_free
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_new
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_guarantee
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_my
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_for
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_vouch
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_ur
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_valid
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_video
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_min
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_select
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_rington
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_mob
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_await
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_chat
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_collect
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_cost
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_receiv
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_apply
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_on
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_entry
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_optout
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_msg
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_39
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_59
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_orang
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_mins
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_guaranteed
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_http
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_sae
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_landline
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_camer
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_c
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_rat
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_poly
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_but
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+c_42
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_network
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+w_it
+  'All'             36.0   31.0
+  [total]           36.0   31.0
+
+
+
+Leaf number: 24 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.91) (0.09)
+=============================
+c_£
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_47
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_cal
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_p
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_txt
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_33
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_claim
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_to
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_fre
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_i
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_www
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_mobl
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_uk
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_38
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_43
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_stop
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_yo
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_text
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_or
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_now
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_reply
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_priz
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_award
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_win
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_won
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_box
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_serv
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_ppm
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_co
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_from
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_ton
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_cash
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_a
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_46
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_contact
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_cs
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_nok
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_pobox
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_urgent
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_our
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_prize
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_w
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_draw
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_week
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_per
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_latest
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_po
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_custom
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_free
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_new
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_guarantee
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_my
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_for
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_vouch
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_ur
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_valid
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_video
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_min
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_select
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_rington
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_mob
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_await
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_chat
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_collect
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_cost
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_receiv
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_apply
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_on
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_entry
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_optout
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_msg
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_39
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_59
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_orang
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_mins
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_guaranteed
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_http
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_sae
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_landline
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_camer
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_c
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_rat
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_poly
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_but
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+c_42
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_network
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+w_it
+  'All'           10.0    1.0
+  [total]         10.0    1.0
+
+
+
+Leaf number: 25 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.71) (0.29)
+===============================
+c_£
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_47
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_cal
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_p
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_txt
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_33
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_claim
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_to
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_fre
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_i
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_www
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_mobl
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_uk
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_38
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_43
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_stop
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_yo
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_text
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_or
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_now
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_reply
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_priz
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_award
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_win
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_won
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_box
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_serv
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_ppm
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_co
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_from
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_ton
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_cash
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_a
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_46
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_contact
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_cs
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_nok
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_pobox
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_urgent
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_our
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_prize
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_w
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_draw
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_week
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_per
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_latest
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_po
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_custom
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_free
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_new
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_guarantee
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_my
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_for
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_vouch
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_ur
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_valid
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_video
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_min
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_select
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_rington
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_mob
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_await
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_chat
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_collect
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_cost
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_receiv
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_apply
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_on
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_entry
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_optout
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_msg
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_39
+  '(-inf-0.5]'      16.0    1.0
+  '(0.5-inf)'        2.0    7.0
+  [total]           18.0    8.0
+
+c_59
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_orang
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_mins
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_guaranteed
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_http
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_sae
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_landline
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_camer
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_c
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_rat
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_poly
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_but
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+c_42
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_network
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+w_it
+  'All'             17.0    7.0
+  [total]           17.0    7.0
+
+
+
+Leaf number: 26 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.88) (0.12)
+===============================
+c_£
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_47
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_cal
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_p
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_txt
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_33
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_claim
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_to
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_fre
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_i
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_www
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_mobl
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_uk
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_38
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_43
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_stop
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_yo
+  '(-inf-1.5]'      22.0    1.0
+  '(1.5-inf)'        1.0    3.0
+  [total]           23.0    4.0
+
+w_text
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_or
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_now
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_reply
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_priz
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_award
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_win
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_won
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_box
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_serv
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_ppm
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_co
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_from
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_ton
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_cash
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_a
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_46
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_contact
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_cs
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_nok
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_pobox
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_urgent
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_our
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_prize
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_w
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_draw
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_week
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_per
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_latest
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_po
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_custom
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_free
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_new
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_guarantee
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_my
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_for
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_vouch
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_ur
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_valid
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_video
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_min
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_select
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_rington
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_mob
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_await
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_chat
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_collect
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_cost
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_receiv
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_apply
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_on
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_entry
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_optout
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_msg
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_39
+  '(-inf-1]'        22.0    1.0
+  '(1-inf)'          1.0    3.0
+  [total]           23.0    4.0
+
+c_59
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_orang
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_mins
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_guaranteed
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_http
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_sae
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_landline
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_camer
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_c
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_rat
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_poly
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_but
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+c_42
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_network
+  'All'             22.0    3.0
+  [total]           22.0    3.0
+
+w_it
+  '(-inf-0.5]'      22.0    1.0
+  '(0.5-inf)'        1.0    3.0
+  [total]           23.0    4.0
+
+
+
+Leaf number: 32 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.18) (0.82)
+===============================
+c_£
+  '(-inf-0.5]'      50.0  269.0
+  '(0.5-inf)'       10.0    3.0
+  [total]           60.0  272.0
+
+c_47
+  '(-inf-0.5]'      38.0  266.0
+  '(0.5-inf)'       22.0    6.0
+  [total]           60.0  272.0
+
+w_cal
+  '(-inf-0.5]'      34.0  256.0
+  '(0.5-inf)'       26.0   16.0
+  [total]           60.0  272.0
+
+w_p
+  '(-inf-0.5]'      48.0  270.0
+  '(0.5-inf)'       12.0    2.0
+  [total]           60.0  272.0
+
+w_txt
+  '(-inf-0.5]'      34.0  271.0
+  '(0.5-inf)'       26.0    1.0
+  [total]           60.0  272.0
+
+c_33
+  '(-inf-0.5]'      33.0  248.0
+  '(0.5-inf)'       27.0   24.0
+  [total]           60.0  272.0
+
+w_claim
+  '(-inf-0.5]'      48.0  271.0
+  '(0.5-inf)'       12.0    1.0
+  [total]           60.0  272.0
+
+w_to
+  '(-inf-0.5]'      21.0  200.0
+  '(0.5-inf)'       39.0   72.0
+  [total]           60.0  272.0
+
+w_fre
+  '(-inf-0.5]'      29.0  269.0
+  '(0.5-inf)'       31.0    3.0
+  [total]           60.0  272.0
+
+w_i
+  '(-inf-0.5]'      58.0  155.0
+  '(0.5-inf)'        2.0  117.0
+  [total]           60.0  272.0
+
+w_www
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_mobl
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_uk
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+c_38
+  '(-inf-1.5]'      49.0   59.0
+  '(1.5-inf)'       11.0  213.0
+  [total]           60.0  272.0
+
+c_43
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_stop
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_yo
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_text
+  '(-inf-0.5]'      48.0  267.0
+  '(0.5-inf)'       12.0    5.0
+  [total]           60.0  272.0
+
+w_or
+  '(-inf-0.5]'      35.0  257.0
+  '(0.5-inf)'       25.0   15.0
+  [total]           60.0  272.0
+
+w_now
+  '(-inf-0.5]'      37.0  262.0
+  '(0.5-inf)'       23.0   10.0
+  [total]           60.0  272.0
+
+w_reply
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_priz
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_award
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_win
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_won
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_box
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_serv
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_ppm
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_co
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_from
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_ton
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_cash
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_a
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+c_46
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_contact
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_cs
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_nok
+  '(-inf-0.5]'      50.0  271.0
+  '(0.5-inf)'       10.0    1.0
+  [total]           60.0  272.0
+
+w_pobox
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_urgent
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_our
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_prize
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_w
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_draw
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_week
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_per
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_latest
+  '(-inf-0.5]'      49.0  271.0
+  '(0.5-inf)'       11.0    1.0
+  [total]           60.0  272.0
+
+w_po
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_custom
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_free
+  '(-inf-0.5]'      51.0  271.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           60.0  272.0
+
+w_new
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_guarantee
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_my
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_for
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_vouch
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_ur
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_valid
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_video
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_min
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_select
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_rington
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_mob
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_await
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_chat
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_collect
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_cost
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_receiv
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_apply
+  '(-inf-0.5]'      48.0  271.0
+  '(0.5-inf)'       12.0    1.0
+  [total]           60.0  272.0
+
+w_on
+  '(-inf-1.5]'      51.0  269.0
+  '(1.5-inf)'        9.0    3.0
+  [total]           60.0  272.0
+
+w_entry
+  '(-inf-0.5]'      50.0  271.0
+  '(0.5-inf)'       10.0    1.0
+  [total]           60.0  272.0
+
+w_optout
+  '(-inf-0.5]'      48.0  271.0
+  '(0.5-inf)'       12.0    1.0
+  [total]           60.0  272.0
+
+w_msg
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+c_39
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+c_59
+  '(-inf-0.5]'      59.0   20.0
+  '(0.5-inf)'        1.0  252.0
+  [total]           60.0  272.0
+
+w_orang
+  '(-inf-0.5]'      47.0  271.0
+  '(0.5-inf)'       13.0    1.0
+  [total]           60.0  272.0
+
+w_mins
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_guaranteed
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_http
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_sae
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_landline
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_camer
+  '(-inf-0.5]'      51.0  271.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           60.0  272.0
+
+w_c
+  '(-inf-0.5]'      43.0  265.0
+  '(0.5-inf)'       17.0    7.0
+  [total]           60.0  272.0
+
+w_rat
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_poly
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_but
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+c_42
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_network
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+w_it
+  'All'             59.0  271.0
+  [total]           59.0  271.0
+
+
+
+Leaf number: 33 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.57) (0.43)
+===============================
+c_£
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_47
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_cal
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_p
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_txt
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_33
+  '(-inf-0.5]'       4.0   12.0
+  '(0.5-inf)'       13.0    1.0
+  [total]           17.0   13.0
+
+w_claim
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_to
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_fre
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_i
+  '(-inf-0.5]'      16.0    6.0
+  '(0.5-inf)'        1.0    7.0
+  [total]           17.0   13.0
+
+w_www
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_mobl
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_uk
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_38
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_43
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_stop
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_yo
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_text
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_or
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_now
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_reply
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_priz
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_award
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_win
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_won
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_box
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_serv
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_ppm
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_co
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_from
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_ton
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_cash
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_a
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_46
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_contact
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_cs
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_nok
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_pobox
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_urgent
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_our
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_prize
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_w
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_draw
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_week
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_per
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_latest
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_po
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_custom
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_free
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_new
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_guarantee
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_my
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_for
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_vouch
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_ur
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_valid
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_video
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_min
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_select
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_rington
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_mob
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_await
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_chat
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_collect
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_cost
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_receiv
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_apply
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_on
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_entry
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_optout
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_msg
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_39
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_59
+  '(-inf-0.5]'      16.0    1.0
+  '(0.5-inf)'        1.0   12.0
+  [total]           17.0   13.0
+
+w_orang
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_mins
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_guaranteed
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_http
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_sae
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_landline
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_camer
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_c
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_rat
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_poly
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_but
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+c_42
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_network
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+w_it
+  'All'             16.0   12.0
+  [total]           16.0   12.0
+
+
+
+Leaf number: 34 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.97) (0.03)
+=============================
+c_£
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_47
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_cal
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_p
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_txt
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_33
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_claim
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_to
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_fre
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_i
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_www
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_mobl
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_uk
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_38
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_43
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_stop
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_yo
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_text
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_or
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_now
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_reply
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_priz
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_award
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_win
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_won
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_box
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_serv
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_ppm
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_co
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_from
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_ton
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_cash
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_a
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_46
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_contact
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_cs
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_nok
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_pobox
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_urgent
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_our
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_prize
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_w
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_draw
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_week
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_per
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_latest
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_po
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_custom
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_free
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_new
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_guarantee
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_my
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_for
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_vouch
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_ur
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_valid
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_video
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_min
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_select
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_rington
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_mob
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_await
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_chat
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_collect
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_cost
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_receiv
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_apply
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_on
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_entry
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_optout
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_msg
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_39
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_59
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_orang
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_mins
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_guaranteed
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_http
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_sae
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_landline
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_camer
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_c
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_rat
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_poly
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_but
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_42
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_network
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_it
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+
+
+Leaf number: 35 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.03) (0.97)
+=============================
+c_£
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_47
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_cal
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_p
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_txt
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_33
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_claim
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_to
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_fre
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_i
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_www
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_mobl
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_uk
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_38
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_43
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_stop
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_yo
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_text
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_or
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_now
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_reply
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_priz
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_award
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_win
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_won
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_box
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_serv
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_ppm
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_co
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_from
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_ton
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_cash
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_a
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_46
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_contact
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_cs
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_nok
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_pobox
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_urgent
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_our
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_prize
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_w
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_draw
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_week
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_per
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_latest
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_po
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_custom
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_free
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_new
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_guarantee
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_my
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_for
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_vouch
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_ur
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_valid
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_video
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_min
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_select
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_rington
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_mob
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_await
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_chat
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_collect
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_cost
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_receiv
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_apply
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_on
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_entry
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_optout
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_msg
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_39
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_59
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_orang
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_mins
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_guaranteed
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_http
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_sae
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_landline
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_camer
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_c
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_rat
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_poly
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_but
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+c_42
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_network
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+w_it
+  'All'            1.0   33.0
+  [total]          1.0   33.0
+
+
+
+Leaf number: 36 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.36) (0.64)
+===============================
+c_£
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_47
+  '(-inf-0.5]'       4.0   16.0
+  '(0.5-inf)'        6.0    1.0
+  [total]           10.0   17.0
+
+w_cal
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_p
+  '(-inf-0.5]'       5.0   16.0
+  '(0.5-inf)'        5.0    1.0
+  [total]           10.0   17.0
+
+w_txt
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_33
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_claim
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_to
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_fre
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_i
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_www
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_mobl
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_uk
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_38
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_43
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_stop
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_yo
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_text
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_or
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_now
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_reply
+  '(-inf-0.5]'       5.0   16.0
+  '(0.5-inf)'        5.0    1.0
+  [total]           10.0   17.0
+
+w_priz
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_award
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_win
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_won
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_box
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_serv
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_ppm
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_co
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_from
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_ton
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_cash
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_a
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_46
+  '(-inf-4.5]'       9.0    7.0
+  '(4.5-inf)'        1.0   10.0
+  [total]           10.0   17.0
+
+w_contact
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_cs
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_nok
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_pobox
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_urgent
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_our
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_prize
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_w
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_draw
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_week
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_per
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_latest
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_po
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_custom
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_free
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_new
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_guarantee
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_my
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_for
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_vouch
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_ur
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_valid
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_video
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_min
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_select
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_rington
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_mob
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_await
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_chat
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_collect
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_cost
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_receiv
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_apply
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_on
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_entry
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_optout
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_msg
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_39
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_59
+  '(-inf-0.5]'       9.0    1.0
+  '(0.5-inf)'        1.0   16.0
+  [total]           10.0   17.0
+
+w_orang
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_mins
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_guaranteed
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_http
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_sae
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_landline
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_camer
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_c
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_rat
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_poly
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_but
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+c_42
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_network
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+w_it
+  'All'              9.0   16.0
+  [total]            9.0   16.0
+
+
+
+Leaf number: 37 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.97) (0.03)
+=============================
+c_£
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_47
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_cal
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_p
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_txt
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_33
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_claim
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_to
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_fre
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_i
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_www
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_mobl
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_uk
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_38
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_43
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_stop
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_yo
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_text
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_or
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_now
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_reply
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_priz
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_award
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_win
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_won
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_box
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_serv
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_ppm
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_co
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_from
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_ton
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_cash
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_a
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_46
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_contact
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_cs
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_nok
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_pobox
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_urgent
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_our
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_prize
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_w
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_draw
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_week
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_per
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_latest
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_po
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_custom
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_free
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_new
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_guarantee
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_my
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_for
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_vouch
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_ur
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_valid
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_video
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_min
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_select
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_rington
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_mob
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_await
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_chat
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_collect
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_cost
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_receiv
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_apply
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_on
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_entry
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_optout
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_msg
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_39
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_59
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_orang
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_mins
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_guaranteed
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_http
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_sae
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_landline
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_camer
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_c
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_rat
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_poly
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_but
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+c_42
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_network
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+w_it
+  'All'           35.0    1.0
+  [total]         35.0    1.0
+
+
+
+Leaf number: 39 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.83) (0.17)
+===============================
+c_£
+  '(-inf-0.5]'      26.0   11.0
+  '(0.5-inf)'       29.0    1.0
+  [total]           55.0   12.0
+
+c_47
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_cal
+  '(-inf-0.5]'       6.0   11.0
+  '(0.5-inf)'       49.0    1.0
+  [total]           55.0   12.0
+
+w_p
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_txt
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_33
+  '(-inf-0.5]'      11.0   11.0
+  '(0.5-inf)'       44.0    1.0
+  [total]           55.0   12.0
+
+w_claim
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_to
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_fre
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_i
+  '(-inf-0.5]'      54.0    5.0
+  '(0.5-inf)'        1.0    7.0
+  [total]           55.0   12.0
+
+w_www
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_mobl
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_uk
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_38
+  '(-inf-1.5]'      54.0    7.0
+  '(1.5-inf)'        1.0    5.0
+  [total]           55.0   12.0
+
+c_43
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_stop
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_yo
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_text
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_or
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_now
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_reply
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_priz
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_award
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_win
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_won
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_box
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_serv
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_ppm
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_co
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_from
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_ton
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_cash
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_a
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_46
+  '(-inf-1.5]'      29.0    1.0
+  '(1.5-inf)'       26.0   11.0
+  [total]           55.0   12.0
+
+w_contact
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_cs
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_nok
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_pobox
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_urgent
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_our
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_prize
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_w
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_draw
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_week
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_per
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_latest
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_po
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_custom
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_free
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_new
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_guarantee
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_my
+  '(-inf-0.5]'      54.0    8.0
+  '(0.5-inf)'        1.0    4.0
+  [total]           55.0   12.0
+
+w_for
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_vouch
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_ur
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_valid
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_video
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_min
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_select
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_rington
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_mob
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_await
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_chat
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_collect
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_cost
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_receiv
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_apply
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_on
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_entry
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_optout
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_msg
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_39
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_59
+  '(-inf-1]'        54.0    7.0
+  '(1-inf)'          1.0    5.0
+  [total]           55.0   12.0
+
+w_orang
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_mins
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_guaranteed
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_http
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_sae
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_landline
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_camer
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_c
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_rat
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_poly
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_but
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+c_42
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_network
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+w_it
+  'All'             54.0   11.0
+  [total]           54.0   11.0
+
+
+
+Leaf number: 40 Naive Bayes Classifier
+
+                  Class
+Attribute          SPAM    HAM
+                 (0.64) (0.36)
+===============================
+c_£
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_47
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_cal
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_p
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_txt
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_33
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_claim
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_to
+  '(-inf-0.5]'       9.0    1.0
+  '(0.5-inf)'        1.0    5.0
+  [total]           10.0    6.0
+
+w_fre
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_i
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_www
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_mobl
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_uk
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_38
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_43
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_stop
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_yo
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_text
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_or
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_now
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_reply
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_priz
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_award
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_win
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_won
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_box
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_serv
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_ppm
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_co
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_from
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_ton
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_cash
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_a
+  '(-inf-0.5]'       1.0    4.0
+  '(0.5-inf)'        9.0    2.0
+  [total]           10.0    6.0
+
+c_46
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_contact
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_cs
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_nok
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_pobox
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_urgent
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_our
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_prize
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_w
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_draw
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_week
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_per
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_latest
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_po
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_custom
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_free
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_new
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_guarantee
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_my
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_for
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_vouch
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_ur
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_valid
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_video
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_min
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_select
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_rington
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_mob
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_await
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_chat
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_collect
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_cost
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_receiv
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_apply
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_on
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_entry
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_optout
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_msg
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_39
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_59
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_orang
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_mins
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_guaranteed
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_http
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_sae
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_landline
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_camer
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_c
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_rat
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_poly
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_but
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+c_42
+  '(-inf-0.5]'       1.0    5.0
+  '(0.5-inf)'        9.0    1.0
+  [total]           10.0    6.0
+
+w_network
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+w_it
+  'All'              9.0    5.0
+  [total]            9.0    5.0
+
+
+
+
+Number of Leaves  : 	21
+
+Size of the tree : 	41
+
+
+Time taken to build model: 73.21 seconds
+Time taken to test model on training data: 0.19 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5513               98.9056 %
+Incorrectly Classified Instances        61                1.0944 %
+Kappa statistic                          0.9516
+Mean absolute error                      0.0189
+Root mean squared error                  0.1033
+Relative absolute error                  8.1553 %
+Root relative squared error             30.3106 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  693   54 |    a = SPAM
+    7 4820 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5462               97.9907 %
+Incorrectly Classified Instances       112                2.0093 %
+Kappa statistic                          0.91  
+Mean absolute error                      0.0271
+Root mean squared error                  0.133 
+Relative absolute error                 11.679  %
+Root relative squared error             39.0336 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  657   90 |    a = SPAM
+   22 4805 |    b = HAM
+

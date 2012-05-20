@@ -1,0 +1,119 @@
+
+J48 pruned tree
+------------------
+
+c_£ = 1: SPAM (258.0/5.0)
+c_£ = 0
+|   w_p = 1
+|   |   w_to = 1: SPAM (102.0)
+|   |   w_to = 0
+|   |   |   w_i = 1: HAM (3.0)
+|   |   |   w_i = 0: SPAM (41.0/5.0)
+|   w_p = 0
+|   |   w_www = 1
+|   |   |   w_mobl = 1
+|   |   |   |   c_33 = 1: SPAM (3.0)
+|   |   |   |   c_33 = 0: HAM (2.0)
+|   |   |   w_mobl = 0: SPAM (50.0)
+|   |   w_www = 0
+|   |   |   w_mobl = 1
+|   |   |   |   w_yo = 1: SPAM (33.0)
+|   |   |   |   w_yo = 0
+|   |   |   |   |   w_text = 1: SPAM (7.0)
+|   |   |   |   |   w_text = 0
+|   |   |   |   |   |   c_33 = 1
+|   |   |   |   |   |   |   w_cal = 1: SPAM (3.0)
+|   |   |   |   |   |   |   w_cal = 0: HAM (2.0)
+|   |   |   |   |   |   c_33 = 0: HAM (12.0/1.0)
+|   |   |   w_mobl = 0
+|   |   |   |   w_claim = 1: SPAM (20.0)
+|   |   |   |   w_claim = 0
+|   |   |   |   |   w_txt = 1
+|   |   |   |   |   |   w_i = 1: HAM (8.0/1.0)
+|   |   |   |   |   |   w_i = 0: SPAM (34.0/6.0)
+|   |   |   |   |   w_txt = 0
+|   |   |   |   |   |   c_47 = 1
+|   |   |   |   |   |   |   w_cal = 1: SPAM (20.0/1.0)
+|   |   |   |   |   |   |   w_cal = 0
+|   |   |   |   |   |   |   |   c_43 = 1: SPAM (10.0)
+|   |   |   |   |   |   |   |   c_43 = 0
+|   |   |   |   |   |   |   |   |   w_reply = 1: SPAM (3.0)
+|   |   |   |   |   |   |   |   |   w_reply = 0
+|   |   |   |   |   |   |   |   |   |   w_uk = 1: SPAM (2.0)
+|   |   |   |   |   |   |   |   |   |   w_uk = 0: HAM (44.0/9.0)
+|   |   |   |   |   |   c_47 = 0
+|   |   |   |   |   |   |   w_fre = 1
+|   |   |   |   |   |   |   |   w_i = 1: HAM (24.0)
+|   |   |   |   |   |   |   |   w_i = 0
+|   |   |   |   |   |   |   |   |   w_yo = 1: SPAM (14.0)
+|   |   |   |   |   |   |   |   |   w_yo = 0
+|   |   |   |   |   |   |   |   |   |   w_uk = 1: SPAM (2.0)
+|   |   |   |   |   |   |   |   |   |   w_uk = 0
+|   |   |   |   |   |   |   |   |   |   |   w_text = 1: SPAM (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   w_text = 0
+|   |   |   |   |   |   |   |   |   |   |   |   w_reply = 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   w_or = 1: HAM (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   w_or = 0: SPAM (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   w_reply = 0: HAM (19.0/6.0)
+|   |   |   |   |   |   |   w_fre = 0
+|   |   |   |   |   |   |   |   w_reply = 1
+|   |   |   |   |   |   |   |   |   w_i = 1: HAM (21.0)
+|   |   |   |   |   |   |   |   |   w_i = 0
+|   |   |   |   |   |   |   |   |   |   w_cal = 1: SPAM (13.0)
+|   |   |   |   |   |   |   |   |   |   w_cal = 0
+|   |   |   |   |   |   |   |   |   |   |   c_33 = 1: SPAM (8.0)
+|   |   |   |   |   |   |   |   |   |   |   c_33 = 0: HAM (20.0/2.0)
+|   |   |   |   |   |   |   |   w_reply = 0
+|   |   |   |   |   |   |   |   |   w_cal = 1
+|   |   |   |   |   |   |   |   |   |   c_33 = 1
+|   |   |   |   |   |   |   |   |   |   |   w_i = 1: HAM (8.0)
+|   |   |   |   |   |   |   |   |   |   |   w_i = 0: SPAM (28.0/4.0)
+|   |   |   |   |   |   |   |   |   |   c_33 = 0: HAM (256.0/27.0)
+|   |   |   |   |   |   |   |   |   w_cal = 0: HAM (4492.0/63.0)
+
+Number of Leaves  : 	35
+
+Size of the tree : 	69
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.08 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5442               97.6319 %
+Incorrectly Classified Instances       132                2.3681 %
+Kappa statistic                          0.8926
+Mean absolute error                      0.0435
+Root mean squared error                  0.1475
+Relative absolute error                 18.7416 %
+Root relative squared error             43.3005 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  637  110 |    a = SPAM
+   22 4805 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5415               97.1475 %
+Incorrectly Classified Instances       159                2.8525 %
+Kappa statistic                          0.8712
+Mean absolute error                      0.0472
+Root mean squared error                  0.16  
+Relative absolute error                 20.3291 %
+Root relative squared error             46.9771 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  627  120 |    a = SPAM
+   39 4788 |    b = HAM
+

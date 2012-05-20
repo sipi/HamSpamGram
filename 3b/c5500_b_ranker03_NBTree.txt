@@ -1,0 +1,270 @@
+
+NBTree
+------------------
+
+w_cal = 1: NB 1
+w_cal = 0: NB 2
+
+Leaf number: 1 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.55) (0.45)
+=============================
+c_£
+  1              126.0    1.0
+  0              198.0  262.0
+  [total]        324.0  263.0
+
+c_47
+  1               75.0    2.0
+  0              249.0  261.0
+  [total]        324.0  263.0
+
+w_cal
+  1              323.0  262.0
+  0                1.0    1.0
+  [total]        324.0  263.0
+
+w_p
+  1               53.0    1.0
+  0              271.0  262.0
+  [total]        324.0  263.0
+
+w_txt
+  1               12.0    2.0
+  0              312.0  261.0
+  [total]        324.0  263.0
+
+c_33
+  1              175.0   14.0
+  0              149.0  249.0
+  [total]        324.0  263.0
+
+w_claim
+  1               78.0    1.0
+  0              246.0  262.0
+  [total]        324.0  263.0
+
+w_fre
+  1               57.0   11.0
+  0              267.0  252.0
+  [total]        324.0  263.0
+
+w_i
+  1               25.0  168.0
+  0              299.0   95.0
+  [total]        324.0  263.0
+
+w_to
+  1              159.0   69.0
+  0              165.0  194.0
+  [total]        324.0  263.0
+
+w_www
+  1               12.0    1.0
+  0              312.0  262.0
+  [total]        324.0  263.0
+
+w_mobl
+  1               63.0    5.0
+  0              261.0  258.0
+  [total]        324.0  263.0
+
+w_uk
+  1                7.0    1.0
+  0              317.0  262.0
+  [total]        324.0  263.0
+
+w_yo
+  1              129.0   23.0
+  0              195.0  240.0
+  [total]        324.0  263.0
+
+c_43
+  1               40.0    1.0
+  0              284.0  262.0
+  [total]        324.0  263.0
+
+w_stop
+  1               25.0    3.0
+  0              299.0  260.0
+  [total]        324.0  263.0
+
+w_or
+  1              103.0   17.0
+  0              221.0  246.0
+  [total]        324.0  263.0
+
+w_text
+  1               36.0    6.0
+  0              288.0  257.0
+  [total]        324.0  263.0
+
+w_now
+  1               92.0   32.0
+  0              232.0  231.0
+  [total]        324.0  263.0
+
+w_reply
+  1               28.0    6.0
+  0              296.0  257.0
+  [total]        324.0  263.0
+
+
+
+Leaf number: 2 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.09) (0.91)
+=============================
+c_£
+  1              129.0    6.0
+  0              298.0 4562.0
+  [total]        427.0 4568.0
+
+c_47
+  1              146.0   36.0
+  0              281.0 4532.0
+  [total]        427.0 4568.0
+
+w_cal
+  1                1.0    1.0
+  0              426.0 4567.0
+  [total]        427.0 4568.0
+
+w_p
+  1              118.0    9.0
+  0              309.0 4559.0
+  [total]        427.0 4568.0
+
+w_txt
+  1              145.0   13.0
+  0              282.0 4555.0
+  [total]        427.0 4568.0
+
+c_33
+  1              193.0  550.0
+  0              234.0 4018.0
+  [total]        427.0 4568.0
+
+w_claim
+  1               33.0    1.0
+  0              394.0 4567.0
+  [total]        427.0 4568.0
+
+w_fre
+  1               96.0   38.0
+  0              331.0 4530.0
+  [total]        427.0 4568.0
+
+w_i
+  1               31.0 1864.0
+  0              396.0 2704.0
+  [total]        427.0 4568.0
+
+w_to
+  1              311.0 1152.0
+  0              116.0 3416.0
+  [total]        427.0 4568.0
+
+w_www
+  1               88.0    3.0
+  0              339.0 4565.0
+  [total]        427.0 4568.0
+
+w_mobl
+  1               41.0   12.0
+  0              386.0 4556.0
+  [total]        427.0 4568.0
+
+w_uk
+  1               67.0    2.0
+  0              360.0 4566.0
+  [total]        427.0 4568.0
+
+w_yo
+  1              108.0  370.0
+  0              319.0 4198.0
+  [total]        427.0 4568.0
+
+c_43
+  1               51.0   23.0
+  0              376.0 4545.0
+  [total]        427.0 4568.0
+
+w_stop
+  1               79.0   40.0
+  0              348.0 4528.0
+  [total]        427.0 4568.0
+
+w_or
+  1               79.0  208.0
+  0              348.0 4360.0
+  [total]        427.0 4568.0
+
+w_text
+  1               89.0   76.0
+  0              338.0 4492.0
+  [total]        427.0 4568.0
+
+w_now
+  1              104.0  261.0
+  0              323.0 4307.0
+  [total]        427.0 4568.0
+
+w_reply
+  1               73.0   42.0
+  0              354.0 4526.0
+  [total]        427.0 4568.0
+
+
+
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 1.56 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5441               97.6139 %
+Incorrectly Classified Instances       133                2.3861 %
+Kappa statistic                          0.8934
+Mean absolute error                      0.0334
+Root mean squared error                  0.1454
+Relative absolute error                 14.3892 %
+Root relative squared error             42.6947 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  649   98 |    a = SPAM
+   35 4792 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5428               97.3807 %
+Incorrectly Classified Instances       146                2.6193 %
+Kappa statistic                          0.8828
+Mean absolute error                      0.0348
+Root mean squared error                  0.1482
+Relative absolute error                 14.9657 %
+Root relative squared error             43.5151 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  641  106 |    a = SPAM
+   40 4787 |    b = HAM
+

@@ -1,0 +1,48 @@
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a  
+
+Time taken to build model: 0.01 seconds
+Time taken to test model on training data: 65.4 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5451               97.7933 %
+Incorrectly Classified Instances       123                2.2067 %
+Kappa statistic                          0.8978
+Mean absolute error                      0.0335
+Root mean squared error                  0.1349
+Relative absolute error                 14.4483 %
+Root relative squared error             39.613  %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  624  123 |    a = SPAM
+    0 4827 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5343               95.8558 %
+Incorrectly Classified Instances       231                4.1442 %
+Kappa statistic                          0.7946
+Mean absolute error                      0.0525
+Root mean squared error                  0.1818
+Relative absolute error                 22.5964 %
+Root relative squared error             53.3529 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  516  231 |    a = SPAM
+    0 4827 |    b = HAM
+

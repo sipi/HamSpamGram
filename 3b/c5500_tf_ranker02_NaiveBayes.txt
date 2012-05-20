@@ -1,0 +1,290 @@
+
+Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.13) (0.87)
+=============================
+c_£
+  mean          0.4337  0.001
+  std. dev.     0.6661 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_47
+  mean          0.4993 0.0095
+  std. dev.     0.9546 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cal
+  mean          0.4926 0.0578
+  std. dev.     0.6174 0.2505
+  weight sum       747   4827
+  precision          1      1
+
+w_p
+  mean           0.241 0.0017
+  std. dev.     0.4666 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_txt
+  mean          0.2249 0.0029
+  std. dev.     0.4602 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_33
+  mean          0.8025 0.1928
+  std. dev.     1.0366 0.6489
+  weight sum       747   4827
+  precision        1.1    1.1
+
+w_claim
+  mean          0.1539      0
+  std. dev.     0.3825 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_to
+  mean           0.925 0.3236
+  std. dev.     0.9124 0.6527
+  weight sum       747   4827
+  precision          1      1
+
+w_fre
+  mean           0.241 0.0099
+  std. dev.     0.5335 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_i
+  mean          0.0937 0.6126
+  std. dev.     0.3999   0.94
+  weight sum       747   4827
+  precision          1      1
+
+w_www
+  mean          0.1312 0.0004
+  std. dev.     0.3376 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_mobl
+  mean          0.1593 0.0031
+  std. dev.     0.4482 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_uk
+  mean          0.1017 0.0002
+  std. dev.     0.3195 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+c_38
+  mean          0.1301 0.2103
+  std. dev.     0.6719 1.0357
+  weight sum       747   4827
+  precision        3.6    3.6
+
+c_43
+  mean          0.0268 0.0054
+  std. dev.     0.3333 0.3333
+  weight sum       747   4827
+  precision          2      2
+
+w_stop
+  mean          0.1687 0.0087
+  std. dev.     0.4551 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_yo
+  mean          0.3641 0.0943
+  std. dev.     0.5865 0.3473
+  weight sum       747   4827
+  precision          1      1
+
+w_text
+  mean          0.1874  0.017
+  std. dev.     0.4478 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_or
+  mean           0.257 0.0491
+  std. dev.     0.4723   0.23
+  weight sum       747   4827
+  precision          1      1
+
+w_now
+  mean          0.2718 0.0622
+  std. dev.     0.4712 0.2499
+  weight sum       747   4827
+  precision          1      1
+
+w_reply
+  mean          0.1499 0.0099
+  std. dev.     0.4028 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_priz
+  mean          0.0803      0
+  std. dev.     0.2908 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_award
+  mean          0.0897 0.0002
+  std. dev.     0.3252 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_win
+  mean          0.1111  0.006
+  std. dev.     0.3227 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_won
+  mean          0.1017 0.0039
+  std. dev.     0.3023 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_box
+  mean          0.0803  0.001
+  std. dev.     0.2718 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_serv
+  mean           0.083 0.0015
+  std. dev.     0.2759 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_ppm
+  mean          0.0656      0
+  std. dev.     0.2476 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_co
+  mean          0.0723 0.0004
+  std. dev.     0.2691 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_from
+  mean          0.1821 0.0317
+  std. dev.     0.4062  0.181
+  weight sum       747   4827
+  precision          1      1
+
+w_ton
+  mean           0.087 0.0002
+  std. dev.     0.3535 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cash
+  mean           0.083 0.0027
+  std. dev.     0.2807 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_a
+  mean          0.5248 0.2217
+  std. dev.     0.7265 0.5187
+  weight sum       747   4827
+  precision          1      1
+
+c_46
+  mean          2.2292 2.1235
+  std. dev.     1.7738 2.8127
+  weight sum       747   4827
+  precision     1.5769 1.5769
+
+w_contact
+  mean          0.0817 0.0029
+  std. dev.     0.2738 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_cs
+  mean          0.0589      0
+  std. dev.     0.2354 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_nok
+  mean          0.0884 0.0006
+  std. dev.     0.3551 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_pobox
+  mean          0.0562      0
+  std. dev.     0.2304 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_urgent
+  mean          0.0643  0.001
+  std. dev.     0.2452 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+w_our
+  mean          0.1138 0.0133
+  std. dev.     0.3259 0.1667
+  weight sum       747   4827
+  precision          1      1
+
+
+
+Time taken to build model: 0.1 seconds
+Time taken to test model on training data: 0.25 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5357               96.1069 %
+Incorrectly Classified Instances       217                3.8931 %
+Kappa statistic                          0.8342
+Mean absolute error                      0.0391
+Root mean squared error                  0.1857
+Relative absolute error                 16.8563 %
+Root relative squared error             54.5214 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  649   98 |    a = SPAM
+  119 4708 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5358               96.1249 %
+Incorrectly Classified Instances       216                3.8751 %
+Kappa statistic                          0.8349
+Mean absolute error                      0.0393
+Root mean squared error                  0.1866
+Relative absolute error                 16.9138 %
+Root relative squared error             54.7748 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  649   98 |    a = SPAM
+  118 4709 |    b = HAM
+

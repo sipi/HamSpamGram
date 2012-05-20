@@ -1,0 +1,116 @@
+
+Naive Bayes Classifier
+
+                 Class
+Attribute         SPAM     HAM
+                (0.13)  (0.87)
+===============================
+c_£
+  mean           1.3328  0.0032
+  std. dev.       2.047  0.5122
+  weight sum        747    4827
+  precision      3.0729  3.0729
+
+c_47
+  mean           1.5402  0.0294
+  std. dev.      2.9446  0.5141
+  weight sum        747    4827
+  precision      3.0846  3.0846
+
+w_cal
+  mean           1.1122  0.1305
+  std. dev.      1.3938  0.5655
+  weight sum        747    4827
+  precision      2.2577  2.2577
+
+w_p
+  mean           0.8313  0.0057
+  std. dev.      1.6096   0.575
+  weight sum        747    4827
+  precision      3.4497  3.4497
+
+w_txt
+  mean           0.7876  0.0102
+  std. dev.      1.6116  0.5836
+  weight sum        747    4827
+  precision      3.5019  3.5019
+
+c_33
+  mean           1.4388  0.3456
+  std. dev.      1.8585  1.1634
+  weight sum        747    4827
+  precision      1.9721  1.9721
+
+w_claim
+  mean           0.6057       0
+  std. dev.       1.505  0.6558
+  weight sum        747    4827
+  precision      3.9345  3.9345
+
+w_to
+  mean           1.1056  0.3867
+  std. dev.      1.0904  0.7801
+  weight sum        747    4827
+  precision      1.1952  1.1952
+
+w_fre
+  mean           0.8042  0.0332
+  std. dev.      1.7807  0.5563
+  weight sum        747    4827
+  precision      3.3376  3.3376
+
+w_i
+  mean           0.0922  0.6027
+  std. dev.      0.3934  0.9248
+  weight sum        747    4827
+  precision      0.9838  0.9838
+
+w_www
+  mean           0.5275  0.0017
+  std. dev.      1.3574  0.6701
+  weight sum        747    4827
+  precision      4.0207  4.0207
+
+
+
+Time taken to build model: 0.07 seconds
+Time taken to test model on training data: 0.14 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5293               94.9587 %
+Incorrectly Classified Instances       281                5.0413 %
+Kappa statistic                          0.7699
+Mean absolute error                      0.0521
+Root mean squared error                  0.203 
+Relative absolute error                 22.4311 %
+Root relative squared error             59.5884 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  557  190 |    a = SPAM
+   91 4736 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5300               95.0843 %
+Incorrectly Classified Instances       274                4.9157 %
+Kappa statistic                          0.775 
+Mean absolute error                      0.0509
+Root mean squared error                  0.2005
+Relative absolute error                 21.9376 %
+Root relative squared error             58.855  %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  558  189 |    a = SPAM
+   85 4742 |    b = HAM
+

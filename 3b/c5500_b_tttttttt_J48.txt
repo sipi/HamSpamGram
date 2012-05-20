@@ -1,0 +1,51 @@
+
+J48 pruned tree
+------------------
+: HAM (5574.0/747.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.09 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4827               86.5985 %
+Incorrectly Classified Instances       747               13.4015 %
+Kappa statistic                          0     
+Mean absolute error                      0.2321
+Root mean squared error                  0.3407
+Relative absolute error                 99.9586 %
+Root relative squared error            100      %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  747 |    a = SPAM
+    0 4827 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        4827               86.5985 %
+Incorrectly Classified Instances       747               13.4015 %
+Kappa statistic                          0     
+Mean absolute error                      0.2321
+Root mean squared error                  0.3407
+Relative absolute error                 99.954  %
+Root relative squared error            100      %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  747 |    a = SPAM
+    0 4827 |    b = HAM
+

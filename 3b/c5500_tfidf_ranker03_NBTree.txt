@@ -1,0 +1,1312 @@
+
+NBTree
+------------------
+
+w_cal <= 1.12884
+|   c_£ <= 1.536455
+|   |   w_i <= 0.491912
+|   |   |   w_www <= 2.01035
+|   |   |   |   w_txt <= 1.75095
+|   |   |   |   |   w_to <= 0.59758: NB 6
+|   |   |   |   |   w_to > 0.59758
+|   |   |   |   |   |   w_p <= 1.72486: NB 8
+|   |   |   |   |   |   w_p > 1.72486: NB 9
+|   |   |   |   w_txt > 1.75095
+|   |   |   |   |   w_stop <= 1.83151
+|   |   |   |   |   |   w_to <= 0.59758: NB 12
+|   |   |   |   |   |   w_to > 0.59758: NB 13
+|   |   |   |   |   w_stop > 1.83151: NB 14
+|   |   |   w_www > 2.01035
+|   |   |   |   c_47 <= 1.5423
+|   |   |   |   |   w_to <= 1.79274: NB 17
+|   |   |   |   |   w_to > 1.79274: NB 18
+|   |   |   |   c_47 > 1.5423: NB 19
+|   |   w_i > 0.491912
+|   |   |   w_to <= 0.59758: NB 21
+|   |   |   w_to > 0.59758: NB 22
+|   c_£ > 1.536455: NB 23
+w_cal > 1.12884: NB 24
+
+Leaf number: 6 Naive Bayes Classifier
+
+                       Class
+Attribute               SPAM    HAM
+                      (0.03) (0.97)
+====================================
+c_£
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+c_47
+  '(-inf-1.5423]'        51.0 2107.0
+  '(1.5423-inf)'         21.0   14.0
+  [total]                72.0 2121.0
+
+w_cal
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_p
+  '(-inf-1.72486]'       61.0 2115.0
+  '(1.72486-inf)'        11.0    6.0
+  [total]                72.0 2121.0
+
+w_txt
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+c_33
+  '(-inf-0.89642]'       47.0 1915.0
+  '(0.89642-inf)'        25.0  206.0
+  [total]                72.0 2121.0
+
+w_claim
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_to
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_fre
+  '(-inf-1.6688]'        63.0 2114.0
+  '(1.6688-inf)'          9.0    7.0
+  [total]                72.0 2121.0
+
+w_i
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_www
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_mobl
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_uk
+  '(-inf-2.167705]'      66.0 2119.0
+  '(2.167705-inf)'        6.0    2.0
+  [total]                72.0 2121.0
+
+c_38
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+c_43
+  '(-inf-1.95817]'       65.0 2114.0
+  '(1.95817-inf)'         7.0    7.0
+  [total]                72.0 2121.0
+
+w_stop
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_yo
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_text
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_or
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_now
+  'All'                  71.0 2120.0
+  [total]                71.0 2120.0
+
+w_reply
+  '(-inf-1.824565]'      61.0 2108.0
+  '(1.824565-inf)'       11.0   13.0
+  [total]                72.0 2121.0
+
+
+
+Leaf number: 8 Naive Bayes Classifier
+
+                      Class
+Attribute              SPAM   HAM
+                      (0.1) (0.9)
+==================================
+c_£
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+c_47
+  '(-inf-4.626905]'     57.0 575.0
+  '(4.626905-inf)'       5.0   1.0
+  [total]               62.0 576.0
+
+w_cal
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_p
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_txt
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+c_33
+  '(-inf-0.89642]'      29.0 507.0
+  '(0.89642-inf)'       33.0  69.0
+  [total]               62.0 576.0
+
+w_claim
+  '(-inf-1.96726]'      56.0 575.0
+  '(1.96726-inf)'        6.0   1.0
+  [total]               62.0 576.0
+
+w_to
+  '(-inf-1.79274]'      37.0 490.0
+  '(1.79274-inf)'       25.0  86.0
+  [total]               62.0 576.0
+
+w_fre
+  '(-inf-1.6688]'       44.0 568.0
+  '(1.6688-inf)'        18.0   8.0
+  [total]               62.0 576.0
+
+w_i
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_www
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_mobl
+  '(-inf-1.931845]'     53.0 574.0
+  '(1.931845-inf)'       9.0   2.0
+  [total]               62.0 576.0
+
+w_uk
+  '(-inf-2.167705]'     55.0 575.0
+  '(2.167705-inf)'       7.0   1.0
+  [total]               62.0 576.0
+
+c_38
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+c_43
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_stop
+  '(-inf-1.83151]'      47.0 568.0
+  '(1.83151-inf)'       15.0   8.0
+  [total]               62.0 576.0
+
+w_yo
+  '(-inf-1.09326]'      39.0 515.0
+  '(1.09326-inf)'       23.0  61.0
+  [total]               62.0 576.0
+
+w_text
+  '(-inf-1.65633]'      40.0 569.0
+  '(1.65633-inf)'       22.0   7.0
+  [total]               62.0 576.0
+
+w_or
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_now
+  'All'                 61.0 575.0
+  [total]               61.0 575.0
+
+w_reply
+  '(-inf-1.824565]'     51.0 566.0
+  '(1.824565-inf)'      11.0  10.0
+  [total]               62.0 576.0
+
+
+
+Leaf number: 9 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.96) (0.04)
+=============================
+c_£
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+c_47
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_cal
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_p
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_txt
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+c_33
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_claim
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_to
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_fre
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_i
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_www
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_mobl
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_uk
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+c_38
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+c_43
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_stop
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_yo
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_text
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_or
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_now
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+w_reply
+  'All'           26.0    1.0
+  [total]         26.0    1.0
+
+
+
+Leaf number: 12 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.38) (0.63)
+=============================
+c_£
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+c_47
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_cal
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_p
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_txt
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+c_33
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_claim
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_to
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_fre
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_i
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_www
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_mobl
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_uk
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+c_38
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+c_43
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_stop
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_yo
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_text
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_or
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_now
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+w_reply
+  'All'            3.0    5.0
+  [total]          3.0    5.0
+
+
+
+Leaf number: 13 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.96) (0.04)
+=============================
+c_£
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+c_47
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_cal
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_p
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_txt
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+c_33
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_claim
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_to
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_fre
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_i
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_www
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_mobl
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_uk
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+c_38
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+c_43
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_stop
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_yo
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_text
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_or
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_now
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+w_reply
+  'All'           46.0    2.0
+  [total]         46.0    2.0
+
+
+
+Leaf number: 14 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.94) (0.06)
+=============================
+c_£
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_47
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_cal
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_p
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_txt
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_33
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_claim
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_to
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_fre
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_i
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_www
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_mobl
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_uk
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_38
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+c_43
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_stop
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_yo
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_text
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_or
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_now
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+w_reply
+  'All'           16.0    1.0
+  [total]         16.0    1.0
+
+
+
+Leaf number: 17 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.96) (0.04)
+=============================
+c_£
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+c_47
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_cal
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_p
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_txt
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+c_33
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_claim
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_to
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_fre
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_i
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_www
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_mobl
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_uk
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+c_38
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+c_43
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_stop
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_yo
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_text
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_or
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_now
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+w_reply
+  'All'           24.0    1.0
+  [total]         24.0    1.0
+
+
+
+Leaf number: 18 Naive Bayes Classifier
+
+                      Class
+Attribute              SPAM   HAM
+                      (0.7) (0.3)
+==================================
+c_£
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+c_47
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_cal
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_p
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_txt
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+c_33
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_claim
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_to
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_fre
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_i
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_www
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_mobl
+  '(-inf-1.931845]'      7.0   1.0
+  '(1.931845-inf)'       1.0   3.0
+  [total]                8.0   4.0
+
+w_uk
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+c_38
+  '(-inf-3.681255]'      7.0   1.0
+  '(3.681255-inf)'       1.0   3.0
+  [total]                8.0   4.0
+
+c_43
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_stop
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_yo
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_text
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_or
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_now
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+w_reply
+  'All'                  7.0   3.0
+  [total]                7.0   3.0
+
+
+
+Leaf number: 19 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.97) (0.03)
+=============================
+c_£
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_47
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_cal
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_p
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_txt
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_33
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_claim
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_to
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_fre
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_i
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_www
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_mobl
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_uk
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_38
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+c_43
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_stop
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_yo
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_text
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_or
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_now
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+w_reply
+  'All'           29.0    1.0
+  [total]         29.0    1.0
+
+
+
+Leaf number: 21 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+                  (0)    (1)
+=============================
+c_£
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+c_47
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_cal
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_p
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_txt
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+c_33
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_claim
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_to
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_fre
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_i
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_www
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_mobl
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_uk
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+c_38
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+c_43
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_stop
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_yo
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_text
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_or
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_now
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+w_reply
+  'All'            4.0 1290.0
+  [total]          4.0 1290.0
+
+
+
+Leaf number: 22 Naive Bayes Classifier
+
+                       Class
+Attribute               SPAM    HAM
+                      (0.04) (0.96)
+====================================
+c_£
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+c_47
+  '(-inf-4.626905]'      13.0  572.0
+  '(4.626905-inf)'        9.0    2.0
+  [total]                22.0  574.0
+
+w_cal
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_p
+  '(-inf-1.72486]'       12.0  573.0
+  '(1.72486-inf)'        10.0    1.0
+  [total]                22.0  574.0
+
+w_txt
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+c_33
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_claim
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_to
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_fre
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_i
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_www
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_mobl
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_uk
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+c_38
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+c_43
+  '(-inf-1.95817]'       16.0  573.0
+  '(1.95817-inf)'         6.0    1.0
+  [total]                22.0  574.0
+
+w_stop
+  '(-inf-1.83151]'       14.0  561.0
+  '(1.83151-inf)'         8.0   13.0
+  [total]                22.0  574.0
+
+w_yo
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_text
+  '(-inf-4.96899]'       18.0  573.0
+  '(4.96899-inf)'         4.0    1.0
+  [total]                22.0  574.0
+
+w_or
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_now
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+w_reply
+  'All'                  21.0  573.0
+  [total]                21.0  573.0
+
+
+
+Leaf number: 23 Naive Bayes Classifier
+
+                Class
+Attribute        SPAM    HAM
+               (0.96) (0.04)
+=============================
+c_£
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+c_47
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_cal
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_p
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_txt
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+c_33
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_claim
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_to
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_fre
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_i
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_www
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_mobl
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_uk
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+c_38
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+c_43
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_stop
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_yo
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_text
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_or
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_now
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+w_reply
+  'All'          129.0    6.0
+  [total]        129.0    6.0
+
+
+
+Leaf number: 24 Naive Bayes Classifier
+
+                       Class
+Attribute               SPAM    HAM
+                      (0.55) (0.45)
+====================================
+c_£
+  '(-inf-1.536455]'     198.0  262.0
+  '(1.536455-inf)'      126.0    1.0
+  [total]               324.0  263.0
+
+c_47
+  '(-inf-1.5423]'       249.0  261.0
+  '(1.5423-inf)'         75.0    2.0
+  [total]               324.0  263.0
+
+w_cal
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+w_p
+  '(-inf-1.72486]'      271.0  262.0
+  '(1.72486-inf)'        53.0    1.0
+  [total]               324.0  263.0
+
+w_txt
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+c_33
+  '(-inf-0.89642]'      149.0  249.0
+  '(0.89642-inf)'       175.0   14.0
+  [total]               324.0  263.0
+
+w_claim
+  '(-inf-1.96726]'      246.0  262.0
+  '(1.96726-inf)'        78.0    1.0
+  [total]               324.0  263.0
+
+w_to
+  '(-inf-0.59758]'      165.0  194.0
+  '(0.59758-inf)'       159.0   69.0
+  [total]               324.0  263.0
+
+w_fre
+  '(-inf-1.6688]'       267.0  252.0
+  '(1.6688-inf)'         57.0   11.0
+  [total]               324.0  263.0
+
+w_i
+  '(-inf-0.491912]'     299.0   95.0
+  '(0.491912-inf)'       25.0  168.0
+  [total]               324.0  263.0
+
+w_www
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+w_mobl
+  '(-inf-1.931845]'     261.0  258.0
+  '(1.931845-inf)'       63.0    5.0
+  [total]               324.0  263.0
+
+w_uk
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+c_38
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+c_43
+  '(-inf-1.95817]'      284.0  262.0
+  '(1.95817-inf)'        40.0    1.0
+  [total]               324.0  263.0
+
+w_stop
+  '(-inf-1.83151]'      299.0  260.0
+  '(1.83151-inf)'        25.0    3.0
+  [total]               324.0  263.0
+
+w_yo
+  '(-inf-1.09326]'      195.0  240.0
+  '(1.09326-inf)'       129.0   23.0
+  [total]               324.0  263.0
+
+w_text
+  '(-inf-1.65633]'      288.0  257.0
+  '(1.65633-inf)'        36.0    6.0
+  [total]               324.0  263.0
+
+w_or
+  '(-inf-1.313465]'     221.0  246.0
+  '(1.313465-inf)'      103.0   17.0
+  [total]               324.0  263.0
+
+w_now
+  '(-inf-1.22086]'      232.0  231.0
+  '(1.22086-inf)'        92.0   32.0
+  [total]               324.0  263.0
+
+w_reply
+  'All'                 323.0  262.0
+  [total]               323.0  262.0
+
+
+
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 4.71 seconds
+Time taken to test model on training data: 0.07 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        5449               97.7574 %
+Incorrectly Classified Instances       125                2.2426 %
+Kappa statistic                          0.8997
+Mean absolute error                      0.0389
+Root mean squared error                  0.143 
+Relative absolute error                 16.735  %
+Root relative squared error             41.967  %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  652   95 |    a = SPAM
+   30 4797 |    b = HAM
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        5414               97.1295 %
+Incorrectly Classified Instances       160                2.8705 %
+Kappa statistic                          0.8706
+Mean absolute error                      0.0418
+Root mean squared error                  0.1571
+Relative absolute error                 18.0124 %
+Root relative squared error             46.1256 %
+Total Number of Instances             5574     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  628  119 |    a = SPAM
+   41 4786 |    b = HAM
+
