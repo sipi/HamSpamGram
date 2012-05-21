@@ -56,7 +56,7 @@ if(len(conf_path) == 0):
   print "not file specified"
 # END ARGUMENT PROCESSING
 
-# si le stemmer n'est pas défini on affiche 
+# si le stemmer n'est pas defini on affiche 
 # la liste des tokens
 if(len(stemmer) == 0):
   tokens = util.tokenizeFile(conf_path)
@@ -67,7 +67,7 @@ if(len(stemmer) == 0):
     else:
       print tokens[i],
 else:
-# lémmatisation
+# lemmatisation
   stemFile(conf_path, st)
 
 

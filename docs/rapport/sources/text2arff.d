@@ -8,7 +8,7 @@ import std.math;
 unittest
 {
   string[] words = getWords(
-      "Juste un test, pour voir si ça à l'air de fonctioner.");
+      "Juste un test, pour voir si ca a l'air de fonctioner.");
   assert(words.length == 12);
 }
 
