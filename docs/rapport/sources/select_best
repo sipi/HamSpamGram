@@ -1,0 +1,65 @@
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 85861
+	Merit of best subset found:    0.566
+
+Attribute Subset Evaluator (supervised, Class (nominal): 2862 CLASS):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 6,109,163,174,231,251,374,440,575,647,792,1062,1124,1172,1195,1233,1264,1271,1282,1284,1285,1286,1287,1327,1348,1354,1527,1584,1594,1604,1664,1893,1908,2155,2196,2209,2304,2323,2329,2333,2338,2397,2403,2447,2452,2583,2681,2683,2707,2807 : 50
+                     w_dun
+                     w_fre
+                     w_got
+                     w_hey
+                     w_how
+                     w_huh
+                     w_jus
+                     w_lor
+                     w_now
+                     w_text
+                     w_going
+                     w_txt
+                     w_wat
+                     w_win
+                     w_won
+                     w_www
+                     c_33
+                     c_38
+                     c_43
+                     c_44
+                     c_45
+                     c_46
+                     c_47
+                     w_you
+                     w_yup
+                     w_from
+                     w_already
+                     w_thanx
+                     w_i
+                     w_p
+                     w_award
+                     c_£
+                     c_ü
+                     w_contact
+                     w_at
+                     w_da
+                     w_me
+                     w_my
+                     w_oh
+                     w_ok
+                     w_or
+                     w_to
+                     w_uk
+                     w_mobl
+                     w_yo
+                     w_claim
+                     w_cal
+                     w_can
+                     w_box
+                     w_din
