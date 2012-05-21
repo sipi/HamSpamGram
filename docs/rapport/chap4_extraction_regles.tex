@@ -1,5 +1,4 @@
-
-Pour l'extraction des règles d'association, on s'est servi de la représentation booléenne de notre corpus. On a réalisé cette extraction à l'aide de l'algorithme APRIORI proposé par WEKA. Cet algorithme, comme vu en cours, a pour but de réduire le nombre de itemsets candidats en minimisant itérativement le support de ces candidats. Pour exécuter correctement cet algorithme, le format exigé par WEKA pour les données booléennes est : 
+Pour l'extraction des règles d'association, nous nous sommes servi de notre corpus sous une représentation booléenne. Nous avons réalisé cette extraction à l'aide de l'algorithme \texttt{Apriori} proposé par WEKA. Cet algorithme, comme vu en cours, a pour but de réduire le nombre d"\og itemsets \fg{} candidats en minimisant itérativement le support de ces derniers. Pour exécuter correctement cet algorithme, le format exigé par WEKA pour les données booléennes est : 
 
 \begin{displaymath}
 \begin{cases}
@@ -7,13 +6,13 @@ Pour l'extraction des règles d'association, on s'est servi de la représentatio
       1 \mapsto t
 \end{cases}.
 \end{displaymath} 
-Nous avons donc modifié notre fichier \texttt{.arff} afin de le mettre au format adéquat. 
+Nous avons donc modifié notre fichier \texttt{arff} afin de le mettre au format adéquat. 
 
 
 
 \section{Phase d'extraction de règles générales}
 
-Ci-dessous, nous pouvons voir les cinq premières règles générées par l'algorithme \texttt{Apriori} sur l'ensemble du corpus. Le premier nombre entre parenthèses correspond au nombre d'instances où la prémice de la règle est vérifiée, le second correspond au nombre d'instance où la régle elle-même est vérifié. Ce qui nous donne la confiance de cette règle. 
+Ci-dessous, nous pouvons voir les cinq premières règles générées par l'algorithme \texttt{Apriori} sur l'ensemble du corpus. Le premier nombre entre parenthèses correspond au nombre d'instances où la prémisse de la règle est vérifiée, le second correspond au nombre d'instance où la règle elle-même est vérifiée. Ces deux nombres permettent de déterminer de niveau de confiance de la règle. 
 
 \begin{verbatim}
 1. w_i=t c_39=t (897) ==> CLASS=HAM (883)        conf:(0.98)
@@ -23,7 +22,7 @@ Ci-dessous, nous pouvons voir les cinq premières règles générées par l'algo
 5. w_i=t c_46=t (1450) ==> CLASS=HAM (1407)      conf:(0.97)
 \end{verbatim}
 
-\section{phase d'extraction de règles par classe}
+\section{Phase d'extraction de règles par classe}
 
 \subsubsection{SPAM}
 
@@ -47,4 +46,4 @@ Ci-dessous, nous pouvons voir les cinq premières règles générées par l'algo
 
 \subsubsection{Comparaison}
 
-Nous pouvons voir que les règles 6 et 11 sont identiques. \og c\_46 \fg{} représente le point, cette règle nous montre que le point est un caractère fréquement présent dans les SMS qu'il soit SPAM ou HAM. Les autres règles sont plus spécifiques, nous pouvons d'ailleurs retrouver la combinaison des règles 12 et 15 dans la règle 1 qui nous dit que les SMS contenant le mot \og i \fg{} et le caractère de code ascii 39, correspondant à la quote simple, sont dans 98\% des cas des HAM.
+Nous pouvons voir que les règles 6 et 11 sont identiques. \texttt{c\_46} représente le point, cette règle nous montre que le point est un caractère fréquemment présent dans les SMS qu'il soit Spam ou Ham. Les autres règles sont plus spécifiques, nous pouvons d'ailleurs retrouver la combinaison des règles 12 et 15 dans la règle 1 qui nous dit que les SMS contenant le mot \og i \fg{} et le caractère de code ascii 39, correspondant à la quote simple, sont dans 98\% des cas des HAM.
