@@ -1,13 +1,46 @@
 
-Pour l'extraction des règles d'association, on s'est servi de la représentation booléenne de notre corpus. On a réalisé cette extraction à l'aide de l'algorithme APRIORI proposé par WEKA. Le format exigé par APRIORI pour les données booléennes étant 
+Pour l'extraction des règles d'association, on s'est servi de la représentation booléenne de notre corpus. On a réalisé cette extraction à l'aide de l'algorithme APRIORI proposé par WEKA. Le format exigé par \texttt{Apriori} pour les données booléennes étant 
+
 \begin{displaymath}
 \begin{cases}
       0 \mapsto ? \\
       1 \mapsto t
 \end{cases},
 \end{displaymath} 
-on a modifié notre fichier \texttt{.arff} afin de le mettre au format adéquat. 
+Nous avons modifié notre fichier \texttt{.arff} afin de le mettre au format adéquat. 
 
-\section{phase d'extraction de règles générales}
+
+
+\section{Phase d'extraction de règles générales}
+
+Ci-dessous, nous pouvons voir les cinq premières règles générées par l'algorithme \texttt{Apriori} sur l'ensemble du corpus. Le premier nombre entre parenthèses correspond au nombre d'instances où la prémice de la règle est vérifiée, le second correspond au nombre d'instance où la régle elle-même est vérifié. Ce qui nous donne la confiance de cette règle. 
+
+\begin{verbatim}
+1. w_i=t c_39=t (897) ==> CLASS=HAM (883)        conf:(0.98)
+2. w_my=t (613) ==> CLASS=HAM (602)              conf:(0.98)
+3. w_i=t c_39=t c_46=t (584) ==> CLASS=HAM (570) conf:(0.98)
+4. w_i=t (2084) ==> CLASS=HAM 2030               conf:(0.97)
+5. w_i=t c_46=t (1450) ==> CLASS=HAM (1407)      conf:(0.97)
+\end{verbatim}
 
 \section{phase d'extraction de règles par classe}
+
+\subsubsection{SPAM}
+
+\begin{verbatim}
+1. c_46=t (589) ==> CLASS=SPAM (589)           conf:(1)
+2. w_to=t (468) ==> CLASS=SPAM (468)           conf:(1)
+3. c_46=t w_to=t (379) ==> CLASS=SPAM (379)    conf:(1)
+4. c_33=t (366) ==> CLASS=SPAM (366)           conf:(1)
+5. w_cal=t (322) ==> CLASS=SPAM (322)          conf:(1)
+\end{verbatim}
+
+\subsubsection{HAM}
+
+\begin{verbatim}
+1. c_46=t (3080) ==> CLASS=HAM (3080)          conf:(1)
+2. w_i=t (2030) ==> CLASS=HAM (2030)           conf:(1)
+3. c_46=t w_i=t (1407) ==> CLASS=HAM (1407)    conf:(1)
+4. w_you=t (1350) ==> CLASS=HAM (1350)         conf:(1)
+5. c_39=t (1309) ==> CLASS=HAM (1309)          conf:(1)
+\end{verbatim}
