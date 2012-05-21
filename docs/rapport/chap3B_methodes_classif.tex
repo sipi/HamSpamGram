@@ -1,9 +1,16 @@
 \textit{L’objectif de cette étape est de générer un modèle de notre attribut CLASS en fonction des valeurs des attributs sélectionnées à l’étape précédente. En utilisant plusieurs algorithmes de classification, également vus et pas vus en cours, on a comparé leur performance sur les différents représentations obtenues à l’étape 2 selon les mesures de \og ACCURACY, PRECISION et RECALL \fg{} , afin d’en trouver le meilleur modèle.}
 
-\subsection{Description des algorithmes}
-\subsubsection {Arbre de décision - J48}
-L'algorithme de classification par arbre de décision J48 est basé principalement sur l'algorithme C4.5. Il permet entre autres, d'élaguer l'arbre généré afin de simplifier son interprétation.  
+\subsection{Description des algorithmes choisis}
+Parmi les algorithmes vus en cours, on a choisi \texttt{J48} et \texttt{Naive Bayes}. Parmi ceux proposés par WEKA, non vus en cours, on a choisi \texttt{NBTree} et \texttt{KStar}.
 
+\subsubsection {Arbre de décision - J48}
+L'algorithme de classification par arbre de décision \texttt{J48} est basé principalement sur l'algorithme C4.5. Il permet entre autres, d'élaguer l'arbre généré afin de simplifier son interprétation. Les paramètres par défaut proposés par WEKA permettant de garder cette possibilité, on a choisi de ne pas les modifier lors de l'exécution.
+\subsubsection{Naive Bayes}
+ L'algorithme de classification \texttt{Naive Bayes} génère un modèle avec la valeur qui maximise la probabilité conditionnelle de l'attribut \texttt{CLASS} sachant celle des autres attributs. Il calcule ces probabilités à l'aide du théorème de Bayes en supposant que les attributs on indépendants.
+ \subsubsection{NBTree}
+ L'algorithme de classification \texttt{NBTree} est un algorithme hybride qui combine la classification par arbre de décision avec celle de \texttt{Naive Bayes}. Plus précisément, il génère un arbre de décision qui utilise la classification par \texttt{Naive Bayes} sur les instances des feuilles de l'arbre.
+ \subsubsection{KStar}
+ L'algorithme de classification \texttt{KStar} génère une classification basée sur toutes les instances du corpus. Plus précisément, la classe de l'instance testée est basée sur celle des instances qui font partie du \og training set \fg{}, qui sont les plus \og proches \fg{} de cette instance. En particulier, KStar mesure cette distance en fonction de la mesure de l'entropie d'information entre ces instances. 
 \subsection{Mise en oeuvre}
 
 Afin d'appliquer ces quatre algorithmes sur l'ensemble des fichiers générés dans la partie 3a, nous avons décidé d'écrire un petit script bash :
@@ -14,10 +21,10 @@ Afin d'appliquer ces quatre algorithmes sur l'ensemble des fichiers générés d
 Après avoir exécuté les différents algorithmes, nous pouvons faire plusieurs remarques.
 
 \subsubsection{Sélection d'attributs}
-Nous pouvons observer, grâce aux différents seuils choisis pour l'algorithme de selection d'attributs \og Ranker \fg{}, que plus le nombre d'attributs selectionnés est grands plus le nombre de SMS mal classés est faible.
+Nous pouvons observer, grâce aux différents seuils choisis pour l'algorithme de sélection d'attributs \og Ranker \fg{}, que plus le nombre d'attributs sélectionnés est grands plus le nombre de SMS mal classés est faible.
 
 \subsubsection{Meilleur algorithme}
-    le meilleur algo semble etre NBTree
+    le meilleur algo semble être NBTree
 
 \subsubsection{Meilleur représentation des données}
     le meilleur modèle semble être le boolean 

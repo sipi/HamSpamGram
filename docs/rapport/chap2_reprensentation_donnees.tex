@@ -39,3 +39,42 @@ Le corpus peut être décrit sous trois modèles de poids :
 \end{description}
 
 L'importation des données dans \textit{WEKA} s'effectuant à partir d'un fichier au format \texttt{arff}, nous avons développé un deuxième utilitaire de conversion écrit en \texttt{langage d}\footnote{Wikipedia : \texttt{http://fr.wikipedia.org/wiki/D\_\%28langage\%29}} qui génère, à partir du fichier généré par le stemmer, trois fichiers \texttt{arff} (pour chacun des trois modèles).
+
+\subsection*{Format des attributs}
+
+Nous distinguons deux types d'attributs : le type \textit{mot} et le type \textit{caractère spécial}. Un caractère spécial est soit une ponctuation, soit un caractère dont le code ascii est supérieur à 127.
+
+
+\begin{tabular}{|l|l|l|c|}
+\hline
+\textbf{Type} & \textbf{Préfixe} & \textbf{Contenu} & \textbf{Exemples} \\
+\hline
+\textit{Mot} & \verb+w_+ & La chaîne de caractère & \begin{minipage}{2cm}
+\begin{verbatim}
+
+w_bonjour
+w_vive
+w_le
+w_master
+w_decol
+
+\end{verbatim}
+\end{minipage} \\
+\hline
+\textit{Carac. Spécial} & \verb+c_+ & \begin{minipage}{4.5cm}\begin{displaymath}\begin{cases}
+      \textrm{Code ASCII si ponctuation} \\
+      \textrm{Caractère sinon}
+\end{cases}
+\end{displaymath} 
+\end{minipage} & \begin{minipage}{2cm}
+\begin{verbatim}
+
+c_58
+c_45
+c_41
+c_£
+
+\end{verbatim}
+\end{minipage} \\
+\hline
+\end{tabular}
