@@ -2,29 +2,34 @@
 Dans un premier temps, nous avons dû constituer un corpus. Ce dernier devait être composé de documents \textbf{pouvant être distribués dans au moins deux classes}, chacune devant regrouper au moins 25 documents. Nous étions libre de choisir la langue du corpus.
 
 \section{Notre choix}
-Nous avons choisi de travailler sur le corpus \texttt{SMS Spam Corpus v.0.1}. Il comporte un ensemble de SMS en Anglais, classés en deux catégories : les \textbf{Spam} et les \textbf{Ham} (messages légitimes)\footnote{L'origine du mot Spam est \og \textbf{Sp}iced H\textbf{am} \fg{} (en Français \og Jambon épicé \fg{}), naturellement l'autre catégorie s'appelle \og Ham \fg{} (en Français \og Jambon \fg{})}.
+Nous avons choisi de travailler sur le corpus \texttt{SMS Spam Corpus v.1}. Il comporte un ensemble de SMS en Anglais, classés en deux catégories : les \textbf{Spam} et les \textbf{Ham} (messages légitimes)\footnote{L'origine du mot Spam est \og \textbf{Sp}iced H\textbf{am} \fg{} (en Français \og Jambon épicé \fg{}), naturellement l'autre catégorie s'appelle \og Ham \fg{} (en Français \og Jambon \fg{})}.
 
 Ce corpus a été créé à partir de données collectées depuis des données libres sur Internet :
 
 \begin{description}
 \item[JSC] : The \textbf{J}on \textbf{S}tevenson \textbf{C}orpus\footnote{JSC diponible à l'adresse suivante : \texttt{http://www.demo.inty.net/Units/SMS/corpus.htm}} est composé de 202 textes correspondant à des SMS légitimes.
-\item[NSC] : The NUS SMS Corpus\footnote{NSC disponible à l'adresse suivante : \texttt{http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/}} contient environ \nombre{10000} SMS légitimes collectés pour des projets de recherche au département informatique de l'Université de Singapour.
-\item[Grumbletext WebSite] : 322 Spam SMS extraits manuellement depuis le site web \texttt{Grumbletext}. Il s'agit d'un forum Anglais sur lequel les utilisateurs dénoncent les SPAM SMS qu'ils reçoivent.
+\item[NSC] : The NUS SMS Corpus\footnote{NSC disponible à l'adresse suivante : \texttt{http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/}} contient environ \nombre{10000} SMS légitimes collectés pour des projets de recherche au département informatique de l'Université de Singapour. \nombre{3375} SMS ont été extrait aléatoirement de ce corpus.
+\item[Grumbletext WebSite] : 425 Spam SMS extraits manuellement depuis le site web \texttt{Grumbletext}. Il s'agit d'un forum Anglais sur lequel les utilisateurs dénoncent les SPAM SMS qu'ils reçoivent.
+\item[Thèse de Caroline Tagg] 450 SMS légitimes extraits de cette thèse.
+\item[Corpus SMS Spam Corpus v.0.1] 1002 Ham et 322 Spam récupérés à partir de la version 0.1 de ce corpus.
 \end{description}
 
 \subsection*{Volume de données}
 
-Le \texttt{SMS Spam Corpus c.0.1} se décline en deux versions : 
-
-\nopagebreak
-\begin{tabular}{p{3cm} p{4cm} p{4cm}}
- & Ham & Spam \\
-\textbf{Small} & 1002 & 82 \\
-\textbf{Big} & 1002 & 322 \\
-\end{tabular}
-
-Nous utiliserons pour ce travail la version \textit{Big}.
+Au total, le \texttt{SMS Spam Corpus v.1} contient \textbf{5574} SMS, distribués dans les deux classes à raison de \textbf{747} Spam et \textbf{4827} Ham.
 
 \subsection*{Format des données}
 
-Les données sont fournies sous la forme de deux fichiers texte : un pour chaque version (\textit{Small} et \textit{Big}). Les fichiers contiennent un SMS par ligne. Chaque ligne finit par un tag \og ham \fg{} ou \og spam \fg{} séparé par une virgule signifiant l'appartenance du SMS à leur classe respective.
+Les données sont fournies sous la forme de deux fichiers texte : un pour chaque version (\textit{Small} et \textit{Big}). Les fichiers contiennent un SMS par ligne. Chaque ligne débute  par un tag \og ham \fg{} ou \og spam \fg{} signifiant l'appartenance du SMS à leur classe respective. Ces tags sont séparés par une tabulation du texte du SMS.
+
+Extrait du fichier :
+
+\begin{verbatim}
+ham   What you doing?how are you?
+ham   Ok lar... Joking wif u oni...
+spam  Sunshine Quiz! Win a super Sony DVD recorder if you canname 
+the capital of Australia? Text MQUIZ to 82277. B
+spam  URGENT! Your Mobile No 07808726822 was awarded a L2,000 Bonus 
+Caller Prize on 02/09/03! This is our 2nd attempt to contact YOU! 
+Call 0871-872-9758 BOX95QU
+\end{verbatim}

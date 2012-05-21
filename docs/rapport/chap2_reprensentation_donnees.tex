@@ -1,9 +1,9 @@
 \section{Stemmatisation du corpus}
 Avant d'effectuer la génération des fichiers \texttt{arff} à importer dans \textit{WEKA}, le corpus a été stemmatisé\footnote{Stemmatisé $=$ Racinisé}. Dans le but de découvrir de nouveaux outils, nous avons fait le choix de développer un utilitaire de conversion en python basé sur les stemmer  inclus dans la librairie \textit{NLP Toolkit}. Il permet, à partir du corpus brut décrit dans la partie~\vref{chap1}, de générer un nouveau fichier contenant le même corpus stemmatisé.
 
-Plusieurs algorithmes de stemmatisation sont fournis par cette librairie. Nous avions le choix entre trois algorithmes : \textit{Porter}, \textit{snowball} et \textit{lancaster}.
+Plusieurs algorithmes de stemmatisation sont fournis par cette librairie. Nous étudié trois algorithmes : \textit{Porter}, \textit{snowball} et \textit{lancaster}.
 
-Nous avons procédé en deux temps pour évaluer les différents algorithmes. Dans un premier temps, nous avons créé un ensemble de termes pertinents qui nous a permit d'observer l'agressivité de la stemmatisation. Ensuite, nous avons appliqué les différents algorithmes à notre corpus afin de comparer le nombre de racines distinctes après exécution de chaque algorithme.
+L'étude des algorithme s'est effectuée en deux temps. Tout d'abord nous avons listé un ensemble de termes pertinents qui nous a permit d'observer l'agressivité de la stemmatisation. Ensuite, nous avons appliqué les différents algorithmes à notre corpus afin de comparer le nombre de racines distinctes après exécution de chaque algorithme.
 
 Le tableau suivant présente quelques termes de notre ensemble de test, ainsi que les statistiques obtenues après exécution des stemmer sur notre corpus.
 
