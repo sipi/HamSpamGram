@@ -19,10 +19,6 @@ Paramètres de l'algorithme :
 
 La méthode d'évaluation \texttt{CfsSubsetEval} évalue les sous-ensembles d'attributs générés par la mesure de dépendance entre les attributs.
 
-\textbf{Résultats du test}
-
-// TODO clem include weka output
-
 \subsubsection{GreedyStepwise -- CfsSubsetEval}
 
 La méthode \texttt{GreedyStepwise} examine l'espace de recherche par l'heuristique \og greedy \fg{}. Pour ce test, nous avons choisi de commencer avec un ensemble d'attributs vide, de procéder par recherche en avant et de ne pas générer de \og ranking \fg{} sur nos attributs.
@@ -35,11 +31,6 @@ Paramètres de l'algorithme :
 \end{description}
 
 La méthode d'évaluation utilisée est la même que pour \texttt{BestFirst} : \texttt{CfsSubsetEval}.
-
-\textbf{Résultats du test}
-
-//TODO include weka output
-
 
 \subsubsection{LinearForwardSelection -- CfsSubsetEval}
 
@@ -54,11 +45,6 @@ Paramètres de l'algorithme :
 \end{description}
 
 La méthode d'évaluation utilisée est la même que pour \texttt{BestFirst} : \texttt{CfsSubsetEval}.
-
-\textbf{Résultats du test}
-
-//TODO include weka output
-
 
 \subsubsection{Ranker -- InfoGainAttributeEval}
 
@@ -76,10 +62,6 @@ La méthode d'évaluation utilisée, \texttt{InfoGainAttributeEval}, évalue les
 \begin{equation*}
 InfoGain(Classe,Attribut) = H(Classe) - H(Classe|Attribut)
 \end{equation*}
-
-\textbf{Résultats du test}
-
-//TODO include weka output
 
 \textbf{Variation du seuil}
 
