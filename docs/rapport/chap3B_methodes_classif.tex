@@ -25,15 +25,36 @@ Afin d'appliquer ces quatre algorithmes sur l'ensemble des fichiers générés d
 Après avoir exécuté les différents algorithmes, nous pouvons faire plusieurs remarques.
 
 \subsubsection{Sélection d'attributs}
-Nous pouvons observer, grâce aux différents seuils choisis pour l'algorithme de sélection d'attributs \og Ranker \fg{}, que plus le nombre d'attributs sélectionnés est grand plus le nombre de SMS mal classés est faible.
+Nous pouvons observer, grâce aux différents seuils choisis pour l'algorithme de sélection d'attributs \og Ranker \fg{}, que plus le nombre d'attributs sélectionnés est grand plus le taux d'erreur de classification est faible, et ce, quelque soit l'algorithme de classification utilisé. Ce comportement était cependant prévisibleau vue de la perte d'information engendrée par la suppression de dimensions. Il est donc important de trouver le bon rapport entre la taille nécessaire à la représentation des données et la qualité de la classification.  
 
 \subsubsection{Meilleur algorithme}
-    le meilleur algo semble être NBTree
+
+Le tableau ci-dessous présente le taux d'erreur de classification des différents algorithme appliqué sur le corpus représenté à l'aide du modèle booléen et filtré par l'algorithme \texttt{Ranker} avec un \texttt{threshold} de $0.005$.
+
+\begin{tabular}{l c} 
+\textbf{Algorithme} & \textbf{Taux d'erreur}\\
+J48 & 2.24\\
+KStar & 3.21\\
+NaivesBayes & 1.56\\
+NBTree & 1.35\\
+\end{tabular}
+
+Clairement \texttt{NBTree} présentent le taux d'erreur de classification le plus faible. Bien que n'étant pas présenté ici, nos tests nous on montrés que ce résultats reste valable quelque soit le modèle de représentation des données  et la méthode de filtrage.
 
 \subsubsection{Meilleur représentation des données}
-    le meilleur modèle semble être le boolean 
 
-    l'algo KStar a une bonne précision sur les SPAM (très peu de ham classé comme SPAM)
+Le tableau ci-dessous présente le taux d'erreur pour chaque modèle avec \texttt{NBTree}.
+
+\begin{tabular}{l c} 
+\textbf{Modèle} & \textbf{Taux d'erreur}\\
+Boolean & 1.35\\
+TF & 1.56\\
+TFIDF & 1.56\\
+\end{tabular}
+
+Nous pouvons constater un léger avantage pour le modèle booléen. 
+
+%    l'algo KStar a une bonne précision sur les SPAM (très peu de ham classé comme SPAM)
 
 
 
