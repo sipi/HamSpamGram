@@ -86,11 +86,12 @@ InfoGain(Classe,Attribut) = H(Classe) - H(Classe|Attribut)
 \begin{center}
 \begin{tabular}{c c}
 \textbf{threshold} & \textbf{Nb attributs}\\
-\nombre{0.005} & 180\\
-\nombre{0.01} & 85\\
-\nombre{0.02} & 38\\
-\nombre{0.03} & 20\\
-\nombre{0.05} & 11\\
+\nombre{0.005} & 356\\
+\nombre{0.01} & 184\\
+\nombre{0.02} & 90\\
+\nombre{0.03} & 57\\
+\nombre{0.04} & 37\\
+\nombre{0.05} & 30\\
 \end{tabular}
 \end{center}
 
@@ -106,17 +107,13 @@ L'étude des résultats des tests nous a permis de distinguer deux ensembles d'a
 Les résultats obtenus par les algorithmes utilisant l'évaluation par mesure de dépendance, notamment \texttt{BestFirst}, \texttt{GreedyStepwise}, \texttt{LinearForwardSelection} avec \texttt{CfsSubsetEval}, étaient tous identiques. La différence entre ces algorithmes était visible dans leur temps d'exécution.   
 
 Notons également la rapidité des algorithmes utilisant l'évaluation par mesure de gain d'information, comme \texttt{Ranker} avec \texttt{InfoGainAttributeEval}.
+
+
 \subsection{Nos choix}
 
-Cette étude préalable nous a permis de conclure que :
+Nous avons décidé d'appliquer différentes méthodes de sélection d'attributs sur notre corpus complet afin de pouvoir comparer les résultats que nous obtiendrons après l'étape de classification. Les méthodes choisies sont les suivantes : 
 
-\begin{itemize}
-	\item l'ensemble d'attributs après réduction diffère selon la méthode d'évaluation,
-	\item le temps d'exécution des algorithmes diffère selon la méthode de recherche.
-\end{itemize}
-
-Nous avons donc choisi un algorithme par méthode d'évaluation : 
 \begin{enumerate}
-\item \texttt{GreedyStepwise} + \texttt{CfsSubsetEval} (parmi les plus rapides des méthodes testés)
-\item \texttt{Ranker}
+\item Un alghorithme parmi ceux utilisant la méthode d'évaluation \texttt{CfsSubsetEval}, en l'occurence \texttt{GreedyStepwise} car plutôt rapide.
+\item l'algorithme \texttt{Ranker} en faisant varier le paramètre \og threshold \fg{}.
 \end{enumerate}
