@@ -1,5 +1,5 @@
 
-Pour l'extraction des règles d'association, on s'est servi de la représentation booléenne de notre corpus. On a réalisé cette extraction à l'aide de l'algorithme APRIORI proposé par WEKA. Le format exigé par \texttt{Apriori} pour les données booléennes étant 
+Pour l'extraction des règles d'association, on s'est servi de la représentation booléenne de notre corpus. On a réalisé cette extraction à l'aide de l'algorithme APRIORI proposé par WEKA. Cet algorithme, comme vu en cours, a pour but de réduire le nombre de itemsets candidats en minimisant itérativement le support de ces candidats. Pour exécuter correctement cet algorithme, le format exigé par WEKA pour les données booléennes est : 
 
 \begin{displaymath}
 \begin{cases}
@@ -7,7 +7,7 @@ Pour l'extraction des règles d'association, on s'est servi de la représentatio
       1 \mapsto t
 \end{cases},
 \end{displaymath} 
-Nous avons modifié notre fichier \texttt{.arff} afin de le mettre au format adéquat. 
+Nous avons donc modifié notre fichier \texttt{.arff} afin de le mettre au format adéquat. 
 
 
 
