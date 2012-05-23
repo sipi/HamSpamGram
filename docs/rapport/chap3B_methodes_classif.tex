@@ -31,13 +31,17 @@ Nous pouvons observer, grâce aux différents seuils choisis pour l'algorithme d
 
 Le tableau ci-dessous présente le taux d'erreur de classification des différents algorithmes appliqués sur le corpus représenté à l'aide du modèle booléen et filtré par l'algorithme \texttt{Ranker} avec un \texttt{threshold} de $0.005$.
 
-\begin{tabular}{l c} 
-\textbf{Algorithme} & \textbf{Taux d'erreur}\\
-J48 & 2.24\\
-KStar & 3.21\\
-NaivesBayes & 1.56\\
-NBTree & 1.35\\
+\begin{tabular}{l cccc} 
+\hline
+\textbf{Algorithme} & \textbf{Taux d'erreur} & \textbf{Précision*} & \textbf{Rappel*} & \textbf{F-mesure*}\\
+\hline
+J48 & 2.24 & 0.977 & 0.978 & 0.977\\
+KStar & 3.21 & 0.969 & 0.968 & 0.966\\
+NaivesBayes & 1.56 & 0.984 & 0.984 & 0.984\\
+NBTree & 1.35 & 0.987 & 0.987 & 0.986\\
 \end{tabular}
+
+\textbf{*}\textit{Moyenne pondérée}
 
 Clairement \texttt{NBTree} présente le taux d'erreur de classification le plus faible. Bien que n'étant pas présenté ici, nos tests nous on montrés que ce résultats reste valable quelque soit le modèle de représentation des données  et la méthode de filtrage.
 
@@ -45,12 +49,16 @@ Clairement \texttt{NBTree} présente le taux d'erreur de classification le plus 
 
 Le tableau ci-dessous présente le taux d'erreur pour chaque modèle avec \texttt{NBTree}.
 
-\begin{tabular}{l c} 
-\textbf{Modèle} & \textbf{Taux d'erreur}\\
-Boolean & 1.35\\
+\begin{tabular}{l cccc} 
+\hline
+\textbf{Modèle} & \textbf{Taux d'erreur}& \textbf{Précision*} & \textbf{Rappel*} & \textbf{F-mesure*}\\
+\hline
+Boolean & 1.35 & 0.987 & 0.987 & 0.986\\
 TF & 1.56\\
 TFIDF & 1.56\\
 \end{tabular}
+
+\textbf{*}\textit{Moyenne pondérée}
 
 Nous pouvons constater un léger avantage pour le modèle booléen. 
 
