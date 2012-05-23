@@ -39,6 +39,12 @@ Relative absolute error                 14.4934 %
 Root relative squared error             49.5681 %
 Total Number of Instances             5574     
 
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.763     0          0.997     0.763     0.864      0.975    SPAM
+                 1         0.237      0.965     1         0.982      0.975    HAM
+Weighted Avg.    0.968     0.205      0.969     0.968     0.966      0.975
 
 === Confusion Matrix ===
 
