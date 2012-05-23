@@ -1,0 +1,58 @@
+\subsection{Choix des algorithmes}
+\begin{frame}
+  \begin{block}{Choix des algorithmes}
+    \begin{itemize}
+    \item J48
+    \item NaiveBayes
+    \item NBTree
+    \item KStar
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\subsection{Mise en oeuvre}
+\begin{frame}{Méthodes de classification}{Mise en oeuvre}
+  \lstinputlisting[language=bash]{files/script.sh}
+\end{frame}
+
+\subsection{Résultats}
+\begin{frame}{Méthodes de classification}{Résultats}
+
+  Résultats par alghorithme de classification
+
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{l cccc} 
+      \hline
+      \textbf{Algorithme} & \textbf{Taux d'erreur} & \textbf{Précision*} & \textbf{Rappel*} & \textbf{F-mesure*}\\
+      \hline
+      J48 & 2.24 & 0.977 & 0.978 & 0.977\\
+      KStar & 3.21 & 0.969 & 0.968 & 0.966\\
+      NaivesBayes & 1.56 & 0.984 & 0.984 & 0.984\\
+      NBTree & 1.35 & 0.987 & 0.987 & 0.986\\
+    \end{tabular}
+  \end{center}    
+    \scriptsize\textbf{*}\textit{Moyenne pondérée}
+
+\end{frame}
+
+
+\begin{frame}{Méthodes de classification}{Résultats}
+  
+  Résultats par type de représentation des données
+  
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{l cccc} 
+      \hline
+      \textbf{Modèle} & \textbf{Taux d'erreur}& \textbf{Précision*} & \textbf{Rappel*} & \textbf{F-mesure*}\\
+      \hline
+      Boolean & 1.35 & 0.987 & 0.987 & 0.986\\
+      TF      & 1.56 & 0.984 & 0.984 & 0.984\\
+      TFIDF   & 1.56\\
+    \end{tabular}
+  \end{center}    
+    \scriptsize\textbf{*}\textit{Moyenne pondérée}
+
+  
+\end{frame}
