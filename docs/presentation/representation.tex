@@ -1,0 +1,74 @@
+\subsection{Stemmatisation}
+\begin{frame}{Représentation des données}{Stemmatisation}
+\begin{tabular}{l l l l}
+\texttt{NLPToolkit} $\Rightarrow$ & \textbf{Porter}	& \textbf{Snowball}	& \textbf{Lancaster} \\
+\hline
+\uncover<2->{Mot 'win'}		& \uncover<2->{'win'}	& \uncover<2->{'win'}	& \uncover<2->{'win'} \\
+\uncover<2->{Mot 'winner'}	& \uncover<2->{'winner'}& \uncover<2->{'winner'}& \uncover<2->{'win'} \\
+\uncover<2->{Mot 'wing'}	& \uncover<2->{'wing'}	& \uncover<2->{'wing'}	& \uncover<2->{'wing'} \\
+
+\hline
+\uncover<3->{Mot 'react'}		& \uncover<3->{'react'}		& \uncover<3->{'react'}		& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reacts'}		& \uncover<3->{'react'}		& \uncover<3->{'react'}		& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reacting'}	& \uncover<3->{'react'}		& \uncover<3->{'react'}		& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reaction'}	& \uncover<3->{'reaction'}	& \uncover<3->{'reaction'}	& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reactions'}	& \uncover<3->{'reaction'}	& \uncover<3->{'reaction'}	& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reactive'}	& \uncover<3->{'reactiv'}	& \uncover<3->{'reactiv'}	& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reactivity'}	& \uncover<3->{'reactiv'}	& \uncover<3->{'reactiv'}	& \uncover<3->{'react'} \\
+\uncover<3->{Mot 'reactant'}	& \uncover<3->{'reactant'}	& \uncover<3->{'reactant'}	& \uncover<3->{'react'} \\
+
+
+\hline
+\hline
+
+\uncover<4->{Stats corpus} 	& \uncover<4->{2931}& \uncover<4->{2932}& \uncover<4->{2878} \\
+
+\end{tabular}
+\end{frame}
+
+\subsection{Conversion $\Rightarrow$ \texttt{arff}}
+\begin{frame}[containsverbatim]{Représentation des données}{Conversion $\Rightarrow$ \texttt{arff}}
+\begin{block}{}
+	\begin{itemize}
+		\item Modèle booléen
+		\item Modèle fréquentiste (TF)
+		\item Modèle TF-IDF
+	\end{itemize}
+\end{block}
+\begin{block}{}
+\scriptsize
+\begin{tabular}{|l|l|l|c|}
+\hline
+\textbf{Type} & \textbf{Préfixe} & \textbf{Contenu} & \textbf{Exemples} \\
+\hline
+\textit{Mot} & \verb+w_+ & La chaîne de caractère & \begin{minipage}{2cm}
+\begin{verbatim}
+
+w_bonjour
+w_vive
+w_le
+w_master
+w_decol
+
+\end{verbatim}
+\end{minipage} \\
+\hline
+\textit{Carac. Spécial} & \verb+c_+ & \begin{minipage}{4.5cm}\begin{displaymath}\begin{cases}
+      \textrm{Code ASCII si ponctuation} \\
+      \textrm{Caractère sinon}
+\end{cases}
+\end{displaymath} 
+\end{minipage} & \begin{minipage}{2cm}
+\begin{verbatim}
+
+c_58
+c_45
+c_41
+c_£
+
+\end{verbatim}
+\end{minipage} \\
+\hline
+\end{tabular}
+\end{block}
+\end{frame}
