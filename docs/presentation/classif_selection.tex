@@ -1,30 +1,29 @@
-\begin{frame} {Sélection d'attributs}
-	\begin{itemize}
-		\item Déterminer un sous-ensemble d'attributs pertinents 
-		\pause
-		\itemÉtude préalable sur corpus léger : 322 SPAM + 1002 HAM
-		\pause
-		\item Tests sur méthodes de recherche + méthode d'évaluation
-	\end{itemize}
-\end{frame}
-
 \subsection{Etude préalable}
-\begin{frame} {Etude préalable}{Tests}
+\begin{frame} {Etude préalable}{Tests d'algorithmes de sélection d'attributs}
 	\begin{itemize}
-		\item BestFirst+ CfsSubsetEval
+		\item Étude préalable sur corpus léger : 322 SPAM + 1002 HAM
 		\pause
-		\item GreedyStepwise + CfsSubsetEval
+		\item Recherche par heuristique + Evaluation par mesure de dépendance
 		\pause
-		\item LinearForwardSelection+ CfsSubsetEval
+		\begin{itemize}
+			\item BestFirst + CfsSubsetEval
+			\item GreedyStepwise + CfsSubsetEval
+			\item LinearForwardSelection + CfsSubsetEval
+		\end{itemize}
 		\pause
-		\item Ranker + InfoGainAttributeEval
+		\item Recherche par classification + Evaluation par mesure d'information
+		\begin{itemize}
+			\item Ranker + InfoGainAttributeEval
+		\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Etude préalable} {Test 4 : Ranker + InfoGainAttributeEval}
-\textbf{Paramètres : Variation du seuil}
+\begin{frame}{Etude préalable} {Ranker + InfoGainAttributeEval}
+\textbf{Variation du seuil}
 	\begin{center}
 		\begin{tabular}{c c}
-			\textbf{threshold} & \textbf{Nb attributs}\\
+			\hline
+			\textbf{Threshold} & \textbf{Nb. attributs}\\
+			\hline
 			\nombre{0.005} & 356\\
 			\nombre{0.01} & 184\\
 			\nombre{0.02} & 90\\
@@ -35,13 +34,13 @@
 	\end{center}
 \end{frame}
 
-\subsection{Discussion}
-\begin {frame}{Étude préalable} {Discussion}
+\subsection{Résultats de l'étude}
+\begin {frame}{Étude préalable} {Résultats}
 Deux ensembles d'attributs distincts : 
-	\begin{itemize}
-		\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{CfsSubsetEval}
-		\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{InfoGainAttributeEval}
-	\end{itemize}
+	\begin{enumerate}
+		\item Généré par \texttt{CfsSubsetEval}
+		\item Généré par \texttt{InfoGainAttributeEval}
+	\end{enumerate}
 \end{frame}
 
 \subsection{Nos choix}
