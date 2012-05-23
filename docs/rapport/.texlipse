@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat May 19 10:43:41 CEST 2012
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=rapport_weka.tex
+outputFile=rapport_weka.pdf
+langSpell=fr
+markDer=true
+srcDir=
