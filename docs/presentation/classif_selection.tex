@@ -1,15 +1,73 @@
-\begin{frame}{Sélection d'attributs}{???}
-  
-  \begin{itemize}
-  \item GreedyStepwise
-  \item Ranker 
-    \begin{itemize}
-    \item \nombre{0.005}
-    \item \nombre{0.1}
-    \item \nombre{0.2}
-    \item \nombre{0.3}
-    \item \nombre{0.4}
-    \item \nombre{0.5}
-    \end{itemize}
-  \end{itemize}
+\begin{frame} {Sélection d'attributs}
+	\begin{itemize}
+		\item Déterminer un sous-ensemble d'attributs pertinents 
+		\itemÉtude préalable sur corpus léger : 322 SPAM + 1002 HAM
+		\item Tests sur méthodes de recherche + méthode d'évaluation
+	\end{itemize}
+\end{frame}
+
+\subsection{Etude préalable}
+\begin{frame} {Etude préalable : Tests}
+	\begin{itemize}
+		\item BestFirst+ CfsSubsetEval
+		\pause
+		\item GreedyStepwise + CfsSubsetEval
+		\pause
+		\item LinearForwardSelection+ CfsSubsetEval
+		\pause
+		\item Ranker + InfoGainAttributeEval
+	\end{itemize}
+\end{frame}
+
+\begin{frame} {BestFirst + CfsSubsetEval}
+	\begin{itemize}
+		\item Ensemble de départ = phi , Direction = Forward
+		\item Paramètres de l'algorithme : 
+			\begin{itemize}
+				\item[direction] = Forward
+				\item[startSet] = (vide)
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{description}
+	\item[threshold] = \nombre{0.005}
+	\item[threshold] = \nombre{0.01}
+	\item[threshold] = \nombre{0.02}
+	\item[threshold] = \nombre{0.03}
+	\item[threshold] = \nombre{0.05}
+\end{description}
+
+\textbf{Variation du seuil}
+
+\begin{center}
+	\begin{tabular}{c c}
+		\textbf{threshold} & \textbf{Nb attributs}\\
+		\nombre{0.005} & 356\\
+		\nombre{0.01} & 184\\
+		\nombre{0.02} & 90\\
+		\nombre{0.03} & 57\\
+		\nombre{0.04} & 37\\
+		\nombre{0.05} & 30\\
+	\end{tabular}
+\end{center}
+\end{frame}
+
+\subsection{Discussion}
+\begin {frame}{Étude préalable -- Discussion}
+Deux ensembles d'attributs distincts : 
+	\begin{itemize}
+		\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{CfsSubsetEval}
+		\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{InfoGainAttributeEval}
+	\end{itemize}
+\end{frame}
+
+\subsection{Nos choix}
+\begin {frame} {Nos choix}
+	\begin{itemize}
+		\item \texttt{GreedyStepwise} car plutôt rapide.
+		\pause
+		\item \texttt{Ranker} en faisant varier le paramètre \og threshold \fg{}.
+	\end{itemize}
 \end{frame}
