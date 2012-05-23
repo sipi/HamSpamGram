@@ -1,0 +1,36 @@
+\begin{frame}{Clustering}{Modèle booléen}
+\begin{center}
+	\begin{tabular}{l||c|c}
+	Cluster & \textbf{c0} (Ham) & \textbf{c1} (noClass)\\
+	\hline
+	\hline
+	Spam & \nombre{652} & \nombre{95} \\
+	\hline
+	Ham & \nombre{3699} & \nombre{1128} \\
+	\hline
+	\% Spam & \nombre{18} & \nombre{8} \\
+	\end{tabular}
+\end{center}
+
+$\Rightarrow$ Taux d'erreur : 30\%
+\end{frame}
+
+\begin{frame}{Clustering}{Modèle TF -- TF-IDF}
+
+\begin{center}
+	\begin{tabular}{l||c|c}
+	Cluster & \textbf{c0} (Ham) & \textbf{c1} (noClass) \\
+	\hline
+	\hline
+	Spam & \nombre{747} & \nombre{0} \\
+	\hline
+	Ham & \nombre{4806} & \nombre{21} \\
+	\hline
+	\% Spam & \nombre{16} & \nombre{0} \\
+	\end{tabular}
+\end{center}
+
+$\Rightarrow$ Taux d'erreur : 14\%
+
+\textit{Résultats identiques entre TF et TF-IDF}
+\end{frame}
