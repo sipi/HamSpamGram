@@ -1,1 +1,38 @@
 Nous avons utilisé l'algorithme de clustering \texttt{K-means} sur les 3 types de représentation générées lors de l'étape 2. Cet algorithme génère des partitions qui minimisent la somme des distances d'instances présents dans un cluster. Dans notre projet, le nombre de clusters est bien évidemment 2.    
+
+Voici les résultats de quelques tests : 
+\begin{enumerate}
+	\item \textbf{Modèle booléen}
+	
+	\begin{center}
+		\begin{tabular}{l||c|c}
+			Cluster & $C_0$ (HAM) & $C_1$ (SPAM)\\
+			\hline
+			\hline
+			Spam & \nombre{652} & \nombre{95} \\
+			\hline
+			Ham & \nombre{3699} & \nombre{1128} \\
+			\hline
+			\% Spam & \nombre{18} & \nombre{8} \\
+		\end{tabular}
+		$\Rightarrow$ Taux d'erreur : 30\%
+	\end{center}
+
+	\item \textbf{Modèles TF et TF-IDF} (résultats identiques)
+	
+	\begin{center}
+		\begin{tabular}{l||c|c}
+			Cluster  & $C_0$ (HAM) & $C_1$ (No class)\\
+			\hline
+			\hline
+			Spam & \nombre{747} & \nombre{0} \\
+			\hline
+			Ham & \nombre{4806} & \nombre{21} \\
+			\hline
+			\% Spam & \nombre{16} & \nombre{0} \\
+		\end{tabular}
+		$\Rightarrow$ Taux d'erreur : 30\%
+	\end{center}
+\end{enumerate}
+
+Comme ces résultats le montrent très clairement, l'approche non-supervisée n'est pas appropriée pour notre corpus. 
