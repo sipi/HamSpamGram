@@ -11,5 +11,6 @@
 *.texshop
 *.pdf
 *.snm
+*.dvi
 
 *.nav
