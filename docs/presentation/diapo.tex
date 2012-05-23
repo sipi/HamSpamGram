@@ -1,0 +1,115 @@
+\documentclass{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage{hyperref}
+\usepackage[footheight=1em]{beamerthemeboxes}
+\usepackage{listings}
+\usepackage{ulem}
+\usepackage{color}
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=left}
+\usetheme{Singapore}
+
+
+\setbeamertemplate{footline}{
+\leavevmode%
+\hbox{
+\hspace*{-0.06cm}
+\begin{beamercolorbox}[wd=.8\paperwidth,dp=1ex,left]{section in head/foot}%
+	\usebeamerfont{section in head/foot}
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+	\insertframenumber{}\hspace*{2ex}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+%\usetheme{Frankfurt}
+
+
+%\addfootboxtemplate{\color{white}}{\color{gray}
+  %\insertframenumber/\inserttotalframenumber\null}
+
+
+
+\setbeamertemplate{background canvas}{\includegraphics
+   [width=\paperwidth,height=\paperheight]{files/fond.png}}
+
+
+\title{HamSpamGram}
+\author{Thibaut \textsc{Marmin} \and Namrata \textsc{Patel} \\ Clément \textsc{Sipieter}}
+\institute{TP WEKA : fouille de données basée sur un corpus de SMS Spam.\\\texttt{https ://github.com/sipi/HamSpamGram}}
+\date{24 Mai 2012}
+
+\begin{document}
+
+% Def variable coloration code source
+\definecolor{keyword}{rgb}{0.55,0,0} 
+\definecolor{type}{rgb}{0,0.55,0} 
+\definecolor{comment}{rgb}{0.7,0.7,0.7} 
+
+\lstset{
+basicstyle=\footnotesize\sffamily,
+numbers=none,
+numberstyle=\footnotesize\color{comment},
+keywordstyle=\color{keyword}\bfseries,
+commentstyle=\color{comment},
+breaklines=true,
+fontadjust=true,
+columns=fullflexible,
+morekeywords=true
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}{HamSpamGram}
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \tableofcontents[sections={1-3},currentsection,hideothersubsections]
+  \end{column}
+  \begin{column}{5cm}
+  \tableofcontents[sections={4-6},currentsection,hideothersubsections]
+  \end{column}
+  \end{columns}
+  \end{frame}
+}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{HamSpamGram}
+    
+
+  \begin{columns}[t]
+  \begin{column}{5cm}
+  \tableofcontents[sections={1-3},hideallsubsections]
+  \end{column}
+  \begin{column}{5cm}
+  \tableofcontents[sections={4-6},hideallsubsections]
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+\section{Choix du corpus}
+\input{corpus}
+
+\section{Représentation des données}
+\input{representation}
+
+\section{Classification -- Sélection attributs}
+\input{classif_selection}
+
+\section{Classification -- Méthodes}
+\input{classif_methodes}
+
+\section{Règles d'association}
+\input{regles}
+
+\section{Clustering}
+\input{clustering}
+
+\end{document}
