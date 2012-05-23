@@ -1,13 +1,15 @@
 \begin{frame} {Sélection d'attributs}
 	\begin{itemize}
 		\item Déterminer un sous-ensemble d'attributs pertinents 
+		\pause
 		\itemÉtude préalable sur corpus léger : 322 SPAM + 1002 HAM
+		\pause
 		\item Tests sur méthodes de recherche + méthode d'évaluation
 	\end{itemize}
 \end{frame}
 
 \subsection{Etude préalable}
-\begin{frame} {Etude préalable : Tests}
+\begin{frame} {Etude préalable}{Tests}
 	\begin{itemize}
 		\item BestFirst+ CfsSubsetEval
 		\pause
@@ -19,43 +21,56 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame} {BestFirst + CfsSubsetEval}
-	\begin{itemize}
-		\item Ensemble de départ = phi , Direction = Forward
-		\item Paramètres de l'algorithme : 
-			\begin{itemize}
-				\item[direction] = Forward
-				\item[startSet] = (vide)
-			\end{itemize}
-	\end{itemize}
+\begin{frame} {Etude préalable}{Test 1 : BestFirst + CfsSubsetEval}
+\textbf{Paramètres :}
+	\begin{center}
+		\begin{tabular}{l cc}
+			\textbf{direction} & Forward \\
+			\textbf{startSet} & (vide) \\
+		\end{tabular}
+	\end{center}
 \end{frame}
 
-\begin{frame}
-\begin{description}
-	\item[threshold] = \nombre{0.005}
-	\item[threshold] = \nombre{0.01}
-	\item[threshold] = \nombre{0.02}
-	\item[threshold] = \nombre{0.03}
-	\item[threshold] = \nombre{0.05}
-\end{description}
+\begin{frame}{Etude préalable} {Test 2 : GreedyStepwise + CfsSubsetEval}
+\textbf{Paramètres :}
+	\begin{center}
+		\begin{tabular} {l cc}
+				\textbf{generateRanking} & False \\
+				\textbf{searchBackwards} & False \\
+				\textbf{startSet} & (vide)\\
+		\end{tabular}
+	\end{center}
+\end{frame}
 
-\textbf{Variation du seuil}
+\begin{frame}{Etude préalable} {Test 3 : LinearForwardSelection + CfsSubsetEval}
+\textbf{Paramètres :}
+	\begin{center}
+		\begin{tabular} {l cc}
+			\textbf{forwardSelectionMethod} & False \\
+			\textbf{numUsedAttributes} & False \\
+			\textbf{performRanking} & True \\
+			\textbf{startSet} & (vide) \\
+		\end{tabular}	
+	\end{center}
+\end{frame}
 
-\begin{center}
-	\begin{tabular}{c c}
-		\textbf{threshold} & \textbf{Nb attributs}\\
-		\nombre{0.005} & 356\\
-		\nombre{0.01} & 184\\
-		\nombre{0.02} & 90\\
-		\nombre{0.03} & 57\\
-		\nombre{0.04} & 37\\
-		\nombre{0.05} & 30\\
-	\end{tabular}
-\end{center}
+\begin{frame}{Etude préalable} {Test 4 : Ranker + InfoGainAttributeEval}
+\textbf{Paramètres : Variation du seuil}
+	\begin{center}
+		\begin{tabular}{c c}
+			\textbf{threshold} & \textbf{Nb attributs}\\
+			\nombre{0.005} & 356\\
+			\nombre{0.01} & 184\\
+			\nombre{0.02} & 90\\
+			\nombre{0.03} & 57\\
+			\nombre{0.04} & 37\\
+			\nombre{0.05} & 30\\
+		\end{tabular}
+	\end{center}
 \end{frame}
 
 \subsection{Discussion}
-\begin {frame}{Étude préalable -- Discussion}
+\begin {frame}{Étude préalable} {Discussion}
 Deux ensembles d'attributs distincts : 
 	\begin{itemize}
 		\item celui généré par les algorithmes utilisant la méthode d'évaluation \texttt{CfsSubsetEval}
@@ -66,8 +81,9 @@ Deux ensembles d'attributs distincts :
 \subsection{Nos choix}
 \begin {frame} {Nos choix}
 	\begin{itemize}
-		\item \texttt{GreedyStepwise} car plutôt rapide.
-		\pause
-		\item \texttt{Ranker} en faisant varier le paramètre \og threshold \fg{}.
+		\item \sout{BestFirst+ CfsSubsetEval}
+		\item \textbf{GreedyStepwise + CfsSubsetEval}
+		\item \sout{LinearForwardSelection+ CfsSubsetEval}
+		\item \textbf{Ranker + InfoGainAttributeEval} en faisant varier le paramètre \og threshold \fg{}.
 	\end{itemize}
 \end{frame}
