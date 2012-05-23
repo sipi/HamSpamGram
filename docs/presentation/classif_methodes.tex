@@ -2,23 +2,53 @@
 \begin{frame}
   \begin{block}{Choix des algorithmes}
     \begin{itemize}
-    \item J48
-    \item NaiveBayes
-    \item NBTree
-    \item KStar
+    \item \textbf{J48} - Arbre de décision
+    \item \textbf{NaiveBayes} - Basé sur les probabilités 
+    \item \textbf{KStar} - Basé sur la proximité des instances
+    \item \textbf{NBTree} - Arbre de décision hybride
     \end{itemize}
   \end{block}
 \end{frame}
 
 \subsection{Mise en oeuvre}
+
 \begin{frame}{Méthodes de classification}{Mise en oeuvre}
+
+  3 $\times$ 6 $\times$ 4 $=$ 72\\[15pt] 
+  
+
   \lstinputlisting[language=bash]{files/script.sh}
+
 \end{frame}
 
 \subsection{Résultats}
 \begin{frame}{Méthodes de classification}{Résultats}
 
-  Résultats par alghorithme de classification
+  Résultats par algorithme de sélection d'attributs\footnote{Avec une représentation booléenne et une classification par \textit{NaiveBayes}. }
+
+  \begin{center}
+    \scriptsize
+    \begin{tabular}{l ccccc} 
+      \hline
+      \textbf{Algorithme} & \textbf{nb. attr.} & \textbf{Taux d'erreur} & \textbf{Précision*} & \textbf{Rappel*} & \textbf{F-mesure*}\\
+      \hline
+
+      GreedyStepwise & 63 & 1,74 & 0.983 & 0.983 & 0.982\\
+      Ranker 0,02 & 39 & 2,67 & 0.973 & 0.973 & 0.973\\ 
+      Ranker 0,01 & 86 & 2.05 & 0.980 & 0.980 & 0.979\\
+      Ranker 0,005 & 181 & 1.56 & 0.984 & 0.984 & 0.984\\
+      
+    \end{tabular}
+  \end{center}    
+    \scriptsize\textbf{*}\textit{Moyenne pondérée}
+
+\end{frame}
+
+\subsection{Résultats}
+\begin{frame}{Méthodes de classification}{Résultats}
+
+  Résultats par algorithme de classification\footnote{Avec une représentation booléenne et une sélection d'attributs par \textit{Ranker} avec un seuil de
+ 0,005. }
 
   \begin{center}
     \scriptsize
@@ -39,7 +69,7 @@
 
 \begin{frame}{Méthodes de classification}{Résultats}
   
-  Résultats par type de représentation des données
+  Résultats par type de représentation des données\footnote{Avec \textit{NBTree} comme algorithme de classification et une sélection d'attributs par \textit{Ranker} avec un seuil de 0,005. }
   
   \begin{center}
     \scriptsize

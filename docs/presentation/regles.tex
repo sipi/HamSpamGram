@@ -1,0 +1,39 @@
+\subsection{Extraction de règles sur le corpus complet}
+
+\begin{frame}[containsverbatim]{Règles d'association}{Extraction de règles sur le corpus complet}
+\scriptsize
+\begin{verbatim}
+1. w_i=t c_39=t (897) ==> CLASS=HAM (883)        conf:(0.98)
+2. w_my=t (613) ==> CLASS=HAM (602)              conf:(0.98)
+3. w_i=t c_39=t c_46=t (584) ==> CLASS=HAM (570) conf:(0.98)
+4. w_i=t (2084) ==> CLASS=HAM 2030               conf:(0.97)
+5. w_i=t c_46=t (1450) ==> CLASS=HAM (1407)      conf:(0.97)
+\end{verbatim}
+\end{frame}
+
+\subsection{Extraction de règles par classe}
+
+\begin{frame}[containsverbatim]{Règles d'association}{Extraction de règles par classe}
+
+\textbf{SPAM}
+\scriptsize
+\begin{verbatim}
+6. c_46=t (589) ==> CLASS=SPAM (589)             
+7. w_to=t (468) ==> CLASS=SPAM (468)             
+8. c_46=t w_to=t (379) ==> CLASS=SPAM (379)      
+9. c_33=t (366) ==> CLASS=SPAM (366)             
+10. w_cal=t (322) ==> CLASS=SPAM (322)           
+\end{verbatim}
+
+\normalsize
+\textbf{HAM}
+\scriptsize
+\begin{verbatim}
+11. c_46=t (3080) ==> CLASS=HAM (3080)           
+12. w_i=t (2030) ==> CLASS=HAM (2030)            
+13. c_46=t w_i=t (1407) ==> CLASS=HAM (1407)     
+14. w_you=t (1350) ==> CLASS=HAM (1350)          
+15. c_39=t (1309) ==> CLASS=HAM (1309)           
+\end{verbatim}
+
+\end{frame}
