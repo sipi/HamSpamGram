@@ -1,2 +1,1 @@
 Nous avons utilisé l'algorithme de clustering \texttt{K-means} sur les 3 types de représentation générées lors de l'étape 2. Cet algorithme génère des partitions qui minimisent la somme des distances d'instances présents dans un cluster. Dans notre projet, le nombre de clusters est bien évidemment 2.    
-
